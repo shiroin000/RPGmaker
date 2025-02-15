@@ -1,0 +1,28 @@
+{
+    "48": [
+        {
+            "revelationText": "世界尽头的灯塔",
+            "textPosX": 24,
+            "textPosY": 19,
+            "author": "我"
+        },
+        {
+            "revelationText": "世界尽头的灯塔222",
+            "textPosX": 24,
+            "textPosY": 19,
+            "author": "我222"
+        },
+        {
+            "revelationText": "世界尽头的灯塔",
+            "textPosX": 23,
+            "textPosY": 25,
+            "author": "我"
+        },
+        {
+            "revelationText": "世界尽头",
+            "textPosX": 23,
+            "textPosY": 25,
+            "author": "我"
+        }
+    ]
+}
