@@ -1,0 +1,412 @@
+{
+    "5": [
+        {
+            "revelationText": "A powerful enemy ahead",
+            "textPosX": 41.7,
+            "textPosY": 24.3,
+            "author": ""
+        },
+        {
+            "revelationText": "Keep moving forward!",
+            "textPosX": 42.5,
+            "textPosY": 26.3,
+            "author": ""
+        }
+    ],
+    "9": [
+        {
+            "revelationText": "This is not the end",
+            "textPosX": 18.7,
+            "textPosY": 9.7,
+            "author": ""
+        },
+        {
+            "revelationText": "Patience is needed",
+            "textPosX": 13.5,
+            "textPosY": 8.6,
+            "author": ""
+        }
+    ],
+    "10": [
+        {
+            "revelationText": "A powerful enemy ahead",
+            "textPosX": 26.8,
+            "textPosY": 10.2,
+            "author": ""
+        },
+        {
+            "revelationText": "Strive to become stronger!",
+            "textPosX": 24.3,
+            "textPosY": 8.2,
+            "author": ""
+        }
+    ],
+    "13": [
+        {
+            "revelationText": "A path ahead",
+            "textPosX": 15.3,
+            "textPosY": 23.5,
+            "author": ""
+        }
+    ],
+    "14": [
+        {
+            "revelationText": "This is futile",
+            "textPosX": 8.6,
+            "textPosY": 9.9,
+            "author": ""
+        }
+    ],
+    "15": [
+        {
+            "revelationText": "Welcome back",
+            "textPosX": 14.7,
+            "textPosY": 13.2,
+            "author": ""
+        },
+        {
+            "revelationText": "This is it →",
+            "textPosX": 16.8,
+            "textPosY": 10.4,
+            "author": ""
+        }
+    ],
+    "16": [
+        {
+            "revelationText": "This is an illusion",
+            "textPosX": 9.6,
+            "textPosY": 9.2,
+            "author": ""
+        },
+        {
+            "revelationText": "Keep moving forward!",
+            "textPosX": 10.8,
+            "textPosY": 17.6,
+            "author": ""
+        },
+        {
+            "revelationText": "This is futile",
+            "textPosX": 11.5,
+            "textPosY": 21.9,
+            "author": ""
+        }
+    ],
+    "17": [
+        {
+            "revelationText": "You can do it!",
+            "textPosX": 8.9,
+            "textPosY": 12.6,
+            "author": ""
+        }
+    ],
+    "18": [
+        {
+            "revelationText": "There might be Aki",
+            "textPosX": 26.2,
+            "textPosY": 32.1,
+            "author": ""
+        },
+        {
+            "revelationText": "They are a companion",
+            "textPosX": 16.6,
+            "textPosY": 5.2,
+            "author": ""
+        },
+        {
+            "revelationText": "This is the story you started...",
+            "textPosX": 22.7,
+            "textPosY": 2.1,
+            "author": ""
+        },
+        {
+            "revelationText": "You can do it!",
+            "textPosX": 27.7,
+            "textPosY": 7.8,
+            "author": ""
+        },
+        {
+            "revelationText": "Hope ahead",
+            "textPosX": 16.7,
+            "textPosY": 3.5,
+            "author": ""
+        },
+        {
+            "revelationText": "Bring a drink home…",
+            "textPosX": 27.8,
+            "textPosY": 3.6,
+            "author": ""
+        },
+        {
+            "revelationText": "Go home if it's too hot",
+            "textPosX": 10.4,
+            "textPosY": 44.4,
+            "author": ""
+        },
+        {
+            "revelationText": "Take care of public property",
+            "textPosX": 10.4,
+            "textPosY": 32.6,
+            "author": ""
+        },
+        {
+            "revelationText": "Praise her!",
+            "textPosX": 25.8,
+            "textPosY": 11.9,
+            "author": ""
+        },
+        {
+            "revelationText": "The B key is useful",
+            "textPosX": 6.2,
+            "textPosY": 43.4,
+            "author": ""
+        },
+        {
+            "revelationText": "Moderation is needed",
+            "textPosX": 20.4,
+            "textPosY": 4,
+            "author": ""
+        },
+        {
+            "revelationText": "There is a hidden wall here",
+            "textPosX": 32.3,
+            "textPosY": 10.8,
+            "author": ""
+        },
+        {
+            "revelationText": "Go home",
+            "textPosX": 8.7,
+            "textPosY": 46.7,
+            "author": ""
+        },
+        {
+            "revelationText": "Where is Imouto",
+            "textPosX": 7.8,
+            "textPosY": 47.1,
+            "author": ""
+        }
+    ],
+    "27": [
+        {
+            "revelationText": "Try it, then...",
+            "textPosX": 29.4,
+            "textPosY": 12.1,
+            "author": ""
+        }
+    ],
+    "28": [
+        {
+            "revelationText": "Try it, then...",
+            "textPosX": 5.1,
+            "textPosY": 20.5,
+            "author": ""
+        },
+        {
+            "revelationText": "A path ahead",
+            "textPosX": 36,
+            "textPosY": 34.8,
+            "author": ""
+        }
+    ],
+    "37": [
+        {
+            "revelationText": "Be careful...",
+            "textPosX": 29.2,
+            "textPosY": 13.8,
+            "author": ""
+        },
+        {
+            "revelationText": "Keep moving forward!",
+            "textPosX": 31.5,
+            "textPosY": 14.4,
+            "author": ""
+        },
+        {
+            "revelationText": "This is futile",
+            "textPosX": 56.5,
+            "textPosY": 16.5,
+            "author": ""
+        }
+    ],
+    "40": [
+        {
+            "revelationText": "Dashing is useful",
+            "textPosX": 5.1,
+            "textPosY": 15.9,
+            "author": ""
+        }
+    ],
+    "43": [
+        {
+            "revelationText": "You won!",
+            "textPosX": 7.3,
+            "textPosY": 10.2,
+            "author": ""
+        }
+    ],
+    "44": [
+        {
+            "revelationText": "A safe zone ahead",
+            "textPosX": 10.7,
+            "textPosY": 12.3,
+            "author": ""
+        }
+    ],
+    "45": [
+        {
+            "revelationText": "Turn back",
+            "textPosX": 13.1,
+            "textPosY": 24.6,
+            "author": ""
+        }
+    ],
+    "46": [
+        {
+            "revelationText": "Keep moving forward!",
+            "textPosX": 33.9,
+            "textPosY": 18.6,
+            "author": ""
+        },
+        {
+            "revelationText": "Trust your judgment!",
+            "textPosX": 21.4,
+            "textPosY": 16.6,
+            "author": ""
+        },
+        {
+            "revelationText": "If you're desperate, try...",
+            "textPosX": 54,
+            "textPosY": 12.2,
+            "author": ""
+        },
+        {
+            "revelationText": "Don't believe this message",
+            "textPosX": 51.9,
+            "textPosY": 11.7,
+            "author": ""
+        }
+    ],
+    "47": [
+        {
+            "revelationText": "Next, jumping is useful!",
+            "textPosX": 63.2,
+            "textPosY": 23,
+            "author": ""
+        },
+        {
+            "revelationText": "A path ahead",
+            "textPosX": 45.4,
+            "textPosY": 16.2,
+            "author": ""
+        },
+        {
+            "revelationText": "Praise the sun!",
+            "textPosX": 25.5,
+            "textPosY": 14.4,
+            "author": ""
+        }
+    ],
+    "48": [
+        {
+            "revelationText": "This is an illusion",
+            "textPosX": 9.6,
+            "textPosY": 56.7,
+            "author": ""
+        },
+        {
+            "revelationText": "They are a companion",
+            "textPosX": 36.2,
+            "textPosY": 29.3,
+            "author": ""
+        },
+        {
+            "revelationText": "This is futile",
+            "textPosX": 37.5,
+            "textPosY": 2.7,
+            "author": ""
+        }
+    ],
+    "49": [
+        {
+            "revelationText": "No one's here, don't bother~",
+            "textPosX": 11.4,
+            "textPosY": 9.4,
+            "author": ""
+        },
+        {
+            "revelationText": "Hope ahead",
+            "textPosX": 6.3,
+            "textPosY": 4.7,
+            "author": ""
+        },
+        {
+            "revelationText": "It would be nice if it was implemented",
+            "textPosX": 14.7,
+            "textPosY": 26.4,
+            "author": ""
+        },
+        {
+            "revelationText": "A path ahead",
+            "textPosX": 39.4,
+            "textPosY": 14.5,
+            "author": ""
+        }
+    ],
+    "50": [
+        {
+            "revelationText": "You did it!",
+            "textPosX": 10.5,
+            "textPosY": 38.9,
+            "author": ""
+        },
+        {
+            "revelationText": "Jumping is useful",
+            "textPosX": 11,
+            "textPosY": 8.3,
+            "author": ""
+        },
+        {
+            "revelationText": "Poison is useful",
+            "textPosX": 13.4,
+            "textPosY": 7,
+            "author": ""
+        }
+    ],
+    "53": [
+        {
+            "revelationText": "Try it, then...",
+            "textPosX": 15.6,
+            "textPosY": 15,
+            "author": ""
+        },
+        {
+            "revelationText": "Try it, then...",
+            "textPosX": 26,
+            "textPosY": 14.8,
+            "author": ""
+        },
+        {
+            "revelationText": "Treasure ahead",
+            "textPosX": 23.5,
+            "textPosY": 6.5,
+            "author": ""
+        },
+        {
+            "revelationText": "Waiting is necessary",
+            "textPosX": 20.3,
+            "textPosY": 9,
+            "author": ""
+        },
+        {
+            "revelationText": "Unknown ahead",
+            "textPosX": 22.9,
+            "textPosY": 15.8,
+            "author": ""
+        },
+        {
+            "revelationText": "This is an illusion...",
+            "textPosX": 41.9,
+            "textPosY": 11.9,
+            "author": ""
+        }
+    ]
+}
