@@ -467,6 +467,7 @@ chahuiUtil.compareVersions = function() {
         if (numA !== numB) {
         var result = numA - numB;
         if (result < 0) {
+		  console.log("Latest version detected: " + versionB);
 		  $gameVariables.setValue(2, versionB);	 
           //chahuiUtil.autoUpdate(versionB);
         }
@@ -482,6 +483,7 @@ chahuiUtil.compareVersions = function() {
     };
 
     xhr.onerror = function() {
+		console.log("Failed to retrieve version information!");
         return false;
     };
 };
