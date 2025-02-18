@@ -1,0 +1,412 @@
+{
+    "5": [
+        {
+            "revelationText": "前有强敌",
+            "textPosX": 41.7,
+            "textPosY": 24.3,
+            "author": ""
+        },
+        {
+            "revelationText": "继续前进！",
+            "textPosX": 42.5,
+            "textPosY": 26.3,
+            "author": ""
+        }
+    ],
+    "9": [
+        {
+            "revelationText": "这不是终点",
+            "textPosX": 18.7,
+            "textPosY": 9.7,
+            "author": ""
+        },
+        {
+            "revelationText": "需要耐心",
+            "textPosX": 13.5,
+            "textPosY": 8.6,
+            "author": ""
+        }
+    ],
+    "10": [
+        {
+            "revelationText": "前有强敌",
+            "textPosX": 26.8,
+            "textPosY": 10.2,
+            "author": ""
+        },
+        {
+            "revelationText": "努力变强吧！",
+            "textPosX": 24.3,
+            "textPosY": 8.2,
+            "author": ""
+        }
+    ],
+    "13": [
+        {
+            "revelationText": "前有道路",
+            "textPosX": 15.3,
+            "textPosY": 23.5,
+            "author": ""
+        }
+    ],
+    "14": [
+        {
+            "revelationText": "这是徒劳",
+            "textPosX": 8.6,
+            "textPosY": 9.9,
+            "author": ""
+        }
+    ],
+    "15": [
+        {
+            "revelationText": "欢迎回来",
+            "textPosX": 14.7,
+            "textPosY": 13.2,
+            "author": ""
+        },
+        {
+            "revelationText": "就是它→",
+            "textPosX": 16.8,
+            "textPosY": 10.4,
+            "author": ""
+        }
+    ],
+    "16": [
+        {
+            "revelationText": "这是幻觉",
+            "textPosX": 9.6,
+            "textPosY": 9.2,
+            "author": ""
+        },
+        {
+            "revelationText": "继续前进！",
+            "textPosX": 10.8,
+            "textPosY": 17.6,
+            "author": ""
+        },
+        {
+            "revelationText": "这是徒劳",
+            "textPosX": 11.5,
+            "textPosY": 21.9,
+            "author": ""
+        }
+    ],
+    "17": [
+        {
+            "revelationText": "你可以做到的！",
+            "textPosX": 8.9,
+            "textPosY": 12.6,
+            "author": ""
+        }
+    ],
+    "18": [
+        {
+            "revelationText": "可能有aki",
+            "textPosX": 26.2,
+            "textPosY": 32.1,
+            "author": ""
+        },
+        {
+            "revelationText": "TA是伙伴",
+            "textPosX": 16.6,
+            "textPosY": 5.2,
+            "author": ""
+        },
+        {
+            "revelationText": "这是你开启的故事...",
+            "textPosX": 22.7,
+            "textPosY": 2.1,
+            "author": ""
+        },
+        {
+            "revelationText": "你可以做到的！",
+            "textPosX": 27.7,
+            "textPosY": 7.8,
+            "author": ""
+        },
+        {
+            "revelationText": "前有希望",
+            "textPosX": 16.7,
+            "textPosY": 3.5,
+            "author": ""
+        },
+        {
+            "revelationText": "带饮料回家吧…",
+            "textPosX": 27.8,
+            "textPosY": 3.6,
+            "author": ""
+        },
+        {
+            "revelationText": "热就回家",
+            "textPosX": 10.4,
+            "textPosY": 44.4,
+            "author": ""
+        },
+        {
+            "revelationText": "要爱护公物",
+            "textPosX": 10.4,
+            "textPosY": 32.6,
+            "author": ""
+        },
+        {
+            "revelationText": "赞美她吧！",
+            "textPosX": 25.8,
+            "textPosY": 11.9,
+            "author": ""
+        },
+        {
+            "revelationText": "B键很有用",
+            "textPosX": 6.2,
+            "textPosY": 43.4,
+            "author": ""
+        },
+        {
+            "revelationText": "需要节制",
+            "textPosX": 20.4,
+            "textPosY": 4,
+            "author": ""
+        },
+        {
+            "revelationText": "这里有隐藏墙壁",
+            "textPosX": 32.3,
+            "textPosY": 10.8,
+            "author": ""
+        },
+        {
+            "revelationText": "回家吧",
+            "textPosX": 8.7,
+            "textPosY": 46.7,
+            "author": ""
+        },
+        {
+            "revelationText": "妹妹在哪里",
+            "textPosX": 7.8,
+            "textPosY": 47.1,
+            "author": ""
+        }
+    ],
+    "27": [
+        {
+            "revelationText": "试试看，然后…",
+            "textPosX": 29.4,
+            "textPosY": 12.1,
+            "author": ""
+        }
+    ],
+    "28": [
+        {
+            "revelationText": "试试看，然后…",
+            "textPosX": 5.1,
+            "textPosY": 20.5,
+            "author": ""
+        },
+        {
+            "revelationText": "前有道路",
+            "textPosX": 36,
+            "textPosY": 34.8,
+            "author": ""
+        }
+    ],
+    "37": [
+        {
+            "revelationText": "请小心…",
+            "textPosX": 29.2,
+            "textPosY": 13.8,
+            "author": ""
+        },
+        {
+            "revelationText": "继续前进！",
+            "textPosX": 31.5,
+            "textPosY": 14.4,
+            "author": ""
+        },
+        {
+            "revelationText": "这是徒劳",
+            "textPosX": 56.5,
+            "textPosY": 16.5,
+            "author": ""
+        }
+    ],
+    "40": [
+        {
+            "revelationText": "冲刺很有用",
+            "textPosX": 5.1,
+            "textPosY": 15.9,
+            "author": ""
+        }
+    ],
+    "43": [
+        {
+            "revelationText": "你赢了！",
+            "textPosX": 7.3,
+            "textPosY": 10.2,
+            "author": ""
+        }
+    ],
+    "44": [
+        {
+            "revelationText": "前方是安全区",
+            "textPosX": 10.7,
+            "textPosY": 12.3,
+            "author": ""
+        }
+    ],
+    "45": [
+        {
+            "revelationText": "回头吧",
+            "textPosX": 13.1,
+            "textPosY": 24.6,
+            "author": ""
+        }
+    ],
+    "46": [
+        {
+            "revelationText": "继续前进！",
+            "textPosX": 33.9,
+            "textPosY": 18.6,
+            "author": ""
+        },
+        {
+            "revelationText": "相信你的预判！",
+            "textPosX": 21.4,
+            "textPosY": 16.6,
+            "author": ""
+        },
+        {
+            "revelationText": "如果你绝望了，就试试…",
+            "textPosX": 54,
+            "textPosY": 12.2,
+            "author": ""
+        },
+        {
+            "revelationText": "不要相信这条消息",
+            "textPosX": 51.9,
+            "textPosY": 11.7,
+            "author": ""
+        }
+    ],
+    "47": [
+        {
+            "revelationText": "接下来、跳跃很有用！",
+            "textPosX": 63.2,
+            "textPosY": 23,
+            "author": ""
+        },
+        {
+            "revelationText": "前有道路",
+            "textPosX": 45.4,
+            "textPosY": 16.2,
+            "author": ""
+        },
+        {
+            "revelationText": "赞美太阳！",
+            "textPosX": 25.5,
+            "textPosY": 14.4,
+            "author": ""
+        }
+    ],
+    "48": [
+        {
+            "revelationText": "这是幻觉",
+            "textPosX": 9.6,
+            "textPosY": 56.7,
+            "author": ""
+        },
+        {
+            "revelationText": "TA是伙伴",
+            "textPosX": 36.2,
+            "textPosY": 29.3,
+            "author": ""
+        },
+        {
+            "revelationText": "这是徒劳",
+            "textPosX": 37.5,
+            "textPosY": 2.7,
+            "author": ""
+        }
+    ],
+    "49": [
+        {
+            "revelationText": "人不在，别试啦~",
+            "textPosX": 11.4,
+            "textPosY": 9.4,
+            "author": ""
+        },
+        {
+            "revelationText": "前有希望",
+            "textPosX": 6.3,
+            "textPosY": 4.7,
+            "author": ""
+        },
+        {
+            "revelationText": "如果有实装就好了",
+            "textPosX": 14.7,
+            "textPosY": 26.4,
+            "author": ""
+        },
+        {
+            "revelationText": "前有道路",
+            "textPosX": 39.4,
+            "textPosY": 14.5,
+            "author": ""
+        }
+    ],
+    "50": [
+        {
+            "revelationText": "你做到了！",
+            "textPosX": 10.5,
+            "textPosY": 38.9,
+            "author": ""
+        },
+        {
+            "revelationText": "跳跃很有用",
+            "textPosX": 11,
+            "textPosY": 8.3,
+            "author": ""
+        },
+        {
+            "revelationText": "毒很有用",
+            "textPosX": 13.4,
+            "textPosY": 7,
+            "author": ""
+        }
+    ],
+    "53": [
+        {
+            "revelationText": "试试看，然后…",
+            "textPosX": 15.6,
+            "textPosY": 15,
+            "author": ""
+        },
+        {
+            "revelationText": "试试看，然后…",
+            "textPosX": 26,
+            "textPosY": 14.8,
+            "author": ""
+        },
+        {
+            "revelationText": "前有宝物",
+            "textPosX": 23.5,
+            "textPosY": 6.5,
+            "author": ""
+        },
+        {
+            "revelationText": "需要等待",
+            "textPosX": 20.3,
+            "textPosY": 9,
+            "author": ""
+        },
+        {
+            "revelationText": "前有未知",
+            "textPosX": 22.9,
+            "textPosY": 15.8,
+            "author": ""
+        },
+        {
+            "revelationText": "这是一场幻觉…",
+            "textPosX": 41.9,
+            "textPosY": 11.9,
+            "author": ""
+        }
+    ]
+}
