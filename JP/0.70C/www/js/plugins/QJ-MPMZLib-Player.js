@@ -1980,7 +1980,8 @@ QJ.MPMZ.tl.ex_playerMeleeAttackTrigger = function() {
     }
 
     if (TouchInput.drill_isLeftPressed() || GamepadsAttack) {
-        let weaponType = $dataWeapons[$gameParty.leader().equips()[0].baseItemId].wtypeId;
+		if (!$gameParty.leader().equips()[0]) return;
+        let weaponType = $gameParty.leader().equips()[0].wtypeId;
         let swordType = [1, 2];
         if (!swordType.includes(weaponType)) return;
 
@@ -2028,8 +2029,8 @@ QJ.MPMZ.tl.ex_playerSpecialAttackTrigger = function() {
         if (QJ.MPMZ.tl.ex_playerAntiClickDetection("normalAttack")) return;
         if ($gameSwitches.value(181)) return;
         if ($gameMap.getGroupBulletListQJ('Senpo').length > 0) return;
-
-        let weaponType = $dataWeapons[$gameParty.leader().equips()[0].baseItemId].wtypeId;
+        if (!$gameParty.leader().equips()[0]) return;
+        let weaponType = $gameParty.leader().equips()[0].wtypeId;
         let swordType = [1, 2];
         if (!swordType.includes(weaponType)) return;
         // 旋风斩
