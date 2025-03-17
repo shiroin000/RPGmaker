@@ -856,6 +856,7 @@ QJ.MPMZ.tl.ex_bombFiendSoul = function(posX,posY,posFix,canTrigger) {
 	
 	if (!posX || !posY) {
 	  if (!this) return;
+	  if (!(this instanceof Game_QJBulletMZ)) return;
     var posX = this.inheritX();
     var posY = this.inheritY();
 	}	
