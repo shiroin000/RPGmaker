@@ -1,6 +1,12 @@
 {
   "5": [
     {
+      "revelationText": "Ah You Finally There ",
+      "textPosX": 13,
+      "textPosY": 29.7,
+      "author": ""
+    },
+    {
       "revelationText": "DemonDanger",
       "textPosX": 38.6,
       "textPosY": 23.3,
@@ -88,6 +94,90 @@
     }
   ],
   "10": [
+    {
+      "revelationText": "Back Back Back Back Back ",
+      "textPosX": 11.1,
+      "textPosY": 5.7,
+      "author": ""
+    },
+    {
+      "revelationText": "What Be Watch Out Watch Out ",
+      "textPosX": 16.4,
+      "textPosY": 26.4,
+      "author": ""
+    },
+    {
+      "revelationText": "All Ally Liar Danger ",
+      "textPosX": 16.3,
+      "textPosY": 18.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Watch Out NLCH ",
+      "textPosX": 16.4,
+      "textPosY": 32.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Abyss Ninja Knight ",
+      "textPosX": 25.1,
+      "textPosY": 9.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Onii-chanLoveYou",
+      "textPosX": 22.7,
+      "textPosY": 9.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Back So What ",
+      "textPosX": 17.1,
+      "textPosY": 32.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Below Here ",
+      "textPosX": 27.2,
+      "textPosY": 21.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Attack The ROCK",
+      "textPosX": 28.3,
+      "textPosY": 25.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Back Back Side Side ",
+      "textPosX": 23,
+      "textPosY": 9.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Side Back",
+      "textPosX": 25.6,
+      "textPosY": 8.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Home Now ",
+      "textPosX": 24.9,
+      "textPosY": 9,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes ",
+      "textPosX": 20.6,
+      "textPosY": 10.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Now Onii-chan ",
+      "textPosX": 24.2,
+      "textPosY": 8.5,
+      "author": ""
+    },
     {
       "revelationText": "Onii-chan Use Milk",
       "textPosX": 25.9,
@@ -204,6 +294,48 @@
     }
   ],
   "13": [
+    {
+      "revelationText": "GroundRiver",
+      "textPosX": 11.1,
+      "textPosY": 22.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Although Rune Resist ",
+      "textPosX": 10.2,
+      "textPosY": 16.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Done Side ",
+      "textPosX": 10.4,
+      "textPosY": 24.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Bomb The River ",
+      "textPosX": 13.1,
+      "textPosY": 23.3,
+      "author": ""
+    },
+    {
+      "revelationText": "THIS, IS, FUN",
+      "textPosX": 12.1,
+      "textPosY": 4.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Ally Buff Skill Dash And ",
+      "textPosX": 10.1,
+      "textPosY": 33.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Love NLCH ",
+      "textPosX": 12.5,
+      "textPosY": 1.4,
+      "author": ""
+    },
     {
       "revelationText": "Bomb The River!!",
       "textPosX": 13.6,
@@ -352,6 +484,336 @@
     }
   ],
   "18": [
+    {
+      "revelationText": "Ah…Need!",
+      "textPosX": 29.5,
+      "textPosY": 10.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Done",
+      "textPosX": 13.3,
+      "textPosY": 26.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Back Back Back Back Back ",
+      "textPosX": 12.1,
+      "textPosY": 34.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Future Safe Success ",
+      "textPosX": 20.9,
+      "textPosY": 8.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Yes Yes Yes Yes Yes ",
+      "textPosX": 14.5,
+      "textPosY": 28.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes",
+      "textPosX": 26.9,
+      "textPosY": 9.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Gold Gold Item ",
+      "textPosX": 8.1,
+      "textPosY": 45.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Although Stats Gold Food ",
+      "textPosX": 9.8,
+      "textPosY": 36.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Imouto Love Me ",
+      "textPosX": 8.1,
+      "textPosY": 46.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Skill All Max ",
+      "textPosX": 19.3,
+      "textPosY": 12,
+      "author": ""
+    },
+    {
+      "revelationText": "Watch Out Onii-chan ",
+      "textPosX": 22.7,
+      "textPosY": 4.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Merchant Gold Milk Weapon ",
+      "textPosX": 13.5,
+      "textPosY": 25.2,
+      "author": ""
+    },
+    {
+      "revelationText": "NLCH NLCH NLCH NLCH NLCH ",
+      "textPosX": 16.6,
+      "textPosY": 33,
+      "author": ""
+    },
+    {
+      "revelationText": "Eat Me Back Back Back Back ",
+      "textPosX": 21.1,
+      "textPosY": 11.1,
+      "author": ""
+    },
+    {
+      "revelationText": "MiYU? ",
+      "textPosX": 9.8,
+      "textPosY": 34.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Milk Milk Milk Milk Milk ",
+      "textPosX": 23.1,
+      "textPosY": 8.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Danger ",
+      "textPosX": 26.9,
+      "textPosY": 9.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Me Need Burned Weapon ",
+      "textPosX": 22.7,
+      "textPosY": 8.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Onii-chan Love Trap ",
+      "textPosX": 23.5,
+      "textPosY": 5.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Love Me Imouto ",
+      "textPosX": 22.8,
+      "textPosY": 4.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Need Attack Skill ",
+      "textPosX": 23.1,
+      "textPosY": 5.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Right Ahead So The Done Yes ",
+      "textPosX": 8.1,
+      "textPosY": 46,
+      "author": ""
+    },
+    {
+      "revelationText": "Do You Drink Me ",
+      "textPosX": 24,
+      "textPosY": 6.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Right But Here ",
+      "textPosX": 23.9,
+      "textPosY": 3.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Yes Yes Yes Yes Yes Yes ",
+      "textPosX": 9.6,
+      "textPosY": 34,
+      "author": ""
+    },
+    {
+      "revelationText": "Weapon ",
+      "textPosX": 25.4,
+      "textPosY": 6.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Do You See Merchant ? ",
+      "textPosX": 10.1,
+      "textPosY": 38,
+      "author": ""
+    },
+    {
+      "revelationText": "YOUGAY",
+      "textPosX": 22,
+      "textPosY": 3.4,
+      "author": ""
+    },
+    {
+      "revelationText": "See Item Frozen ",
+      "textPosX": 24.8,
+      "textPosY": 8.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Use Skill ",
+      "textPosX": 18.2,
+      "textPosY": 11.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Gear All Gold Love Imouto ",
+      "textPosX": 8.7,
+      "textPosY": 41.8,
+      "author": ""
+    },
+    {
+      "revelationText": "LoveNLCH",
+      "textPosX": 8.4,
+      "textPosY": 44.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Magic Bomb Use Enemies Stats ",
+      "textPosX": 21.3,
+      "textPosY": 8.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Take Room Now Imouto Love ",
+      "textPosX": 25.7,
+      "textPosY": 7.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Invalid Front Side Side Side ",
+      "textPosX": 12,
+      "textPosY": 26.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Done The But Use Attack !",
+      "textPosX": 28.7,
+      "textPosY": 5.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Attack Front Target All ",
+      "textPosX": 9.2,
+      "textPosY": 40.1,
+      "author": ""
+    },
+    {
+      "revelationText": "You Love Imouto ! ",
+      "textPosX": 16.9,
+      "textPosY": 32.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Take Use Need Attack Enem",
+      "textPosX": 22.6,
+      "textPosY": 2.6,
+      "author": ""
+    },
+    {
+      "revelationText": "You Me Enemies ! ! ! ! ! ",
+      "textPosX": 31.7,
+      "textPosY": 5.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Gear Item Item Item Rune ",
+      "textPosX": 8.9,
+      "textPosY": 35.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Milk Valid Tarot ",
+      "textPosX": 13.5,
+      "textPosY": 30.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Imouto Milk Valid Need ",
+      "textPosX": 18.5,
+      "textPosY": 12.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Correct Imouto Love NLCH ",
+      "textPosX": 23,
+      "textPosY": 8.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Done The What Ah Not He",
+      "textPosX": 11.7,
+      "textPosY": 31.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Stats Max Status ",
+      "textPosX": 22.3,
+      "textPosY": 5.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Milk ",
+      "textPosX": 21.9,
+      "textPosY": 7.4,
+      "author": ""
+    },
+    {
+      "revelationText": "WhereImouto",
+      "textPosX": 8.1,
+      "textPosY": 46.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Sleep ",
+      "textPosX": 21.2,
+      "textPosY": 9.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Done ",
+      "textPosX": 13.1,
+      "textPosY": 32.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Weapon Gear … Max SLOT",
+      "textPosX": 10.8,
+      "textPosY": 34.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Weapon Gear … Max SLOT! ",
+      "textPosX": 12,
+      "textPosY": 34.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Buff Stats Max ",
+      "textPosX": 13.8,
+      "textPosY": 35,
+      "author": ""
+    },
+    {
+      "revelationText": "See Onii-chan ",
+      "textPosX": 18.4,
+      "textPosY": 11.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Onii-chan Love Imouto ",
+      "textPosX": 23.1,
+      "textPosY": 6.4,
+      "author": ""
+    },
     {
       "revelationText": "Unknown Enemy",
       "textPosX": 23.1,
@@ -1221,6 +1683,30 @@
   ],
   "28": [
     {
+      "revelationText": "You And Me ",
+      "textPosX": 12,
+      "textPosY": 33.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Milk The Imouto Ah Ah Ah ",
+      "textPosX": 9.7,
+      "textPosY": 24.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Frozen ",
+      "textPosX": 3.1,
+      "textPosY": 20.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Boss Gold Food Love Onii-chan ",
+      "textPosX": 23.8,
+      "textPosY": 15.5,
+      "author": ""
+    },
+    {
       "revelationText": "FrozenFrozen",
       "textPosX": 36.8,
       "textPosY": 46.1,
@@ -1353,6 +1839,32 @@
       "author": ""
     }
   ],
+  "32": [
+    {
+      "revelationText": "Path ? ",
+      "textPosX": 12.3,
+      "textPosY": 6.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Not ",
+      "textPosX": 11.9,
+      "textPosY": 5.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Path Correct ",
+      "textPosX": 7.5,
+      "textPosY": 11.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Path ",
+      "textPosX": 4.6,
+      "textPosY": 12.2,
+      "author": ""
+    }
+  ],
   "35": [
     {
       "revelationText": "TherePath",
@@ -1368,6 +1880,132 @@
     }
   ],
   "37": [
+    {
+      "revelationText": "Skill ",
+      "textPosX": 8.9,
+      "textPosY": 21.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Skill See You Side ",
+      "textPosX": 55.5,
+      "textPosY": 17.1,
+      "author": ""
+    },
+    {
+      "revelationText": "What, R, You LOOKIN,At ? ",
+      "textPosX": 84.9,
+      "textPosY": 65.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Take ",
+      "textPosX": 11.8,
+      "textPosY": 40.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Do Dash Ahead ",
+      "textPosX": 49.5,
+      "textPosY": 37.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Side Back Back Back Room ",
+      "textPosX": 27.8,
+      "textPosY": 17.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Back Back Side ",
+      "textPosX": 56.9,
+      "textPosY": 64.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Skill Trap Rune Back Back",
+      "textPosX": 29.3,
+      "textPosY": 19.1,
+      "author": ""
+    },
+    {
+      "revelationText": "DefendAndAttack",
+      "textPosX": 21.1,
+      "textPosY": 8.8,
+      "author": ""
+    },
+    {
+      "revelationText": "CanOnii-chanMilkImouto",
+      "textPosX": 4.9,
+      "textPosY": 8.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Careful … Magic Bomb ",
+      "textPosX": 5.9,
+      "textPosY": 20.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Back Back ",
+      "textPosX": 85.3,
+      "textPosY": 65,
+      "author": ""
+    },
+    {
+      "revelationText": "Path Room Correct ",
+      "textPosX": 7.7,
+      "textPosY": 22.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes ",
+      "textPosX": 4.1,
+      "textPosY": 10.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Done ",
+      "textPosX": 11,
+      "textPosY": 9.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Back Back What Attack Use ",
+      "textPosX": 58.8,
+      "textPosY": 25.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Take Me Onii-chan ",
+      "textPosX": 30.1,
+      "textPosY": 64.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Take Need ",
+      "textPosX": 10.6,
+      "textPosY": 42.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Trap ",
+      "textPosX": 12.1,
+      "textPosY": 53.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Careful ",
+      "textPosX": 14.6,
+      "textPosY": 30.1,
+      "author": ""
+    },
+    {
+      "revelationText": "What Side ? ",
+      "textPosX": 21.6,
+      "textPosY": 17.1,
+      "author": ""
+    },
     {
       "revelationText": "StatusMaxGold",
       "textPosX": 12.9,
@@ -1701,6 +2339,18 @@
   ],
   "39": [
     {
+      "revelationText": "Path ",
+      "textPosX": 11.8,
+      "textPosY": 30.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Correct Correct Correct ",
+      "textPosX": 11.2,
+      "textPosY": 30.1,
+      "author": ""
+    },
+    {
       "revelationText": "Unknown",
       "textPosX": 9.5,
       "textPosY": 11.5,
@@ -1709,9 +2359,23 @@
   ],
   "40": [
     {
+      "revelationText": "Love You ",
+      "textPosX": 5.1,
+      "textPosY": 16.7,
+      "author": ""
+    },
+    {
       "revelationText": "Dashing is useful",
       "textPosX": 5.1,
       "textPosY": 15.9,
+      "author": ""
+    }
+  ],
+  "41": [
+    {
+      "revelationText": "Left … … … … ",
+      "textPosX": 6.6,
+      "textPosY": 12,
       "author": ""
     }
   ],
@@ -1733,6 +2397,24 @@
   ],
   "45": [
     {
+      "revelationText": "Yes Done The What Ah Not ",
+      "textPosX": 16.2,
+      "textPosY": 13.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Ah Liar Invalid Can Enemy ",
+      "textPosX": 16.6,
+      "textPosY": 11.7,
+      "author": ""
+    },
+    {
+      "revelationText": "WhatTheFuCC",
+      "textPosX": 15.5,
+      "textPosY": 13.8,
+      "author": ""
+    },
+    {
       "revelationText": "GearAhead",
       "textPosX": 13,
       "textPosY": 23,
@@ -1746,6 +2428,12 @@
     }
   ],
   "46": [
+    {
+      "revelationText": "Food Gold All Max Ground ",
+      "textPosX": 19.8,
+      "textPosY": 20.9,
+      "author": ""
+    },
     {
       "revelationText": "Keep moving forward!",
       "textPosX": 33.9,
@@ -1852,6 +2540,42 @@
     }
   ],
   "48": [
+    {
+      "revelationText": "Food Meat ! ",
+      "textPosX": 20.2,
+      "textPosY": 68.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Do You See Me ",
+      "textPosX": 32.5,
+      "textPosY": 20.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Done Max Skill Dash Gold ",
+      "textPosX": 26.6,
+      "textPosY": 36,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Do Take Minion Skill ",
+      "textPosX": 7.9,
+      "textPosY": 54.4,
+      "author": ""
+    },
+    {
+      "revelationText": "FutureFutureFutureFuture",
+      "textPosX": 27.5,
+      "textPosY": 19.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Ahead ",
+      "textPosX": 27.9,
+      "textPosY": 61.8,
+      "author": ""
+    },
     {
       "revelationText": "MoveFront",
       "textPosX": 9.5,
@@ -1981,6 +2705,54 @@
   ],
   "49": [
     {
+      "revelationText": "SkillYesMaxMinAllyRigh",
+      "textPosX": 19.9,
+      "textPosY": 21.4,
+      "author": ""
+    },
+    {
+      "revelationText": "What The ",
+      "textPosX": 28.9,
+      "textPosY": 21.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Imouto Love Onii-chan ",
+      "textPosX": 16.8,
+      "textPosY": 9.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Attack Onii-chan ",
+      "textPosX": 42.5,
+      "textPosY": 11.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Love Onii-chan Love Love ",
+      "textPosX": 11.4,
+      "textPosY": 10.1,
+      "author": ""
+    },
+    {
+      "revelationText": "You",
+      "textPosX": 39.2,
+      "textPosY": 14.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes ",
+      "textPosX": 22.6,
+      "textPosY": 11,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Skill ",
+      "textPosX": 14.5,
+      "textPosY": 26.1,
+      "author": ""
+    },
+    {
       "revelationText": "AllTheYesBeCorrectSkill",
       "textPosX": 14.5,
       "textPosY": 26.1,
@@ -2066,6 +2838,48 @@
     }
   ],
   "50": [
+    {
+      "revelationText": "Dash Below ",
+      "textPosX": 14.3,
+      "textPosY": 28.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Max And Because Move ",
+      "textPosX": 11,
+      "textPosY": 7.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Demon",
+      "textPosX": 11.1,
+      "textPosY": 7.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Praise Imouto ! ",
+      "textPosX": 9,
+      "textPosY": 7.8,
+      "author": ""
+    },
+    {
+      "revelationText": "FrozenAtBoss,Success",
+      "textPosX": 10.5,
+      "textPosY": 20.2,
+      "author": ""
+    },
+    {
+      "revelationText": "… Side Side Back ",
+      "textPosX": 11.3,
+      "textPosY": 7.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Done ",
+      "textPosX": 8.1,
+      "textPosY": 16,
+      "author": ""
+    },
     {
       "revelationText": "ImoutoLoveOnii-chan",
       "textPosX": 10.7,
@@ -2166,6 +2980,36 @@
     }
   ],
   "53": [
+    {
+      "revelationText": "Frozen Knight ",
+      "textPosX": 22.4,
+      "textPosY": 11.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Weapon,Gear,Item",
+      "textPosX": 20.6,
+      "textPosY": 28.3,
+      "author": ""
+    },
+    {
+      "revelationText": "MOMMY",
+      "textPosX": 20.5,
+      "textPosY": 11.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Me Love Imouto ",
+      "textPosX": 22.9,
+      "textPosY": 32.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Item Right Ahead ",
+      "textPosX": 19.3,
+      "textPosY": 6.5,
+      "author": ""
+    },
     {
       "revelationText": "YesFinallyMilk",
       "textPosX": 20.6,

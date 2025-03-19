@@ -29,6 +29,12 @@
   ],
   "10": [
     {
+      "revelationText": "考える部屋",
+      "textPosX": 26.1,
+      "textPosY": 7.9,
+      "author": ""
+    },
+    {
       "revelationText": "。。。。。。。。。。。。。。。",
       "textPosX": 16.3,
       "textPosY": 24.5,
@@ -73,6 +79,12 @@
   ],
   "13": [
     {
+      "revelationText": "肉",
+      "textPosX": 10.5,
+      "textPosY": 32.5,
+      "author": ""
+    },
+    {
       "revelationText": "爆弾耐性",
       "textPosX": 11.3,
       "textPosY": 27.1,
@@ -92,6 +104,12 @@
     }
   ],
   "14": [
+    {
+      "revelationText": "見る",
+      "textPosX": 7.5,
+      "textPosY": 10.3,
+      "author": ""
+    },
     {
       "revelationText": "それは無駄だ",
       "textPosX": 8.6,
@@ -142,6 +160,72 @@
     }
   ],
   "18": [
+    {
+      "revelationText": "中央",
+      "textPosX": 26.4,
+      "textPosY": 33.9,
+      "author": ""
+    },
+    {
+      "revelationText": "凍結",
+      "textPosX": 10.9,
+      "textPosY": 39.3,
+      "author": ""
+    },
+    {
+      "revelationText": "ここ",
+      "textPosX": 8.5,
+      "textPosY": 47,
+      "author": ""
+    },
+    {
+      "revelationText": "正しいです",
+      "textPosX": 12.2,
+      "textPosY": 24.8,
+      "author": ""
+    },
+    {
+      "revelationText": "正面",
+      "textPosX": 17.9,
+      "textPosY": 13,
+      "author": ""
+    },
+    {
+      "revelationText": "肉！",
+      "textPosX": 22.6,
+      "textPosY": 5.5,
+      "author": ""
+    },
+    {
+      "revelationText": "食べる気をつけろ力お茶会お茶会",
+      "textPosX": 20.2,
+      "textPosY": 7.4,
+      "author": ""
+    },
+    {
+      "revelationText": "ですですですです",
+      "textPosX": 21.5,
+      "textPosY": 34.8,
+      "author": ""
+    },
+    {
+      "revelationText": "有効",
+      "textPosX": 26.2,
+      "textPosY": 6.6,
+      "author": ""
+    },
+    {
+      "revelationText": "使う使う使う使う使う使う使う使う",
+      "textPosX": 8.1,
+      "textPosY": 40.5,
+      "author": ""
+    },
+    {
+      "revelationText": "魔敵耐性",
+      "textPosX": 14.6,
+      "textPosY": 26.8,
+      "author": ""
+    },
     {
       "revelationText": "なぜならする取る属性タロット肉",
       "textPosX": 8.1,
@@ -359,6 +443,24 @@
   ],
   "28": [
     {
+      "revelationText": "またはまたはまたは",
+      "textPosX": 11.1,
+      "textPosY": 35.6,
+      "author": ""
+    },
+    {
+      "revelationText": "ダッシュスキル飲み物",
+      "textPosX": 11.9,
+      "textPosY": 26.6,
+      "author": ""
+    },
+    {
+      "revelationText": "見る全部",
+      "textPosX": 30.9,
+      "textPosY": 35.4,
+      "author": ""
+    },
+    {
       "revelationText": "ですですですですですですですです",
       "textPosX": 10.1,
       "textPosY": 36,
@@ -413,7 +515,87 @@
       "author": ""
     }
   ],
+  "30": [
+    {
+      "revelationText": "牛乳凍結",
+      "textPosX": 11.1,
+      "textPosY": 4.1,
+      "author": ""
+    }
+  ],
+  "31": [
+    {
+      "revelationText": "耐性",
+      "textPosX": 1.7,
+      "textPosY": 8.7,
+      "author": ""
+    }
+  ],
+  "32": [
+    {
+      "revelationText": "見る取る取る",
+      "textPosX": 3.3,
+      "textPosY": 12.3,
+      "author": ""
+    }
+  ],
+  "35": [
+    {
+      "revelationText": "敵敵敵",
+      "textPosX": 11.2,
+      "textPosY": 2.7,
+      "author": ""
+    }
+  ],
   "37": [
+    {
+      "revelationText": "牛乳",
+      "textPosX": 47.3,
+      "textPosY": 65.4,
+      "author": ""
+    },
+    {
+      "revelationText": "ない君力夢道",
+      "textPosX": 30.1,
+      "textPosY": 14.2,
+      "author": ""
+    },
+    {
+      "revelationText": "耐性",
+      "textPosX": 62.6,
+      "textPosY": 56.7,
+      "author": ""
+    },
+    {
+      "revelationText": "？",
+      "textPosX": 4.3,
+      "textPosY": 6.4,
+      "author": ""
+    },
+    {
+      "revelationText": "爆弾爆弾",
+      "textPosX": 21.5,
+      "textPosY": 17.2,
+      "author": ""
+    },
+    {
+      "revelationText": "左",
+      "textPosX": 31.3,
+      "textPosY": 39.8,
+      "author": ""
+    },
+    {
+      "revelationText": "正面",
+      "textPosX": 31.7,
+      "textPosY": 66.4,
+      "author": ""
+    },
+    {
+      "revelationText": "属性",
+      "textPosX": 27.8,
+      "textPosY": 65.8,
+      "author": ""
+    },
     {
       "revelationText": "凍結仲間",
       "textPosX": 31.3,
@@ -475,6 +657,14 @@
       "author": ""
     }
   ],
+  "39": [
+    {
+      "revelationText": "正面凍結",
+      "textPosX": 11.2,
+      "textPosY": 32.2,
+      "author": ""
+    }
+  ],
   "40": [
     {
       "revelationText": "ダッシュは有効だ",
@@ -508,6 +698,18 @@
     }
   ],
   "46": [
+    {
+      "revelationText": "…",
+      "textPosX": 24.3,
+      "textPosY": 38,
+      "author": ""
+    },
+    {
+      "revelationText": "だのか",
+      "textPosX": 34.5,
+      "textPosY": 18.3,
+      "author": ""
+    },
     {
       "revelationText": "爆弾",
       "textPosX": 54.6,
@@ -566,6 +768,24 @@
     }
   ],
   "48": [
+    {
+      "revelationText": "川の中強敵仲間！",
+      "textPosX": 36.2,
+      "textPosY": 30.6,
+      "author": ""
+    },
+    {
+      "revelationText": "ですののかかか",
+      "textPosX": 36.1,
+      "textPosY": 29.7,
+      "author": ""
+    },
+    {
+      "revelationText": "お兄ちゃん",
+      "textPosX": 5.3,
+      "textPosY": 25.1,
+      "author": ""
+    },
     {
       "revelationText": "だけど移動移動詐欺師使う",
       "textPosX": 34.6,
@@ -672,6 +892,18 @@
     }
   ],
   "50": [
+    {
+      "revelationText": "強敵？下攻撃考えると見る",
+      "textPosX": 10,
+      "textPosY": 18.2,
+      "author": ""
+    },
+    {
+      "revelationText": "麻痺麻痺麻痺",
+      "textPosX": 11.1,
+      "textPosY": 8.8,
+      "author": ""
+    },
     {
       "revelationText": "強敵",
       "textPosX": 8.1,
