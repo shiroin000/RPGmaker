@@ -26,6 +26,7 @@ QJ.MPMZ.tl.ex_toEnemyAttack = function (weaponDamage, attackData = {}, args) {
     if (!this) return;
 	if (!(this instanceof Game_QJBulletMZ)) return;
 	
+	// 炸弹魔之魂
 	if ($gameParty.leader().hasSkill(34)) {
 		let chance = 5 + 3 * $gameParty.leader().skillMasteryLevel(34);
 		if (chance > Math.randomInt(100)) {

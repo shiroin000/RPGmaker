@@ -38,8 +38,8 @@ QJ.MPMZ.tl.ex_playerConditionCheck = function() {
 			[90,150,QJ.MPMZ.tl.ex_abyssTimeFlow], // 在深渊时间自动流逝
 			[20,20,QJ.MPMZ.tl.ex_PlayerHitCheck], // 受击检测和无敌帧重置
 			[60,60,QJ.MPMZ.tl.ex_playerStuckCheck], // 玩家卡墙检测
-			[60,60,QJ.MPMZ.tl.ex_playerAttributeRefresh], // 玩家属性框刷新
-		    [60,60,QJ.MPMZ.tl.ex_playerAttackModeDetection],  // 玩家攻击模式检测
+			[60,120,QJ.MPMZ.tl.ex_playerAttributeRefresh], // 玩家属性框刷新
+		    [60,90,QJ.MPMZ.tl.ex_playerAttackModeDetection],  // 玩家攻击模式检测
 			[60,20,QJ.MPMZ.tl.ex_senPoListener]  // 闪步触发判断
 		],
     });
@@ -63,7 +63,8 @@ QJ.MPMZ.tl.ex_playerConditionCheck = function() {
 	if ($gamePlayer.isStealthMode()) return;
     
 	// 生成从者
-	QJ.MPMZ.tl.ServantResetAndRegeneration();
+	QJ.MPMZ.tl.ServantResetAndRegeneration();	
+	
 };
 
 // 从者重置-生成
@@ -86,10 +87,18 @@ QJ.MPMZ.tl.ServantResetAndRegeneration = function() {
         ).length;
 
         // 生成多个存钱罐
-        for (let i = 0; i < piggyBankCount; i++) {
-            $gameMap.spawnEventQJ(1, 111, XX, YY, false);
-        }
-
+        QJ.MPMZ.Shoot({
+                   img: "null1",
+                   groupName: ['skinshipListeners'],
+				   extra:piggyBankCount,
+                   existData: [
+				     {t: ['S', "this.data.extra==0", true]},
+					 {t: ['Time', 10]},
+                   ],
+                   moveJS: [
+                       [1, 1, `$gameMap.spawnEventQJ(1, 111, ${XX}, ${YY}, false);this.data.extra-=1`],
+                   ]
+          });
         // 贪欲存钱罐
         if (actor.equips().some(equip => equip && DataManager.isArmor(equip) && equip.baseItemId === 38)) {
             let eid = $gameMap.spawnEventQJ(1, 112, XX, YY, false); 
@@ -1458,9 +1467,8 @@ var canMoveRight = $gamePlayer.canPass(playerX, playerY, 6); // 右
 if ((noPass && !canThrough) || (!canThrough && !canMoveUp && !canMoveDown && !canMoveLeft && !canMoveRight)) {
    // 卡墙的碰撞伤害
 	QJ.MPMZ.tl.ex_playerStuckCollisionDamage();
-    var XX = $gamePlayer.centerRealX();  var YY = $gamePlayer.centerRealY();
     var condition = DrillUp.g_COFA_condition_list[ 10 ];
-    var c_area = $gameMap.drill_COFA_getShapePointsWithCondition( XX,YY,"圆形区域",8, condition );
+    var c_area = $gameMap.drill_COFA_getShapePointsWithCondition( playerX,playerY,"圆形区域",8, condition );
 	   
     if(c_area.length > 0) {
        var p = c_area[ Math.floor( Math.random()*c_area.length ) ];
@@ -1477,7 +1485,7 @@ if ((noPass && !canThrough) || (!canThrough && !canMoveUp && !canMoveDown && !ca
 QJ.MPMZ.tl.ex_playerStuckCollisionDamage = function() {
 	
 	$gamePlayer.requestAnimation(140);
-	var realDamage = Math.floor($gameParty.leader().mhp * 0.15);
+	var realDamage = Math.floor($gameParty.leader().mhp * 0.05);
     SimpleMapDamageQJ.put(2,-1,realDamage,0,-72);
     $gameParty.leader().gainHp(-realDamage);
 	
@@ -1492,7 +1500,7 @@ QJ.MPMZ.tl.ex_playerStuckCollisionDamage = function() {
 		  {t:['Time',19]},
         ],
     });
-}
+};
 
 //检查玩家背包中武器容量
 QJ.MPMZ.tl.checkplayerWeaponWeight = function() {
@@ -1690,130 +1698,168 @@ QJ.MPMZ.tl.upgradeWeaponArmorLimit = function(type) {
 //体术
 //=============================================================================
 
+
+
 //闪步
 QJ.MPMZ.tl.ex_senpo = function() {
 
-    if($gameMap.getGroupBulletListQJ('senpoTachi').length > 0) return;
-	if($gameMap.getGroupBulletListQJ('playerSkill').length > 0) return;
-	
-	var skillDuration = 15;
-	    skillDuration += $gameParty.leader().skillMasteryLevel(39);
-	
-	if (!$gameParty.leader().isStateAffected(67)) {
-	$gameScreen._particle.particlePlay(0,"fuss_startdash","player","def","0.9");
-
-  } else {
-    $gameScreen._particle.particleGroupSet(0,"splash_cp","player");
-  }
-   var seNames = "Wind1";
-   var se = { name: seNames, volume: 60, pitch: 140, pan: 0 };
-   AudioManager.playSe(se);
-
-	$gameMap.setFilter( "モーションブラー" ,[30,0]);
-	$gameMap.moveFilter( "モーションブラー" ,[0,0], skillDuration);	
-	$gameSwitches.setValue(95, false);
-	$gameSwitches.setValue(100, true);	
-	$gameSwitches.setValue(203, true);	
-	$gameParty.leader().addState(63);
+    if (!$dataMap.note.includes("<深渊>")) return;
     
-	// 保证走路时触发闪步也有最低限度的位移
-	if ( $gamePlayer.realMoveSpeed() < 25 ) {
-		$gamePlayer._moveSpeed = 20;
-	}
-		
+	if ($gameSwitches.value(14) && !$gameParty.leader().isStateAffected(67)) return;
 	
-	var character = $gamePlayer;
-	if (!$gameParty.leader().isStateAffected(67)) {
-    var r = 255;
-    var g = 150;
-    var b = 0;
-    var color = [r, g, b, 255];
-	} else {
-    var r = 50;
-    var g = 140;
-    var b = 200;
-    var color = [r, g, b, 255];		
-	}
+    if ( $gameSwitches.value(203) || $gameSwitches.value(95) || $dataMap.disableDashing ) {
+
+            var lang = $gameVariables.value(1);
+            switch (lang) {
+                case 0:
+                    lang = "技能冷却中！!";
+                    break;
+                case 1:
+                    lang = "スキルはクールダウン中！!";
+                    break;
+                case 2:
+                    lang = "Skill On Cooldown!!";
+                    break;
+                default:
+                    lang = "Skill On Cooldown!!";
+                    break;
+            }
+            var text = "\\fs[28]\\c[101]\\dDCOG[11:1:1:1]" + lang;
+            var x = $gamePlayer.screenX() * $gameScreen.zoomScale();
+            var y = ($gamePlayer.screenY() * $gameScreen.zoomScale()) - 48;
+            $gameTemp.drill_GFTT_createSimple([x, y], text, 5, 0, 90);
+            AudioManager.playSe({ name: "012myuu_YumeSE_SystemBuzzer01", volume: 70, pitch: 100, pan: 0 });
+            return;
+        }
     
-	// 幽灵闪步
+    
+    if ($gameMap.getGroupBulletListQJ('senpoTachi').length > 0) return;
+    if ($gameMap.getGroupBulletListQJ('playerSkill').length > 0) return;
+    
+    // 技能持续时间，基于玩家技能熟练度增加
+    var skillDuration = 15;
+    skillDuration += $gameParty.leader().skillMasteryLevel(39);
+    
+    // 根据状态选择演出效果
+    if (!$gameParty.leader().isStateAffected(67)) {
+        $gameScreen._particle.particlePlay(0, "fuss_startdash", "player", "def", "0.9");
+    } else {
+        $gameScreen._particle.particleGroupSet(0, "splash_cp", "player");
+    }
+    
+    // 播放音效
+    var seNames = "Wind1";
+    var se = { name: seNames, volume: 60, pitch: 140, pan: 0 };
+    AudioManager.playSe(se);
+    
+    // 设置运动滤镜效果
+	$gameMap.createFilter("モーションブラー", "motionblur", 3999);
+    $gameMap.setFilter("モーションブラー", [30, 0]);
+    $gameMap.moveFilter("モーションブラー", [0, 0], skillDuration);
+    $gameMap.eraseFilterAfterMove("モーションブラー");
+    // 设置闪步状态开关
+    $gameSwitches.setValue(95, false);
+    $gameSwitches.setValue(100, true);
+    $gameSwitches.setValue(203, true);
+    $gameParty.leader().addState(63);
+    
+    // 保证走路时触发闪步时有最低位移
+    if ($gamePlayer.realMoveSpeed() < 25) {
+        $gamePlayer._moveSpeed = 20;
+    }
+    
+    var character = $gamePlayer;
+    var color;
+    if (!$gameParty.leader().isStateAffected(67)) {
+        var r = 255, g = 150, b = 0;
+        color = [r, g, b, 255];
+    } else {
+        var r = 50, g = 140, b = 200;
+        color = [r, g, b, 255];
+    }
+    
+    // 幽灵闪步效果：改变颜色、透明度和穿透性
     if ($gameParty.leader().hasSkill(92)) {
-     r = 144;
-     g = 0;
-     b = 255;
-     color = [r, g, b, 255];
-     character._opacity = 128;
-	 character._through = true;
-	}
-
-    // 计算残影的间隔时间	
-    var baseSpeed = 48; 
-	var moveSpeed = $gamePlayer.realMoveSpeed();
-    const minPeriod = 2; 
-    const maxPeriod = 6;	
-    var period = Math.max(minPeriod, maxPeriod - Math.floor(moveSpeed / baseSpeed));	
-    character.residual().setPeriod(period);		
-	
+        r = 144; g = 0; b = 255;
+        color = [r, g, b, 255];
+        character._opacity = 128;
+        character._through = true;
+    }
+    
+    // 计算残影间隔（根据移动速度）
+    var baseSpeed = 48;
+    var moveSpeed = $gamePlayer.realMoveSpeed();
+    const minPeriod = 2;
+    const maxPeriod = 6;
+    var period = Math.max(minPeriod, maxPeriod - Math.floor(moveSpeed / baseSpeed));
+    character.residual().setPeriod(period);
+    
     character.residual().setDuration(60);
     character.residual().setOpacity(128);
     character.residual().setColorTone(color);
     character.residual().setValid(true);
+    
+    
+    var senPo = QJ.MPMZ.Shoot({
+        img: "null1",
+        groupName: ['senPo'],
+        position: [['P'], ['P']],
+        initialRotation: ['PD'],
+        scale: [1, 1],
+        moveType: ['B', -1],
+        opacity: 0,
+        imgRotation: ['F'],
+        anchor: [0.5, 0.5],
+        existData: [
+            { t: ['Time', skillDuration] }
+            // { t: ['G', ['"enemy"', '"object"']], a: ['C', 155, [1, 20, 0, 0]], p: [-1, false, true] }
+        ],
+        z: "E",
+        collisionBox: ['C', 1],
+        deadF: [[QJ.MPMZ.tl.ex_senpoFinish]]
+    });
+    
+	// 女仆装状态下禁止以下操作
+    if ($gamePlayer.isStealthMode()) return;
+    
+    // 闪步太刀监听器
+    if ($gameParty.leader().hasSkill(3)) {
+        QJ.MPMZ.Shoot({
+            img: "null1",
+            groupName: ['senpoTachiListener'],
+            position: [['P'], ['P']],
+            initialRotation: ['PD'],
+            moveType: ['B', -1],
+            opacity: 0,
+            existData: [
+                { t: ['Time', 60] }
+            ],
+            moveF: [
+                [0, 0, QJ.MPMZ.tl.ex_senpoTachiListener]
+            ]
+        });
+    }
+    
+    // 适配荆棘套装的接近攻击能力
+    if ($gameParty.leader().hasSkill(91)) {
+        let damage = 5 + $gameParty.leader().skillMasteryLevel(91);
+        damage += Math.floor(damage * ($gamePlayer.realMoveSpeed() / 20));
+        QJ.MPMZ.Shoot({
+            img: "null1",
+            groupName: ['2'],
+            position: [['P'], ['P']],
+            initialRotation: ['PD'],
+            collisionBox: ['C', 30],
+            moveType: ['B', -1],
+            opacity: 0,
+            existData: [
+                { t: ['Time', skillDuration] },
+                { t: ['G', ['"enemy"']], a: ['F', QJ.MPMZ.tl.customEnemyDamageCalculation, [damage, false]], p: [-1, false, true] }
+            ]
+        });
+    }
+};
 
-	var senPo = QJ.MPMZ.Shoot({
-        img:"null1",
-		groupName:['senPo'],
-        position:[['P'],['P']],
-        initialRotation:['PD'],
-        scale:[1,1],
-        moveType:['B',-1],
-		opacity:0,
-        imgRotation:['F'],
-        anchor:[0.5,0.5],
-        existData:[
-            {t:['Time',skillDuration]},
-            //{t:['G',['"enemy"','"object"']],a:['C',155,[1,20,0,0]],p:[-1,false,true]}
-        ],
-        z:"E",collisionBox:['C',1],
-	deadF:[[QJ.MPMZ.tl.ex_senpoFinish]]
-    });
-	
-	if($gamePlayer.isStealthMode()) return;
-	
-	//闪步太刀
-	if ($gameParty.leader().hasSkill(3)) {
-		QJ.MPMZ.Shoot({
-        img:"null1",
-		groupName:['senpoTachiListener'],
-        position:[['P'],['P']],
-        initialRotation:['PD'],
-        moveType:['B',-1],
-		opacity:0,
-        existData:[
-            {t:['Time',60]},
-        ],
-		moveF:[
-		 [0,0,QJ.MPMZ.tl.ex_senpoTachiListener]
-		]
-    });
-  }
-	// 适配接近攻击能力
-	if ($gameParty.leader().hasSkill(91)) {  
-	   let damage = 5 + $gameParty.leader().skillMasteryLevel(91);
-	       damage += Math.floor(damage * ($gamePlayer.realMoveSpeed() / 20));
-		QJ.MPMZ.Shoot({
-        img:"null1",
-		groupName:['2'],
-        position:[['P'],['P']],
-        initialRotation:['PD'],
-		collisionBox:['C',30],
-        moveType:['B',-1],
-		opacity:0,
-        existData:[
-            {t:['Time',skillDuration]},
-			{t:['G',['"enemy"']],a:['F',QJ.MPMZ.tl.customEnemyDamageCalculation,[damage,false]],p:[-1,false,true]}
-        ],
-     });
-	}
-}
 
 //闪步太刀攻击模式监听
 QJ.MPMZ.tl.ex_senpoTachiListener = function() {
@@ -1868,10 +1914,14 @@ QJ.MPMZ.tl.ex_senpoFinish = function() {
 	$gameSwitches.setValue(100, false);
 	$gameParty.leader().removeState(63);
 
-   if(!$gameSwitches.value(191)){
-    var coolDown = 60;  
+
+   var type;
+   if(!$gameParty.leader().isStateAffected(67)){
+    var coolDown = 60;
+    type = 0;
    } else {
 	var coolDown = 120;   
+    type = 1;	
    }
 
    if ($gameParty.leader().hasSkill(28)) {
@@ -1886,17 +1936,21 @@ QJ.MPMZ.tl.ex_senpoFinish = function() {
         position:[['P'],['P']],
         initialRotation:['S',0],
         imgRotation:['F'],
+		extra:type,
         collisionBox:['C',1],
         moveType:['D',false],
         existData:[
             {t:['Time',coolDown]}, 		
         ],
-		moveF:[
-		],
-		deadJS:["$gameParty.leader().removeState(64);$gameSwitches.setValue(203, false);"]
-    });		
+		deadJS:["$gameParty.leader().removeState(64);$gameSwitches.setValue(203, false)"]
+    });
+
+    if (coolDown > 10) {
+	  coolDown -= 10;
+      senPokinshi.addMoveData("JS",[coolDown,99999,'if(this.data.extra===1){$gamePlayer.requestAnimation(183)}else{$gamePlayer.requestAnimation(147)}']);
+	}		
 	
-}
+};
 
 //=============================================================================
 //玩家技能
@@ -2168,7 +2222,9 @@ QJ.MPMZ.tl.meleeAttackSettlement = function() {
     
 	// 剑术修行: 空挥
      if (!this._effectiveHit && $gameParty.leader().hasSkill(26)) {
-	  $gameParty.leader().gainSkillMasteryUses(26, 1);
+		 
+	  let value = Math.floor(1 * $gameParty.leader().pdr); 
+	  $gameParty.leader().gainSkillMasteryUses(26, value);
      const uses = $gameParty.leader().skillMasteryUses(26);
      const masteryTable = [4, 15, 50, 150, 500, 1600, 4800, 12000, 24000, 36000];
      let newLevel = 0; 

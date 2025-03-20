@@ -774,6 +774,8 @@ QJ.MPMZ.tl.ex_JackBomb = function(user,type) {
 
 //杰克爆弹爆炸伤害判定
 QJ.MPMZ.tl.ex_JackBombExplode = function(type,args) {
+	
+	if (!(this instanceof Game_QJBulletMZ)) return;
 	let posX = this.inheritX(); 
     let posY = this.inheritY();
 	let tarX = 0;
@@ -783,7 +785,6 @@ QJ.MPMZ.tl.ex_JackBombExplode = function(type,args) {
 	if (!args.target) return;	
 	tarX = args.target.screenShootXQJ();
 	tarY = args.target.screenShootYQJ();
-
     // 炸弹魔
 	let resist = 1 * (0.5 ** $gameParty.leader().skillMasteryLevel(34));
 	
@@ -792,7 +793,9 @@ QJ.MPMZ.tl.ex_JackBombExplode = function(type,args) {
     case 1:
 	//普通炸弹	
 	//击退
-	angle = QJ.calculateAngleByTwoPointAngle(posX, posY, tarX, tarY);	
+	angle = QJ.calculateAngleByTwoPointAngle(posX, posY, tarX, tarY);
+	if (typeof angle !== 'number' || isNaN(angle)) angle = 0;
+
     if ( args.target instanceof Game_Player ) {	
 	let damage = Math.floor(233 * scaleXY * resist);	
 	QJ.MPMZ.tl.ex_playerDamageCheck(damage,2);
@@ -1318,9 +1321,9 @@ QJ.MPMZ.tl.ex_piggyBank = function(target) {
 	let level = 1 + $gameParty.leader().skillMasteryLevel(101);
     let equips = actor.equips().filter(equip => equip && equip.baseItemId === 37);
 	let range = 180 + (60 * level);
-	
-    for (let equip of equips) {
-    let tag = "GearBinding" + equip.id; 
+
+    for (var equip of equips) {
+    var tag = "GearBinding" + equip.id; 
 	var BName = 'piggyBank' + equip.id; 
     if ($gameMap.drill_COET_getEventsByTag_direct(tag).length == 0) { 
         target.drill_COET_addTag(tag); 
@@ -1342,18 +1345,29 @@ QJ.MPMZ.tl.ex_piggyBank = function(target) {
 			 extra:eid,
 			 anchor:[0.5,0.55],
              existData:[
-			      {t:['S',`$gameMap.event(${eid})`,false],a:['S',"console.log('存钱罐事件不存在了！')"]},  
+			      {t:['S',`$gameMap.event(${eid})`,false]},  
                   {t:['G',['drops']],a:[],p:[-1,true,true,QJ.MPMZ.tl.ex_piggyBankChasingMoney],c:['T',0,30,true]},
 				  //{t:['G',['drops']],a:['F',QJ.MPMZ.tl.ex_piggyBankChasingMoney],p:[-1,true,true],c:['T',0,30,true]},
 				  {t:['G',['drops']],a:['F',QJ.MPMZ.tl.ex_piggyBankCollectingMoney],p:[-1,true,true,],cb:['C',15]}
              ],
              collisionBox:['C',range],
-			 deadJS:[
-			      dCode
-				  //"if(this.dead){console.log('触发死亡指令')}"
+			 deadJS:[dCode],
+			 deadF:[
+			    //[QJ.MPMZ.tl.ex_piggyBankDisappear,[tag]]
 			 ]
        });		
       	 
+};
+
+// 猪猪存钱罐-拆卸装备消失
+QJ.MPMZ.tl.ex_piggyBankDisappear = function(tag) {
+	
+	if (!this._needJS) return;
+	
+    if ($gameMap.drill_COET_getEventsByTag_direct(tag).length > 0) {
+	    let eid = $gameMap.drill_COET_getEventsByTag_direct(tag)[0]._eventId;
+		$gameMap.clearSpawnEventQJ(eid);
+	}
 };
 
 // 猪猪存钱罐-追逐金钱
