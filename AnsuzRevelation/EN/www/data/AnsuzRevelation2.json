@@ -1,6 +1,48 @@
 {
   "5": [
     {
+      "revelationText": "Boss Ahead ",
+      "textPosX": 42.6,
+      "textPosY": 24.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Liar ",
+      "textPosX": 13.5,
+      "textPosY": 26.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Milk Milk Milk Milk ",
+      "textPosX": 19.1,
+      "textPosY": 41,
+      "author": ""
+    },
+    {
+      "revelationText": "Think Bomb River ",
+      "textPosX": 39.1,
+      "textPosY": 22.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Go. DoW. N",
+      "textPosX": 12.3,
+      "textPosY": 39.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Move . TO. Abyss ",
+      "textPosX": 12.2,
+      "textPosY": 38.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Below Here ",
+      "textPosX": 11.5,
+      "textPosY": 38,
+      "author": ""
+    },
+    {
       "revelationText": "Ah You Finally There ",
       "textPosX": 13,
       "textPosY": 29.7,
@@ -94,6 +136,60 @@
     }
   ],
   "10": [
+    {
+      "revelationText": "Where ALICE? … ",
+      "textPosX": 26.4,
+      "textPosY": 10.1,
+      "author": ""
+    },
+    {
+      "revelationText": "GoDrink Imouto Love Milk ",
+      "textPosX": 26.3,
+      "textPosY": 8.5,
+      "author": ""
+    },
+    {
+      "revelationText": "ICan See The Future TOO! ",
+      "textPosX": 13.3,
+      "textPosY": 21.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Path Valid ",
+      "textPosX": 10.6,
+      "textPosY": 7.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Take The Magic ",
+      "textPosX": 25.5,
+      "textPosY": 8.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Love You Meat Past ",
+      "textPosX": 18.1,
+      "textPosY": 11.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Praise Imouto Love Imouto ",
+      "textPosX": 17.7,
+      "textPosY": 13.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes ",
+      "textPosX": 18.6,
+      "textPosY": 16.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Love Onii-chan ",
+      "textPosX": 23.9,
+      "textPosY": 8.2,
+      "author": ""
+    },
     {
       "revelationText": "Back Back Back Back Back ",
       "textPosX": 11.1,
@@ -295,6 +391,12 @@
   ],
   "13": [
     {
+      "revelationText": "Bomb The River ",
+      "textPosX": 12.5,
+      "textPosY": 23.5,
+      "author": ""
+    },
+    {
       "revelationText": "GroundRiver",
       "textPosX": 11.1,
       "textPosY": 22.4,
@@ -484,6 +586,222 @@
     }
   ],
   "18": [
+    {
+      "revelationText": "Go Home Onii-chan ",
+      "textPosX": 7.5,
+      "textPosY": 43.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Need Dash Skill . ",
+      "textPosX": 19.9,
+      "textPosY": 33.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Finally See Imouto Go Go ",
+      "textPosX": 7.6,
+      "textPosY": 44.3,
+      "author": ""
+    },
+    {
+      "revelationText": "HOW Do I REPAIR Milk VEND??? ",
+      "textPosX": 25.9,
+      "textPosY": 5.5,
+      "author": ""
+    },
+    {
+      "revelationText": "BackBackBackBackBack",
+      "textPosX": 9.7,
+      "textPosY": 41.3,
+      "author": ""
+    },
+    {
+      "revelationText": "HOW Do I RePaIR Milk VENDING? ",
+      "textPosX": 25.8,
+      "textPosY": 5.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Skill ",
+      "textPosX": 14.5,
+      "textPosY": 24.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Take Take Enemy",
+      "textPosX": 9.5,
+      "textPosY": 44.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Max Skill Status ",
+      "textPosX": 23.2,
+      "textPosY": 4.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Ah Burned Food Imouto ",
+      "textPosX": 21.1,
+      "textPosY": 8.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Ah . . . ",
+      "textPosX": 21.4,
+      "textPosY": 4,
+      "author": ""
+    },
+    {
+      "revelationText": "Back Back Back Back Back ",
+      "textPosX": 11,
+      "textPosY": 30.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Weapon Weapon ",
+      "textPosX": 13.2,
+      "textPosY": 24.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Have Trap Max Attack ",
+      "textPosX": 8.1,
+      "textPosY": 46.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Here Gold ",
+      "textPosX": 26.3,
+      "textPosY": 7.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Watch Out Abyss Danger ",
+      "textPosX": 9,
+      "textPosY": 42.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Finally Knight ",
+      "textPosX": 17.9,
+      "textPosY": 6.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Boss Gold ",
+      "textPosX": 15.8,
+      "textPosY": 32.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Me Me Trap Trap Buff Back ",
+      "textPosX": 8.5,
+      "textPosY": 41.8,
+      "author": ""
+    },
+    {
+      "revelationText": "The Although Ahead ",
+      "textPosX": 14.1,
+      "textPosY": 32.6,
+      "author": ""
+    },
+    {
+      "revelationText": "River Trap And Abyss ",
+      "textPosX": 24.7,
+      "textPosY": 6.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Love You ",
+      "textPosX": 29.5,
+      "textPosY": 35.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Defend Me",
+      "textPosX": 8.1,
+      "textPosY": 46.1,
+      "author": ""
+    },
+    {
+      "revelationText": "The Right Unknown At Path ",
+      "textPosX": 18.7,
+      "textPosY": 32.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Front ",
+      "textPosX": 8.1,
+      "textPosY": 46.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Done Skill You Enemy Valid ",
+      "textPosX": 25.1,
+      "textPosY": 7,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Although All All Back ",
+      "textPosX": 17.5,
+      "textPosY": 6.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Correct Imouto ",
+      "textPosX": 11.6,
+      "textPosY": 32.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Back ",
+      "textPosX": 26,
+      "textPosY": 36.3,
+      "author": ""
+    },
+    {
+      "revelationText": "All All Ah Ah ",
+      "textPosX": 21.9,
+      "textPosY": 8.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Frozen ",
+      "textPosX": 7.6,
+      "textPosY": 41.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Do You Resist ? ",
+      "textPosX": 23.1,
+      "textPosY": 4.4,
+      "author": ""
+    },
+    {
+      "revelationText": "See The Unknown Milk ",
+      "textPosX": 22.6,
+      "textPosY": 2.6,
+      "author": ""
+    },
+    {
+      "revelationText": "See Meat Drink Milk ",
+      "textPosX": 25.5,
+      "textPosY": 9.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Boss Skill Stats Buff Me ",
+      "textPosX": 9.4,
+      "textPosY": 39.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Magic Skill Max Finally ",
+      "textPosX": 22.5,
+      "textPosY": 7.1,
+      "author": ""
+    },
     {
       "revelationText": "Ah…Need!",
       "textPosX": 29.5,
@@ -1683,6 +2001,60 @@
   ],
   "28": [
     {
+      "revelationText": "Move Here ",
+      "textPosX": 37.3,
+      "textPosY": 37.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Yes ",
+      "textPosX": 33.3,
+      "textPosY": 36.5,
+      "author": ""
+    },
+    {
+      "revelationText": "What Enemy ",
+      "textPosX": 8.6,
+      "textPosY": 19,
+      "author": ""
+    },
+    {
+      "revelationText": "Use Attack Or Defend ",
+      "textPosX": 12.3,
+      "textPosY": 9.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Me Resist Magic Bomb ",
+      "textPosX": 8.9,
+      "textPosY": 17,
+      "author": ""
+    },
+    {
+      "revelationText": "Below Middle Use Resist N",
+      "textPosX": 22.5,
+      "textPosY": 35.6,
+      "author": ""
+    },
+    {
+      "revelationText": "Attack . Me ! ",
+      "textPosX": 3.4,
+      "textPosY": 22.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Resist Resist Resist ",
+      "textPosX": 9,
+      "textPosY": 24.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Liar ! ! ! ! ! ! ! ! ! ",
+      "textPosX": 13.5,
+      "textPosY": 38.9,
+      "author": ""
+    },
+    {
       "revelationText": "You And Me ",
       "textPosX": 12,
       "textPosY": 33.6,
@@ -1841,6 +2213,30 @@
   ],
   "32": [
     {
+      "revelationText": "Unknown Unknown Unknown Unknown ",
+      "textPosX": 9.2,
+      "textPosY": 10.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Path ",
+      "textPosX": 8.3,
+      "textPosY": 12.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Here Path ",
+      "textPosX": 7.8,
+      "textPosY": 12.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Path ",
+      "textPosX": 6.6,
+      "textPosY": 12.3,
+      "author": ""
+    },
+    {
       "revelationText": "Path ? ",
       "textPosX": 12.3,
       "textPosY": 6.8,
@@ -1880,6 +2276,126 @@
     }
   ],
   "37": [
+    {
+      "revelationText": "Done The Right Can",
+      "textPosX": 17.4,
+      "textPosY": 11.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Use Need Attack ",
+      "textPosX": 33.8,
+      "textPosY": 18.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Skill You Me Enemy Ally B",
+      "textPosX": 86.5,
+      "textPosY": 65.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Watch Out , Trap ! ",
+      "textPosX": 46.3,
+      "textPosY": 29.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Watch Out , Trap ! ",
+      "textPosX": 59,
+      "textPosY": 45.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Watch Out , Trap ! ",
+      "textPosX": 59,
+      "textPosY": 45,
+      "author": ""
+    },
+    {
+      "revelationText": "Watch Out , Trap ! ",
+      "textPosX": 59,
+      "textPosY": 46.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Back BacSide ",
+      "textPosX": 30.1,
+      "textPosY": 14.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Meat Meat Meat Meat Meat ",
+      "textPosX": 71,
+      "textPosY": 63.8,
+      "author": ""
+    },
+    {
+      "revelationText": "Imouto ",
+      "textPosX": 19.5,
+      "textPosY": 29.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Below Demon Danger ",
+      "textPosX": 10.2,
+      "textPosY": 22.6,
+      "author": ""
+    },
+    {
+      "revelationText": "NLCH NLCH ",
+      "textPosX": 48.9,
+      "textPosY": 44.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Unknown ",
+      "textPosX": 29.5,
+      "textPosY": 17.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Ally Max Resist ",
+      "textPosX": 95.1,
+      "textPosY": 68.9,
+      "author": ""
+    },
+    {
+      "revelationText": "FrontValidMilkMagic",
+      "textPosX": 14.1,
+      "textPosY": 9.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Invalid River ",
+      "textPosX": 58.9,
+      "textPosY": 18.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Back Back Back ",
+      "textPosX": 41.9,
+      "textPosY": 30.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Do You See Me ",
+      "textPosX": 29.1,
+      "textPosY": 18.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Sad ",
+      "textPosX": 9.1,
+      "textPosY": 22.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Yes Weapon Weapon Enemies ",
+      "textPosX": 6.7,
+      "textPosY": 10.1,
+      "author": ""
+    },
     {
       "revelationText": "Skill ",
       "textPosX": 8.9,
@@ -2339,6 +2855,30 @@
   ],
   "39": [
     {
+      "revelationText": "Path",
+      "textPosX": 11.2,
+      "textPosY": 29.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Not ",
+      "textPosX": 2.8,
+      "textPosY": 7.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Correct Ahead ",
+      "textPosX": 3,
+      "textPosY": 7.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Correct Path ",
+      "textPosX": 11.5,
+      "textPosY": 29.6,
+      "author": ""
+    },
+    {
       "revelationText": "Path ",
       "textPosX": 11.8,
       "textPosY": 30.3,
@@ -2358,6 +2898,12 @@
     }
   ],
   "40": [
+    {
+      "revelationText": "Yes Done Finally Here ! ! ",
+      "textPosX": 7.9,
+      "textPosY": 9.5,
+      "author": ""
+    },
     {
       "revelationText": "Love You ",
       "textPosX": 5.1,
@@ -2389,6 +2935,18 @@
   ],
   "44": [
     {
+      "revelationText": "Imouto FUCK. Unknown MAN",
+      "textPosX": 20.4,
+      "textPosY": 10.7,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Right , Danger Ahead ",
+      "textPosX": 20.8,
+      "textPosY": 9.7,
+      "author": ""
+    },
+    {
       "revelationText": "A safe zone ahead",
       "textPosX": 10.7,
       "textPosY": 12.3,
@@ -2396,6 +2954,12 @@
     }
   ],
   "45": [
+    {
+      "revelationText": "ALICE! ",
+      "textPosX": 16.6,
+      "textPosY": 12.7,
+      "author": ""
+    },
     {
       "revelationText": "Yes Done The What Ah Not ",
       "textPosX": 16.2,
@@ -2428,6 +2992,18 @@
     }
   ],
   "46": [
+    {
+      "revelationText": "Be SuccessAnd Careful ",
+      "textPosX": 36.6,
+      "textPosY": 29.9,
+      "author": ""
+    },
+    {
+      "revelationText": "None Here, None Path ",
+      "textPosX": 53.9,
+      "textPosY": 12.3,
+      "author": ""
+    },
     {
       "revelationText": "Food Gold All Max Ground ",
       "textPosX": 19.8,
@@ -2485,6 +3061,18 @@
   ],
   "47": [
     {
+      "revelationText": "Path Here ",
+      "textPosX": 72.4,
+      "textPosY": 23.3,
+      "author": ""
+    },
+    {
+      "revelationText": "Praise Imouto! ",
+      "textPosX": 26.4,
+      "textPosY": 14.8,
+      "author": ""
+    },
+    {
       "revelationText": "What",
       "textPosX": 72.4,
       "textPosY": 23.3,
@@ -2540,6 +3128,24 @@
     }
   ],
   "48": [
+    {
+      "revelationText": "Attack Attack Skill Status ",
+      "textPosX": 35.1,
+      "textPosY": 6.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Liar Attack ",
+      "textPosX": 20.6,
+      "textPosY": 69.3,
+      "author": ""
+    },
+    {
+      "revelationText": "See Take Take Take ",
+      "textPosX": 36.3,
+      "textPosY": 27.1,
+      "author": ""
+    },
     {
       "revelationText": "Food Meat ! ",
       "textPosX": 20.2,
@@ -2705,6 +3311,42 @@
   ],
   "49": [
     {
+      "revelationText": "Yes Yes Yes Yes Yes Yes Yes ",
+      "textPosX": 21.8,
+      "textPosY": 14.2,
+      "author": ""
+    },
+    {
+      "revelationText": "Status All Milk Use But ",
+      "textPosX": 21.9,
+      "textPosY": 11.2,
+      "author": ""
+    },
+    {
+      "revelationText": "MeatOnii-chanLoveSee",
+      "textPosX": 14.8,
+      "textPosY": 26.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Go Here Gold ",
+      "textPosX": 18.7,
+      "textPosY": 9.5,
+      "author": ""
+    },
+    {
+      "revelationText": "Stunned Stunned Unknown",
+      "textPosX": 5,
+      "textPosY": 22.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Milk Careful ",
+      "textPosX": 28.2,
+      "textPosY": 7.4,
+      "author": ""
+    },
+    {
       "revelationText": "SkillYesMaxMinAllyRigh",
       "textPosX": 19.9,
       "textPosY": 21.4,
@@ -2838,6 +3480,30 @@
     }
   ],
   "50": [
+    {
+      "revelationText": "GoNLCHOnii-chan!",
+      "textPosX": 12.5,
+      "textPosY": 15.9,
+      "author": ""
+    },
+    {
+      "revelationText": "Enemy Trap ",
+      "textPosX": 15.3,
+      "textPosY": 14.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Done ",
+      "textPosX": 9.4,
+      "textPosY": 17.1,
+      "author": ""
+    },
+    {
+      "revelationText": "Dash Left ",
+      "textPosX": 4.8,
+      "textPosY": 13.9,
+      "author": ""
+    },
     {
       "revelationText": "Dash Below ",
       "textPosX": 14.3,
@@ -2980,6 +3646,24 @@
     }
   ],
   "53": [
+    {
+      "revelationText": "I.LOVE.Her.BuTT!!!",
+      "textPosX": 19.4,
+      "textPosY": 10.1,
+      "author": ""
+    },
+    {
+      "revelationText": "YesFinallyMilk",
+      "textPosX": 20.5,
+      "textPosY": 11.4,
+      "author": ""
+    },
+    {
+      "revelationText": "Onii-chan Need Milk ! ! ! ",
+      "textPosX": 18.9,
+      "textPosY": 11.3,
+      "author": ""
+    },
     {
       "revelationText": "Frozen Knight ",
       "textPosX": 22.4,

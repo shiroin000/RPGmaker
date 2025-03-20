@@ -1,6 +1,18 @@
 {
   "5": [
     {
+      "revelationText": "お兄ちゃんと妹の愛",
+      "textPosX": 9.3,
+      "textPosY": 21.8,
+      "author": ""
+    },
+    {
+      "revelationText": "です知らないすべて上限炎上炎上",
+      "textPosX": 9.2,
+      "textPosY": 19,
+      "author": ""
+    },
+    {
       "revelationText": "前方に強敵あり",
       "textPosX": 41.7,
       "textPosY": 24.3,
@@ -28,6 +40,18 @@
     }
   ],
   "10": [
+    {
+      "revelationText": "なぜなら詐欺師アイテム敵集団ル",
+      "textPosX": 18.7,
+      "textPosY": 10.8,
+      "author": ""
+    },
+    {
+      "revelationText": "お兄ちゃん頑張れ",
+      "textPosX": 14.9,
+      "textPosY": 18.4,
+      "author": ""
+    },
     {
       "revelationText": "考える部屋",
       "textPosX": 26.1,
@@ -79,6 +103,12 @@
   ],
   "13": [
     {
+      "revelationText": "のか",
+      "textPosX": 10.8,
+      "textPosY": 21.5,
+      "author": ""
+    },
+    {
       "revelationText": "肉",
       "textPosX": 10.5,
       "textPosY": 32.5,
@@ -104,6 +134,12 @@
     }
   ],
   "14": [
+    {
+      "revelationText": "正面正面正面正面",
+      "textPosX": 7.3,
+      "textPosY": 9.7,
+      "author": ""
+    },
     {
       "revelationText": "見る",
       "textPosX": 7.5,
@@ -160,6 +196,96 @@
     }
   ],
   "18": [
+    {
+      "revelationText": "肉肉肉肉肉肉肉肉肉肉肉肉肉肉肉",
+      "textPosX": 19.5,
+      "textPosY": 5.2,
+      "author": ""
+    },
+    {
+      "revelationText": "正面正面正面正面正面正面正面正面",
+      "textPosX": 13.5,
+      "textPosY": 33.6,
+      "author": ""
+    },
+    {
+      "revelationText": "アイテム",
+      "textPosX": 8,
+      "textPosY": 46.1,
+      "author": ""
+    },
+    {
+      "revelationText": "……妹愛",
+      "textPosX": 12.9,
+      "textPosY": 30.4,
+      "author": ""
+    },
+    {
+      "revelationText": "だなぜならなぜならなぜなら間違い",
+      "textPosX": 23.4,
+      "textPosY": 7.5,
+      "author": ""
+    },
+    {
+      "revelationText": "正面",
+      "textPosX": 27.6,
+      "textPosY": 6.3,
+      "author": ""
+    },
+    {
+      "revelationText": "前",
+      "textPosX": 17,
+      "textPosY": 6.7,
+      "author": ""
+    },
+    {
+      "revelationText": "妹に愛",
+      "textPosX": 7.4,
+      "textPosY": 43.7,
+      "author": ""
+    },
+    {
+      "revelationText": "妹の牛乳と肉の愛",
+      "textPosX": 16.2,
+      "textPosY": 31.2,
+      "author": ""
+    },
+    {
+      "revelationText": "正面正面",
+      "textPosX": 22.3,
+      "textPosY": 1.5,
+      "author": ""
+    },
+    {
+      "revelationText": "しかししかし",
+      "textPosX": 16.6,
+      "textPosY": 34.7,
+      "author": ""
+    },
+    {
+      "revelationText": "お金使うかねかねお金",
+      "textPosX": 21.2,
+      "textPosY": 6.8,
+      "author": ""
+    },
+    {
+      "revelationText": "背後側面側面",
+      "textPosX": 21.4,
+      "textPosY": 6.8,
+      "author": ""
+    },
+    {
+      "revelationText": "だだだだだ…",
+      "textPosX": 19.1,
+      "textPosY": 6.6,
+      "author": ""
+    },
+    {
+      "revelationText": "正面正面正面",
+      "textPosX": 23.3,
+      "textPosY": 6,
+      "author": ""
+    },
     {
       "revelationText": "中央",
       "textPosX": 26.4,
@@ -443,6 +569,30 @@
   ],
   "28": [
     {
+      "revelationText": "右",
+      "textPosX": 7.1,
+      "textPosY": 24.5,
+      "author": ""
+    },
+    {
+      "revelationText": "見る君敵集団移動防御正面",
+      "textPosX": 5.3,
+      "textPosY": 19.8,
+      "author": ""
+    },
+    {
+      "revelationText": "罠上限上限",
+      "textPosX": 8.1,
+      "textPosY": 12.9,
+      "author": ""
+    },
+    {
+      "revelationText": "？",
+      "textPosX": 7.4,
+      "textPosY": 35.3,
+      "author": ""
+    },
+    {
       "revelationText": "またはまたはまたは",
       "textPosX": 11.1,
       "textPosY": 35.6,
@@ -517,6 +667,12 @@
   ],
   "30": [
     {
+      "revelationText": "だです",
+      "textPosX": 15,
+      "textPosY": 12.8,
+      "author": ""
+    },
+    {
       "revelationText": "牛乳凍結",
       "textPosX": 11.1,
       "textPosY": 4.1,
@@ -548,6 +704,30 @@
     }
   ],
   "37": [
+    {
+      "revelationText": "正面",
+      "textPosX": 31.5,
+      "textPosY": 41.3,
+      "author": ""
+    },
+    {
+      "revelationText": "です",
+      "textPosX": 39.9,
+      "textPosY": 17.3,
+      "author": ""
+    },
+    {
+      "revelationText": "するだから！",
+      "textPosX": 10.7,
+      "textPosY": 9.2,
+      "author": ""
+    },
+    {
+      "revelationText": "ですダッシュ雑魚左左罠属性",
+      "textPosX": 4.5,
+      "textPosY": 7.9,
+      "author": ""
+    },
     {
       "revelationText": "牛乳",
       "textPosX": 47.3,
@@ -743,6 +923,12 @@
   ],
   "47": [
     {
+      "revelationText": "肉お金牛乳武器食材",
+      "textPosX": 62.1,
+      "textPosY": 15.2,
+      "author": ""
+    },
+    {
       "revelationText": "君スキルダッシュダッシュ",
       "textPosX": 23.7,
       "textPosY": 23.3,
@@ -768,6 +954,12 @@
     }
   ],
   "48": [
+    {
+      "revelationText": "やったやったやったやったやった",
+      "textPosX": 9.7,
+      "textPosY": 56.9,
+      "author": ""
+    },
     {
       "revelationText": "川の中強敵仲間！",
       "textPosX": 36.2,
@@ -849,6 +1041,12 @@
   ],
   "49": [
     {
+      "revelationText": "です",
+      "textPosX": 43.9,
+      "textPosY": 11,
+      "author": ""
+    },
+    {
       "revelationText": "なぜなら",
       "textPosX": 24.6,
       "textPosY": 18.4,
@@ -892,6 +1090,30 @@
     }
   ],
   "50": [
+    {
+      "revelationText": "下",
+      "textPosX": 14.7,
+      "textPosY": 44.7,
+      "author": ""
+    },
+    {
+      "revelationText": "上限",
+      "textPosX": 13,
+      "textPosY": 23.6,
+      "author": ""
+    },
+    {
+      "revelationText": "下",
+      "textPosX": 11.9,
+      "textPosY": 25.3,
+      "author": ""
+    },
+    {
+      "revelationText": "下牛乳牛乳",
+      "textPosX": 11.9,
+      "textPosY": 25.3,
+      "author": ""
+    },
     {
       "revelationText": "強敵？下攻撃考えると見る",
       "textPosX": 10,
@@ -942,6 +1164,24 @@
     }
   ],
   "53": [
+    {
+      "revelationText": "肉",
+      "textPosX": 24.3,
+      "textPosY": 9.8,
+      "author": ""
+    },
+    {
+      "revelationText": "しかしではないではないしかしと",
+      "textPosX": 21.2,
+      "textPosY": 17,
+      "author": ""
+    },
+    {
+      "revelationText": "背後",
+      "textPosX": 18.6,
+      "textPosY": 11.7,
+      "author": ""
+    },
     {
       "revelationText": "罠です",
       "textPosX": 20.9,
