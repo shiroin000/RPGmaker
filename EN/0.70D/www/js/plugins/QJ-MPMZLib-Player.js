@@ -1472,7 +1472,7 @@ if ((noPass && !canThrough) || (!canThrough && !canMoveUp && !canMoveDown && !ca
 	   
     if(c_area.length > 0) {
        var p = c_area[ Math.floor( Math.random()*c_area.length ) ];
-       var xPlus = p.x - XX;  var yPlus = p.y - YY;	
+       var xPlus = p.x - playerX;  var yPlus = p.y - playerX;	
        $gamePlayer.jump(xPlus, yPlus);
       } else {
 	   $gamePlayer.jump(0, 0);  
