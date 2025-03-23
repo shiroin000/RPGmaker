@@ -1,6 +1,18 @@
 {
   "5": [
     {
+      "revelationText": "不知道",
+      "textPosX": 16.1,
+      "textPosY": 42.8,
+      "author": ""
+    },
+    {
+      "revelationText": "前面有害，冻结有效！",
+      "textPosX": 39.7,
+      "textPosY": 23.1,
+      "author": ""
+    },
+    {
       "revelationText": "前面道路强敌小心",
       "textPosX": 23.2,
       "textPosY": 22.5,
@@ -27,6 +39,24 @@
   ],
   "9": [
     {
+      "revelationText": "前有强敌",
+      "textPosX": 6.6,
+      "textPosY": 16.8,
+      "author": ""
+    },
+    {
+      "revelationText": "危险",
+      "textPosX": 8.5,
+      "textPosY": 16.8,
+      "author": ""
+    },
+    {
+      "revelationText": "炸弹有效",
+      "textPosX": 16.6,
+      "textPosY": 12.2,
+      "author": ""
+    },
+    {
       "revelationText": "这不是终点",
       "textPosX": 18.7,
       "textPosY": 9.7,
@@ -40,6 +70,48 @@
     }
   ],
   "10": [
+    {
+      "revelationText": "冻结",
+      "textPosX": 21.7,
+      "textPosY": 16.1,
+      "author": ""
+    },
+    {
+      "revelationText": "麻痹",
+      "textPosX": 18.9,
+      "textPosY": 24.1,
+      "author": ""
+    },
+    {
+      "revelationText": "危险！深渊敌人爱吃哥哥下面！！",
+      "textPosX": 26.3,
+      "textPosY": 8.6,
+      "author": ""
+    },
+    {
+      "revelationText": "前面是敌人",
+      "textPosX": 24.7,
+      "textPosY": 9.5,
+      "author": ""
+    },
+    {
+      "revelationText": "你杂鱼",
+      "textPosX": 24.2,
+      "textPosY": 10,
+      "author": ""
+    },
+    {
+      "revelationText": "哥哥可以回家和妹妹睡觉",
+      "textPosX": 17.4,
+      "textPosY": 16.3,
+      "author": ""
+    },
+    {
+      "revelationText": "做做看！下面！中毒了牛奶牛奶",
+      "textPosX": 17.1,
+      "textPosY": 35.1,
+      "author": ""
+    },
     {
       "revelationText": "这里不过是无效的",
       "textPosX": 15.3,
@@ -72,6 +144,54 @@
     }
   ],
   "13": [
+    {
+      "revelationText": "不是右边",
+      "textPosX": 11.2,
+      "textPosY": 22.2,
+      "author": ""
+    },
+    {
+      "revelationText": "深渊",
+      "textPosX": 12,
+      "textPosY": 12.5,
+      "author": ""
+    },
+    {
+      "revelationText": "河里用炸弹有食材",
+      "textPosX": 14.2,
+      "textPosY": 23.3,
+      "author": ""
+    },
+    {
+      "revelationText": "在哪里",
+      "textPosX": 11.2,
+      "textPosY": 7.9,
+      "author": ""
+    },
+    {
+      "revelationText": "肉牛奶有效",
+      "textPosX": 10.6,
+      "textPosY": 19.7,
+      "author": ""
+    },
+    {
+      "revelationText": "炸弹可以炸伤哥哥的下面，注意！",
+      "textPosX": 10.7,
+      "textPosY": 21.6,
+      "author": ""
+    },
+    {
+      "revelationText": "在河右边移动有道路",
+      "textPosX": 14.4,
+      "textPosY": 23.4,
+      "author": ""
+    },
+    {
+      "revelationText": "加油",
+      "textPosX": 12.1,
+      "textPosY": 12.3,
+      "author": ""
+    },
     {
       "revelationText": "杂鱼",
       "textPosX": 11.6,
@@ -133,6 +253,18 @@
   ],
   "16": [
     {
+      "revelationText": "骗子",
+      "textPosX": 5.4,
+      "textPosY": 21.9,
+      "author": ""
+    },
+    {
+      "revelationText": "无效",
+      "textPosX": 5.8,
+      "textPosY": 23.4,
+      "author": ""
+    },
+    {
       "revelationText": "这是幻觉",
       "textPosX": 9.6,
       "textPosY": 9.2,
@@ -160,6 +292,330 @@
     }
   ],
   "18": [
+    {
+      "revelationText": "牛奶",
+      "textPosX": 14.9,
+      "textPosY": 18.2,
+      "author": ""
+    },
+    {
+      "revelationText": "下面移动",
+      "textPosX": 29.8,
+      "textPosY": 4.6,
+      "author": ""
+    },
+    {
+      "revelationText": "？",
+      "textPosX": 18.3,
+      "textPosY": 8.5,
+      "author": ""
+    },
+    {
+      "revelationText": "是了",
+      "textPosX": 13.1,
+      "textPosY": 30.1,
+      "author": ""
+    },
+    {
+      "revelationText": "妹妹是我的全部",
+      "textPosX": 16.4,
+      "textPosY": 18.6,
+      "author": ""
+    },
+    {
+      "revelationText": "不是？",
+      "textPosX": 25.2,
+      "textPosY": 5.9,
+      "author": ""
+    },
+    {
+      "revelationText": "右边",
+      "textPosX": 24.9,
+      "textPosY": 33.3,
+      "author": ""
+    },
+    {
+      "revelationText": "肉肉肉肉肉肉",
+      "textPosX": 13.9,
+      "textPosY": 18.8,
+      "author": ""
+    },
+    {
+      "revelationText": "右边有道路",
+      "textPosX": 16.6,
+      "textPosY": 32.4,
+      "author": ""
+    },
+    {
+      "revelationText": "冻结冻结冻结冻结冻结冻结",
+      "textPosX": 15.5,
+      "textPosY": 31.4,
+      "author": ""
+    },
+    {
+      "revelationText": "看！我要全部！",
+      "textPosX": 19.5,
+      "textPosY": 5.5,
+      "author": ""
+    },
+    {
+      "revelationText": "用中毒属性",
+      "textPosX": 15,
+      "textPosY": 17.2,
+      "author": ""
+    },
+    {
+      "revelationText": "正面",
+      "textPosX": 8.1,
+      "textPosY": 46.1,
+      "author": ""
+    },
+    {
+      "revelationText": "魔法塔罗牌",
+      "textPosX": 20.3,
+      "textPosY": 4.7,
+      "author": ""
+    },
+    {
+      "revelationText": "妹妹的牛奶全部都是我的",
+      "textPosX": 8.1,
+      "textPosY": 46.1,
+      "author": ""
+    },
+    {
+      "revelationText": "地上休息",
+      "textPosX": 23.7,
+      "textPosY": 9.8,
+      "author": ""
+    },
+    {
+      "revelationText": "背面背面背面背面背面背面背面背面",
+      "textPosX": 9,
+      "textPosY": 44.4,
+      "author": ""
+    },
+    {
+      "revelationText": "移动",
+      "textPosX": 9.6,
+      "textPosY": 40.6,
+      "author": ""
+    },
+    {
+      "revelationText": "杂鱼杂鱼杂鱼哥哥",
+      "textPosX": 17.2,
+      "textPosY": 32.1,
+      "author": ""
+    },
+    {
+      "revelationText": "冻结冻结",
+      "textPosX": 13.5,
+      "textPosY": 32.1,
+      "author": ""
+    },
+    {
+      "revelationText": "敌人",
+      "textPosX": 11.1,
+      "textPosY": 39.6,
+      "author": ""
+    },
+    {
+      "revelationText": "危险",
+      "textPosX": 11.3,
+      "textPosY": 34.8,
+      "author": ""
+    },
+    {
+      "revelationText": "是的炎上",
+      "textPosX": 19.3,
+      "textPosY": 34.6,
+      "author": ""
+    },
+    {
+      "revelationText": "正面正面",
+      "textPosX": 12.9,
+      "textPosY": 24.4,
+      "author": ""
+    },
+    {
+      "revelationText": "左边",
+      "textPosX": 8.1,
+      "textPosY": 43.9,
+      "author": ""
+    },
+    {
+      "revelationText": "不知道",
+      "textPosX": 13.3,
+      "textPosY": 34.6,
+      "author": ""
+    },
+    {
+      "revelationText": "左边右边下面",
+      "textPosX": 25.2,
+      "textPosY": 6.4,
+      "author": ""
+    },
+    {
+      "revelationText": "你是我的伙伴",
+      "textPosX": 28.7,
+      "textPosY": 11.7,
+      "author": ""
+    },
+    {
+      "revelationText": "加油",
+      "textPosX": 18,
+      "textPosY": 13.2,
+      "author": ""
+    },
+    {
+      "revelationText": "赞美爱爱爱。。",
+      "textPosX": 11.5,
+      "textPosY": 33.9,
+      "author": ""
+    },
+    {
+      "revelationText": "哥哥杂鱼哥哥杂鱼杂鱼杂鱼",
+      "textPosX": 8.2,
+      "textPosY": 44.8,
+      "author": ""
+    },
+    {
+      "revelationText": "牛奶",
+      "textPosX": 9.4,
+      "textPosY": 42.2,
+      "author": ""
+    },
+    {
+      "revelationText": "杂鱼杂鱼杂鱼杂鱼杂鱼杂鱼杂鱼",
+      "textPosX": 22.9,
+      "textPosY": 5.4,
+      "author": ""
+    },
+    {
+      "revelationText": "这里是地上吗",
+      "textPosX": 8.8,
+      "textPosY": 44.7,
+      "author": ""
+    },
+    {
+      "revelationText": "杂鱼",
+      "textPosX": 24.9,
+      "textPosY": 7.9,
+      "author": ""
+    },
+    {
+      "revelationText": "妹妹可以和茶会做爱…未来？",
+      "textPosX": 16.6,
+      "textPosY": 16.1,
+      "author": ""
+    },
+    {
+      "revelationText": "左边左边",
+      "textPosX": 23.1,
+      "textPosY": 2.2,
+      "author": ""
+    },
+    {
+      "revelationText": "中间中间",
+      "textPosX": 19.1,
+      "textPosY": 3.8,
+      "author": ""
+    },
+    {
+      "revelationText": "错误攻击",
+      "textPosX": 28.2,
+      "textPosY": 4.2,
+      "author": ""
+    },
+    {
+      "revelationText": "道路",
+      "textPosX": 24.5,
+      "textPosY": 6.2,
+      "author": ""
+    },
+    {
+      "revelationText": "注意妹妹",
+      "textPosX": 7.7,
+      "textPosY": 47.1,
+      "author": ""
+    },
+    {
+      "revelationText": "有牛，有牛啊！",
+      "textPosX": 29.4,
+      "textPosY": 9.8,
+      "author": ""
+    },
+    {
+      "revelationText": "回家睡妹妹吧",
+      "textPosX": 9.9,
+      "textPosY": 39.6,
+      "author": ""
+    },
+    {
+      "revelationText": "…安全了吗？",
+      "textPosX": 25,
+      "textPosY": 8.8,
+      "author": ""
+    },
+    {
+      "revelationText": "我要看和妹妹做爱",
+      "textPosX": 22.5,
+      "textPosY": 4.1,
+      "author": ""
+    },
+    {
+      "revelationText": "炎上",
+      "textPosX": 17.7,
+      "textPosY": 34,
+      "author": ""
+    },
+    {
+      "revelationText": "牛奶",
+      "textPosX": 20,
+      "textPosY": 9,
+      "author": ""
+    },
+    {
+      "revelationText": "无效",
+      "textPosX": 21.7,
+      "textPosY": 7.9,
+      "author": ""
+    },
+    {
+      "revelationText": "眩晕眩晕眩晕眩晕眩晕眩晕",
+      "textPosX": 24.7,
+      "textPosY": 4.3,
+      "author": ""
+    },
+    {
+      "revelationText": "做到了",
+      "textPosX": 8.8,
+      "textPosY": 38.6,
+      "author": ""
+    },
+    {
+      "revelationText": "侧面侧面",
+      "textPosX": 15.2,
+      "textPosY": 31.3,
+      "author": ""
+    },
+    {
+      "revelationText": "正面",
+      "textPosX": 9.2,
+      "textPosY": 37.6,
+      "author": ""
+    },
+    {
+      "revelationText": "加油",
+      "textPosX": 8.5,
+      "textPosY": 45.6,
+      "author": ""
+    },
+    {
+      "revelationText": "未来茶会",
+      "textPosX": 8.1,
+      "textPosY": 46.1,
+      "author": ""
+    },
     {
       "revelationText": "杂鱼哥哥的牛奶",
       "textPosX": 26.8,
@@ -209,18 +665,6 @@
       "author": ""
     },
     {
-      "revelationText": "哥哥可以在地上和忍者做爱",
-      "textPosX": 15.2,
-      "textPosY": 18.4,
-      "author": ""
-    },
-    {
-      "revelationText": "骑士可以和哥哥做爱！！！",
-      "textPosX": 19.2,
-      "textPosY": 8.3,
-      "author": ""
-    },
-    {
       "revelationText": "伙伴骗子全部是陷阱骗子！",
       "textPosX": 22.4,
       "textPosY": 6.1,
@@ -242,12 +686,6 @@
       "revelationText": "终于炎上了吗？",
       "textPosX": 26,
       "textPosY": 11.8,
-      "author": ""
-    },
-    {
-      "revelationText": "注意前面剑圣可以做爱！",
-      "textPosX": 29.5,
-      "textPosY": 10.2,
       "author": ""
     },
     {
@@ -284,18 +722,6 @@
       "revelationText": "妹妹下面有塔肉吧",
       "textPosX": 8.4,
       "textPosY": 43.6,
-      "author": ""
-    },
-    {
-      "revelationText": "在深渊可用道具和哥哥做爱",
-      "textPosX": 14.9,
-      "textPosY": 16.8,
-      "author": ""
-    },
-    {
-      "revelationText": "这里左边可以和哥哥做爱",
-      "textPosX": 11.4,
-      "textPosY": 33.2,
       "author": ""
     },
     {
@@ -449,6 +875,48 @@
   ],
   "28": [
     {
+      "revelationText": "眩晕麻痹中毒",
+      "textPosX": 14.8,
+      "textPosY": 10.2,
+      "author": ""
+    },
+    {
+      "revelationText": "下面有恶魔",
+      "textPosX": 21,
+      "textPosY": 17.4,
+      "author": ""
+    },
+    {
+      "revelationText": "危险！下面都是杂鱼",
+      "textPosX": 3.9,
+      "textPosY": 20.1,
+      "author": ""
+    },
+    {
+      "revelationText": "这里有陷阱！安全吧？",
+      "textPosX": 12,
+      "textPosY": 20.1,
+      "author": ""
+    },
+    {
+      "revelationText": "这里是目标",
+      "textPosX": 37.8,
+      "textPosY": 37.8,
+      "author": ""
+    },
+    {
+      "revelationText": "敌群敌群",
+      "textPosX": 12.3,
+      "textPosY": 34.7,
+      "author": ""
+    },
+    {
+      "revelationText": "看看",
+      "textPosX": 33.1,
+      "textPosY": 41.6,
+      "author": ""
+    },
+    {
       "revelationText": "抗性",
       "textPosX": 14.9,
       "textPosY": 10.1,
@@ -469,6 +937,18 @@
   ],
   "30": [
     {
+      "revelationText": "右边错误",
+      "textPosX": 18.1,
+      "textPosY": 10.8,
+      "author": ""
+    },
+    {
+      "revelationText": "前面",
+      "textPosX": 11.6,
+      "textPosY": 8.2,
+      "author": ""
+    },
+    {
       "revelationText": "不知道",
       "textPosX": 17,
       "textPosY": 10.7,
@@ -481,7 +961,141 @@
       "author": ""
     }
   ],
+  "31": [
+    {
+      "revelationText": "左边",
+      "textPosX": 5.2,
+      "textPosY": 8.8,
+      "author": ""
+    }
+  ],
   "37": [
+    {
+      "revelationText": "冻结敌人",
+      "textPosX": 30.6,
+      "textPosY": 17.8,
+      "author": ""
+    },
+    {
+      "revelationText": "我要全部！",
+      "textPosX": 58.4,
+      "textPosY": 64.8,
+      "author": ""
+    },
+    {
+      "revelationText": "是牛奶",
+      "textPosX": 51.9,
+      "textPosY": 17,
+      "author": ""
+    },
+    {
+      "revelationText": "敌人敌人陷阱符文饮料",
+      "textPosX": 18.8,
+      "textPosY": 29.7,
+      "author": ""
+    },
+    {
+      "revelationText": "前面武器",
+      "textPosX": 32.4,
+      "textPosY": 14.2,
+      "author": ""
+    },
+    {
+      "revelationText": "左边",
+      "textPosX": 54.9,
+      "textPosY": 66,
+      "author": ""
+    },
+    {
+      "revelationText": "敌人敌人属性",
+      "textPosX": 32.8,
+      "textPosY": 17.6,
+      "author": ""
+    },
+    {
+      "revelationText": "骗子",
+      "textPosX": 4.7,
+      "textPosY": 8.9,
+      "author": ""
+    },
+    {
+      "revelationText": "右边武器拿",
+      "textPosX": 30.9,
+      "textPosY": 13.4,
+      "author": ""
+    },
+    {
+      "revelationText": "右边",
+      "textPosX": 35.2,
+      "textPosY": 44.4,
+      "author": ""
+    },
+    {
+      "revelationText": "麻痹",
+      "textPosX": 18.4,
+      "textPosY": 54.8,
+      "author": ""
+    },
+    {
+      "revelationText": "正面",
+      "textPosX": 34.9,
+      "textPosY": 17.5,
+      "author": ""
+    },
+    {
+      "revelationText": "敌群下面",
+      "textPosX": 9.2,
+      "textPosY": 22.1,
+      "author": ""
+    },
+    {
+      "revelationText": "右边有陷阱",
+      "textPosX": 49.7,
+      "textPosY": 66.4,
+      "author": ""
+    },
+    {
+      "revelationText": "房",
+      "textPosX": 32.4,
+      "textPosY": 14.2,
+      "author": ""
+    },
+    {
+      "revelationText": "啊啊啊",
+      "textPosX": 45.1,
+      "textPosY": 28.6,
+      "author": ""
+    },
+    {
+      "revelationText": "魔法炸弹",
+      "textPosX": 82.1,
+      "textPosY": 51.9,
+      "author": ""
+    },
+    {
+      "revelationText": "看",
+      "textPosX": 16.2,
+      "textPosY": 54.8,
+      "author": ""
+    },
+    {
+      "revelationText": "正确正确正确",
+      "textPosX": 5,
+      "textPosY": 19,
+      "author": ""
+    },
+    {
+      "revelationText": "全部要！",
+      "textPosX": 62.9,
+      "textPosY": 65.7,
+      "author": ""
+    },
+    {
+      "revelationText": "冻结",
+      "textPosX": 31.7,
+      "textPosY": 17.4,
+      "author": ""
+    },
     {
       "revelationText": "前面陷阱塔罗牌肉麻痹",
       "textPosX": 20.7,
@@ -569,6 +1183,12 @@
   ],
   "40": [
     {
+      "revelationText": "因为",
+      "textPosX": 6.1,
+      "textPosY": 6.8,
+      "author": ""
+    },
+    {
       "revelationText": "冲刺很有用",
       "textPosX": 5.1,
       "textPosY": 15.9,
@@ -593,6 +1213,24 @@
   ],
   "45": [
     {
+      "revelationText": "你做到了！",
+      "textPosX": 13,
+      "textPosY": 20.9,
+      "author": ""
+    },
+    {
+      "revelationText": "是的",
+      "textPosX": 18.7,
+      "textPosY": 14.5,
+      "author": ""
+    },
+    {
+      "revelationText": "回家回家",
+      "textPosX": 13.7,
+      "textPosY": 16.7,
+      "author": ""
+    },
+    {
       "revelationText": "右边下面拿装备",
       "textPosX": 13.2,
       "textPosY": 19.6,
@@ -612,6 +1250,24 @@
     }
   ],
   "46": [
+    {
+      "revelationText": "炎上",
+      "textPosX": 20.8,
+      "textPosY": 25.1,
+      "author": ""
+    },
+    {
+      "revelationText": "？？？？？？？？？",
+      "textPosX": 41.1,
+      "textPosY": 9.4,
+      "author": ""
+    },
+    {
+      "revelationText": "不是…",
+      "textPosX": 16.4,
+      "textPosY": 44.3,
+      "author": ""
+    },
     {
       "revelationText": "是吗",
       "textPosX": 52.1,
@@ -645,15 +1301,27 @@
   ],
   "47": [
     {
-      "revelationText": "赞美妹妹",
-      "textPosX": 26.4,
-      "textPosY": 14.5,
+      "revelationText": "？",
+      "textPosX": 54.1,
+      "textPosY": 7.8,
       "author": ""
     },
     {
-      "revelationText": "这里可以和妹妹做爱",
-      "textPosX": 8.7,
+      "revelationText": "全部用中间这里攻击敌人或冻结",
+      "textPosX": 22.2,
+      "textPosY": 23.5,
+      "author": ""
+    },
+    {
+      "revelationText": "哥哥是要做妹妹的肉吗",
+      "textPosX": 10.9,
       "textPosY": 23.8,
+      "author": ""
+    },
+    {
+      "revelationText": "赞美妹妹",
+      "textPosX": 26.4,
+      "textPosY": 14.5,
       "author": ""
     },
     {
@@ -683,6 +1351,30 @@
   ],
   "48": [
     {
+      "revelationText": "哥哥哥哥哥哥哥哥哥哥哥哥哥哥哥哥",
+      "textPosX": 9.4,
+      "textPosY": 56.1,
+      "author": ""
+    },
+    {
+      "revelationText": "目标在河里",
+      "textPosX": 37.9,
+      "textPosY": 18.1,
+      "author": ""
+    },
+    {
+      "revelationText": "哪里",
+      "textPosX": 35.5,
+      "textPosY": 33.1,
+      "author": ""
+    },
+    {
+      "revelationText": "都是",
+      "textPosX": 35,
+      "textPosY": 35.9,
+      "author": ""
+    },
+    {
       "revelationText": "背面",
       "textPosX": 8.3,
       "textPosY": 56.8,
@@ -692,12 +1384,6 @@
       "revelationText": "用炸弹攻击河里",
       "textPosX": 35.5,
       "textPosY": 36.1,
-      "author": ""
-    },
-    {
-      "revelationText": "下面可以回家做爱",
-      "textPosX": 20.3,
-      "textPosY": 69.4,
       "author": ""
     },
     {
@@ -726,6 +1412,36 @@
     }
   ],
   "49": [
+    {
+      "revelationText": "冻结冻结冻结冻结冻结冻结冻结冻结",
+      "textPosX": 22.7,
+      "textPosY": 10.2,
+      "author": ""
+    },
+    {
+      "revelationText": "这里有钱背面",
+      "textPosX": 7.3,
+      "textPosY": 4.3,
+      "author": ""
+    },
+    {
+      "revelationText": "冻结",
+      "textPosX": 24.2,
+      "textPosY": 18.5,
+      "author": ""
+    },
+    {
+      "revelationText": "左边",
+      "textPosX": 10.7,
+      "textPosY": 23.1,
+      "author": ""
+    },
+    {
+      "revelationText": "抗性上限",
+      "textPosX": 36.9,
+      "textPosY": 9,
+      "author": ""
+    },
     {
       "revelationText": "中毒",
       "textPosX": 10.6,
@@ -765,9 +1481,39 @@
   ],
   "50": [
     {
-      "revelationText": "下面可以和哥哥做爱",
-      "textPosX": 13.3,
-      "textPosY": 28.3,
+      "revelationText": "杂鱼敌人",
+      "textPosX": 12.3,
+      "textPosY": 8.4,
+      "author": ""
+    },
+    {
+      "revelationText": "做到了！敌人下面全是哥哥的牛奶",
+      "textPosX": 11.8,
+      "textPosY": 18.5,
+      "author": ""
+    },
+    {
+      "revelationText": "中毒",
+      "textPosX": 11.1,
+      "textPosY": 6.5,
+      "author": ""
+    },
+    {
+      "revelationText": "用魔法攻击",
+      "textPosX": 14.6,
+      "textPosY": 7.1,
+      "author": ""
+    },
+    {
+      "revelationText": "危险注意小心",
+      "textPosX": 9.2,
+      "textPosY": 6.8,
+      "author": ""
+    },
+    {
+      "revelationText": "有效有效",
+      "textPosX": 14.5,
+      "textPosY": 28.8,
       "author": ""
     },
     {
@@ -797,6 +1543,12 @@
   ],
   "52": [
     {
+      "revelationText": "我",
+      "textPosX": 11.7,
+      "textPosY": 5.9,
+      "author": ""
+    },
+    {
       "revelationText": "这里有忍者",
       "textPosX": 11.6,
       "textPosY": 5.8,
@@ -810,6 +1562,18 @@
     }
   ],
   "53": [
+    {
+      "revelationText": "右边装备拿",
+      "textPosX": 19.3,
+      "textPosY": 6.2,
+      "author": ""
+    },
+    {
+      "revelationText": "正面上我啊！",
+      "textPosX": 20.5,
+      "textPosY": 11.7,
+      "author": ""
+    },
     {
       "revelationText": "试试看，然后…",
       "textPosX": 15.6,
