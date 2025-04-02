@@ -830,7 +830,7 @@ QJ.MPMZ.tl._imoutoUtilautoUpdataCheck = function() {
 
     if ($gameSwitches.value(99)) return;
 	
-	if ($gameSwitches.value(99)) {
+	if ($gameMap.mapId() === 4) {
 	  chahuiUtil.getGameUpdateLog();
 	}
 	
