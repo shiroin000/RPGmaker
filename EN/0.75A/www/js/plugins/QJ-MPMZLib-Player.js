@@ -2076,7 +2076,11 @@ QJ.MPMZ.tl.ex_senpoResidualEffect = function(user,color = [0,0,0,0],IsActionSequ
 	 if (!$gamePlayer.isMoved()) return;		
      posX = $gamePlayer.screenBoxXShowQJ();
      posY = $gamePlayer.screenBoxYShowQJ();
-	 value = true;
+	  if ($gamePlayer._drill_EASe_controller !== undefined) {
+	    value = true;
+	  } else {
+		value = false;  
+	  }
 	}		
 	
 	let time = 10;
