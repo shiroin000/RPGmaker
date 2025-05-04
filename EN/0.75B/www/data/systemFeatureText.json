@@ -1,0 +1,14 @@
+{
+  "autoUpdate": {
+        "0": [
+            "检测到可同步的更高版本游戏数据，是否立即下载并更新？"
+		],
+        "1": [
+            "同期可能な新しいバージョンのゲームデータが検出されました。\n今すぐダウンロードして更新しますか？"
+        ],
+		"2": [
+            "A newer version of the game data is available for sync. \nWould you like to download and update now?"
+        ]		
+    }
+		
+}

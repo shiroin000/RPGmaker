@@ -941,6 +941,7 @@ QJ.MPMZ.tl._imoutoUtilautoUpdataCheck = function() {
         var result = numA - numB;
         if (result < 0) {
 		  $gameStrings.setValue(1,versionB); 
+		  $gameVariables.setValue(2, versionB);
           QJ.MPMZ.tl._imoutoUtilautoUpdataIcon();
 		  }
 		return true;
@@ -949,7 +950,8 @@ QJ.MPMZ.tl._imoutoUtilautoUpdataCheck = function() {
         // 如果数值部分相同，比较字母部分（A < B < C...）
         var result = letterA.localeCompare(letterB);
         if (result < 0) {
-		  $gameStrings.setValue(1,versionB); 
+		  $gameStrings.setValue(1,versionB);
+          $gameVariables.setValue(2, versionB);		  
           QJ.MPMZ.tl._imoutoUtilautoUpdataIcon();
 		  }
 		return true;
