@@ -1918,3 +1918,23 @@ Game_Map.prototype.isAnyEventStartingQJ = function() {
 Game_Map.prototype.isEventRunningQJ = function() {
     return this._commonEventQJ.length > 0 || this._interpreter.isRunning() || this.isAnyEventStartingQJ();
 };
+
+
+Game_Interpreter.prototype.command352 = function() {
+	
+    // 1. 先清空子弹数据
+    QJ.MPMZ.ClearAll();
+
+    // 2. 确认清空成功
+    const lengthOk = $gameMap._mapBulletsQJLength === 0;
+    const objOk    = Object.keys($gameMap._mapBulletsQJ  || {}).length === 0;
+    const nameOk   = Object.keys($gameMap._mapBulletsNameQJ|| {}).length === 0;
+
+    if (lengthOk && objOk && nameOk) {
+		console.log('子弹数据清除成功');
+    if (!$gameParty.inBattle()) {
+        SceneManager.push(Scene_Save);
+      }
+	}
+    return true;
+};
