@@ -1085,7 +1085,7 @@ Scene_Title.prototype.autoUpdataConfirm = function() {
     const lang = $gameVariables.value(1);
     let texts = window.systemFeatureText && window.systemFeatureText.autoUpdate;
     if (!texts || !texts[String(lang)]) return;
-    let text = texts[String(2)];
+    let text = texts[String(lang)];
 	
     const ask = confirm(text);
     if (ask) {
