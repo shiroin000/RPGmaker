@@ -1072,7 +1072,7 @@ Scene_Title.prototype.autoUpdataCheck = function() {
         var result = letterA.localeCompare(letterB);
         if (result < 0) {
 		  $gameVariables.setValue(2, versionB);
-		  scene.autoUpdataConfirm();
+		  scene.autoUpdataConfirm(versionB);
           scene._startedCustomGame = true;
 		}
 		return true;
@@ -1080,12 +1080,20 @@ Scene_Title.prototype.autoUpdataCheck = function() {
 };
 
 
-Scene_Title.prototype.autoUpdataConfirm = function() {
+Scene_Title.prototype.autoUpdataConfirm = function(version) {
 	
     const lang = $gameVariables.value(1);
     let texts = window.systemFeatureText && window.systemFeatureText.autoUpdate;
     if (!texts || !texts[String(lang)]) return;
-    let text = texts[String(lang)];
+    let textArray = texts[String(lang)];
+    let text = textArray.join('\n');
+
+	const match = String(text).match(/\$\{([^}]*)\}/);
+	
+	if (match && version) {
+	 text = String(text).replace(/\$\{[^}]*\}/g, version);	
+	}
+	
 	
     const ask = confirm(text);
     if (ask) {
