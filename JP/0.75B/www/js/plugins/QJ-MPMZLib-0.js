@@ -18,6 +18,15 @@
 //
 //=============================================================================
 
+// 修复新版本NWjs关闭程序的写法问题
+SceneManager.exit = function() {
+  if (window.nw && nw.App && nw.App.quit) {
+    nw.App.quit();
+  } else {
+    window.close();
+  }
+};
+
 
 QJ.MPMZ.tl.ex_LabyrinthScenePreload = function() {
 
