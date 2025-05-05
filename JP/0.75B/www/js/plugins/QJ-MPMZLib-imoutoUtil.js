@@ -3189,6 +3189,22 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
          $gameMap.event(30).steupCEQJ(1);
          return;		 
 	}
+    // 乳头判定-左
+    if ( chahuiUtil.pointInCircle('tachieLeftNipple') && !TouchInput.isMoved() ) {
+		 this._coolDown = 5;
+		 this._suspend = true;
+         var text = "\\c[10]\\dDCOG[11:2:2:2]\\fs[28]正在戳乳头！";
+         $gameTemp.drill_GFTT_createSimple( [_drill_mouse_x,_drill_mouse_y], text, 2, 9, 90 );	
+         return;	
+	}
+	// 乳头判定-右
+    if ( chahuiUtil.pointInCircle('tachieRightNipple') && !TouchInput.isMoved() ) {
+		 this._coolDown = 5;
+		 this._suspend = true;
+         var text = "\\c[10]\\dDCOG[11:2:2:2]\\fs[28]正在戳乳头！";
+         $gameTemp.drill_GFTT_createSimple( [_drill_mouse_x,_drill_mouse_y], text, 2, 9, 90 );	
+         return;	
+	}	
     // 揉胸判定-左
     if ( chahuiUtil.pointInCircle('tachieLeftBreast') ) {
 		 this._coolDown = 5;

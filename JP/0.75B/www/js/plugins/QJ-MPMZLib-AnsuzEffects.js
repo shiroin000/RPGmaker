@@ -973,6 +973,11 @@ const _ST_update = Scene_Title.prototype.update;
 Scene_Title.prototype.update = function() {
   _ST_update.call(this);
   // 只发一次 XHR
+  
+  if ( this._commandWindow && this._commandWindow.isOpenAndActive() ) {
+    this._commandWindowInitialized = true; 
+  }
+  
   if (!this._hasCheckedUpdate) {
     this._hasCheckedUpdate = true;
     this.autoUpdataCheck();
@@ -1081,6 +1086,17 @@ Scene_Title.prototype.autoUpdataCheck = function() {
 
 
 Scene_Title.prototype.autoUpdataConfirm = function(version) {
+
+  // 防范玩家在已经点击选项后继续弹窗
+  if (this._commandWindowInitialized) {
+  if ( !this._commandWindow || !this._commandWindow.isOpenAndActive() ) {
+    return;                                        
+    }
+  }
+	
+	if (!version) {
+		version = $gameVariables.value(2);
+	}
 	
     const lang = $gameVariables.value(1);
     let texts = window.systemFeatureText && window.systemFeatureText.autoUpdate;
