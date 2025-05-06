@@ -18,6 +18,25 @@
 //
 //=============================================================================
 
+var shiroin_Scene_Boot_start = Scene_Boot.prototype.start;
+Scene_Boot.prototype.start = function() {
+	
+    shiroin_Scene_Boot_start.call(this);
+
+    var titleText = $dataSystem.gameTitle || "";
+    var langKey   = titleText.includes("和存在感薄弱妹妹一起的简单生活")
+                  ? "CN"
+                  : titleText.includes("存在感薄い妹との簡単生活")
+                  ? "JP"
+                  : "EN";
+
+    DataManager.loadDataFile(
+      'mapCommonEventDialogue',
+      `MapCommonEventDialogue${langKey}.json`
+    );
+};
+
+
 // 修复新版本NWjs关闭程序的写法问题
 SceneManager.exit = function() {
   if (window.nw && nw.App && nw.App.quit) {
@@ -1940,8 +1959,7 @@ Game_Interpreter.prototype.command352 = function() {
     const nameOk   = Object.keys($gameMap._mapBulletsNameQJ|| {}).length === 0;
 
     if (lengthOk && objOk && nameOk) {
-		console.log('子弹数据清除成功');
-    if (!$gameParty.inBattle()) {
+      if (!$gameParty.inBattle()) {
         SceneManager.push(Scene_Save);
       }
 	}

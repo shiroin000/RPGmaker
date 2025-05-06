@@ -8,6 +8,29 @@
 
 var chahuiUtil = chahuiUtil || {};
 
+// 快捷显示公共事件文本
+Game_Interpreter.prototype.showCommonEventDialogue = function(type, idx, subIdx) {
+
+
+        const key   = "commonEventDialogue";
+        const table = window[key] || {};
+        const entry = table[type]?.[String(idx)];
+        let textArray;
+
+        if (subIdx !== undefined) {
+            // 如果传了 subIdx，就取第二层
+            const sub = entry?.[String(subIdx)];
+            // 无论取到的是字符串还是对象，都要包成数组
+            textArray = sub !== undefined ? [sub] : [];
+        } else {
+            // 原先的整体数组
+            textArray = Array.isArray(entry) ? entry : [];
+        }
+
+        chahuiUtil.multilingualCompatibleDisplayText.call(this, textArray);
+};
+
+// 快捷显示地图事件文本
 Game_Interpreter.prototype.showMapEventDialogue = function(idx, subIdx) {
         const eid   = String(this._eventId);
         const mapId = $gameMap.mapId();
@@ -29,18 +52,16 @@ Game_Interpreter.prototype.showMapEventDialogue = function(idx, subIdx) {
         chahuiUtil.multilingualCompatibleDisplayText.call(this, textArray);
 };
 
+
 DataManager._databaseFiles.push(
 
   {
     name: "dataSceneObjectDescriptionText",
     src: "sceneObjectDescriptionText.json"
-  },
-  {
-    name: "systemFeatureText",
-    src: "systemFeatureText.json"
   }
 
 );
+
 
 // 重置语言标记
 chahuiUtil.resetSystemLanguageFlag = function() {
@@ -1739,6 +1760,18 @@ chahuiUtil.polySets = {
 
 // 圆形碰撞箱预设模板
 chahuiUtil.circleSets = {
+  // 立绘-左乳头
+  tachieLeftNipple: {
+    cx: 1440,  // 圆心 x
+    cy: 600,   // 圆心 y
+    r: 20      // 半径
+  },	
+  // 立绘-右乳头
+  tachieRightNipple: {
+    cx: 1266,  // 圆心 x
+    cy: 591,   // 圆心 y
+    r: 20      // 半径
+  },	
   // 立绘-右胸
   tachieRightBreast: {
     cx: 1294,  // 圆心 x

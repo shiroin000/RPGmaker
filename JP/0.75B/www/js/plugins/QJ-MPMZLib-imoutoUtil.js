@@ -3193,16 +3193,26 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
     if ( chahuiUtil.pointInCircle('tachieLeftNipple') && !TouchInput.isMoved() ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
-         var text = "\\c[10]\\dDCOG[11:2:2:2]\\fs[28]正在戳乳头！";
-         $gameTemp.drill_GFTT_createSimple( [_drill_mouse_x,_drill_mouse_y], text, 2, 9, 90 );	
+		 let type;
+		 if (TouchInput.isMoved()) {
+           type = "stroke";
+		 } else {
+		   type = "poke";
+		 }
+         $gameMap.event(5).steupCEQJ(4,{actionType:type});
          return;	
 	}
 	// 乳头判定-右
-    if ( chahuiUtil.pointInCircle('tachieRightNipple') && !TouchInput.isMoved() ) {
+    if ( chahuiUtil.pointInCircle('tachieRightNipple') ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
-         var text = "\\c[10]\\dDCOG[11:2:2:2]\\fs[28]正在戳乳头！";
-         $gameTemp.drill_GFTT_createSimple( [_drill_mouse_x,_drill_mouse_y], text, 2, 9, 90 );	
+		 let type;
+		 if (TouchInput.isMoved()) {
+           type = "stroke";
+		 } else {
+		   type = "poke";
+		 }
+         $gameMap.event(5).steupCEQJ(4,{actionType:type});
          return;	
 	}	
     // 揉胸判定-左
@@ -3225,8 +3235,13 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
     if ( chahuiUtil.pointInCircle('tachieNavel') ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
-		 $gameVariables.setValue(10, 0);
-         $gameMap.event(5).steupCEQJ(3);
+		 let type;
+		 if (TouchInput.isMoved()) {
+           type = "stroke";
+		 } else {
+		   type = "poke";
+		 }
+         $gameMap.event(5).steupCEQJ(5,{touchPoint:"navel",actionType:type});
          return;
 	}
     // 小穴区域判定	
@@ -3256,22 +3271,40 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
     // 锁骨区域判定	
     if ( chahuiUtil.pointInPolygo('tachieClavicle') ) {
 		 this._coolDown = 5;
-         var text = "\\c[10]\\dDCOG[11:2:2:2]\\fs[28]正在摸锁骨！";
-         $gameTemp.drill_GFTT_createSimple( [_drill_mouse_x,_drill_mouse_y], text, 2, 9, 90 );	
+		 this._suspend = true;
+		 let type;
+		 if (TouchInput.isMoved()) {
+           type = "stroke";
+		 } else {
+		   type = "poke";
+		 }
+         $gameMap.event(5).steupCEQJ(5,{touchPoint:"clavicle",actionType:type});
          return;		 
 	}
     // 右耳区域判定	
     if ( chahuiUtil.pointInPolygo('tachieRightEar') ) {
 		 this._coolDown = 5;
-         var text = "\\c[10]\\dDCOG[11:2:2:2]\\fs[28]正在摸右耳！";
-         $gameTemp.drill_GFTT_createSimple( [_drill_mouse_x,_drill_mouse_y], text, 2, 9, 90 );	
+		 this._suspend = true;
+		 let type;
+		 if (TouchInput.isMoved()) {
+           type = "stroke";
+		 } else {
+		   type = "poke";
+		 }
+         $gameMap.event(5).steupCEQJ(5,{touchPoint:"ear",actionType:type});
 		 return;
 	}	
     // 左耳区域判定	
     if ( chahuiUtil.pointInPolygo('tachieLeftEar') ) {
 		 this._coolDown = 5;
-         var text = "\\c[10]\\dDCOG[11:2:2:2]\\fs[28]正在摸左耳！";
-         $gameTemp.drill_GFTT_createSimple( [_drill_mouse_x,_drill_mouse_y], text, 2, 9, 90 );
+		 this._suspend = true;
+		 let type;
+		 if (TouchInput.isMoved()) {
+           type = "stroke";
+		 } else {
+		   type = "poke";
+		 }
+         $gameMap.event(5).steupCEQJ(5,{touchPoint:"ear",actionType:type});
 		 return;
 	}
   }
