@@ -14,17 +14,17 @@
     },
   "inventoryExpansion": {
         "0": [
-            "似乎可以使用\\ii[312]",
-			"来扩充背包容量…要怎么做？"
+            "It seems like using \\ii[312]",
+			"can expand the backpack capacity..."
 		],	  
         "1": [
-            "扩充武器格",
-			"扩充装备格",
-			"还是算了"
+            "Expand weapon slots",
+			"Expand gear slots",
+			"Never mind"
 		],
         "2": [
-            "\\ii[312]的数量",
-			"好像不够…"
+            "The quantity of \\ii[312]",
+			"seems insufficient..."
 		]	
     }	
 }
