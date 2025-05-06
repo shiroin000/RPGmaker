@@ -12,7 +12,7 @@ var chahuiUtil = chahuiUtil || {};
 Game_Interpreter.prototype.showCommonEventDialogue = function(type, idx, subIdx) {
 
 
-        const key   = "commonEventDialogue";
+        const key   = "mapCommonEventDialogue";
         const table = window[key] || {};
         const entry = table[type]?.[String(idx)];
         let textArray;
