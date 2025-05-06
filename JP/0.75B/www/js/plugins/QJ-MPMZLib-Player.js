@@ -1369,15 +1369,16 @@ QJ.MPMZ.tl.ex_PlayerHitCheck = function() {
       }
 
     //防止玩家没死成
-   if ( $gameActors.actor(1).isStateAffected(1) || $gameActors.actor(1).hp <= 0 ) {
+   if ( !$gameTemp._eventReserved && ($gameActors.actor(1).isStateAffected(1) || $gameActors.actor(1).hp <= 0) ) {
 	   // 稻草人发动
 	   if (!$gameSystem.hasGameTimeEvent('scarecrowHeart') && $gameActors.actor(1).isStateAffected(115)) {
 	      if (!$gameSystem.hasGameTimeEvent('scarecrowHeart') && !$gameSystem.hasGameTimeEvent('scarecrowHeartActivated')) {
 		      $gameSystem.addGameTimeEvent({ key: 'scarecrowHeart', delayMinutes: 3 });
 			  $gameSystem.addGameTimeEvent({ key: 'scarecrowHeartActivated', delayMinutes: 60 });
 		  }
+		  $gameScreen._particle.particleSet(0,'dark_hole_r_3','player');
 	   }
-	   $gameScreen._particle.particleSet(0,'dark_hole_r_3','player');
+	   
 	   $gameMap.steupCEQJ(4,1);
 	  
    }
