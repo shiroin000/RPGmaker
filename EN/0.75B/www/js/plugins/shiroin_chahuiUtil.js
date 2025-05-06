@@ -1346,6 +1346,10 @@ chahuiUtil.imoutoChibiButtonInitialization = function () {
 
 chahuiUtil.quickInteractionIconInitialize = function() {
 
+   if ($gameMap.getGroupBulletListQJ('imoutoUtil').length == 0) {
+	  QJ.MPMZ.tl._imoutoUtilCheckInitialization(true);
+   }
+
    if ($gameMap.getGroupBulletListQJ('optionButton').length == 0) {
     var optionButton = QJ.MPMZ.Shoot({
     groupName:["optionButton","imoutoUtilIcon"],

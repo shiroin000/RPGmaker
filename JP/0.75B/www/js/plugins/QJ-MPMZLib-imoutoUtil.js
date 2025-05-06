@@ -821,11 +821,11 @@ QJ.MPMZ.tl._imoutoUtilMoveStatusHud = function() {
 };
 
 //常态存在的妹妹监听器
-QJ.MPMZ.tl._imoutoUtilCheckInitialization = function() {
+QJ.MPMZ.tl._imoutoUtilCheckInitialization = function(forbid) {
     
 	// 快捷互动按钮
 	let condition = $gameScreen.picture(5) && $gameScreen.picture(5).name().includes("sis_chibi_normal");
-	if (condition) chahuiUtil.quickInteractionIconInitialize();
+	if (!forbid && condition) chahuiUtil.quickInteractionIconInitialize();
 
 	if ($gameMap.getGroupBulletListQJ('imoutoUtil').length > 0) return;
 		
