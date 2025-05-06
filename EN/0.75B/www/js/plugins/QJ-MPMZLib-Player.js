@@ -2529,6 +2529,8 @@ QJ.MPMZ.tl.playerSkillLevelDisplay = function(skillId) {
 QJ.MPMZ.tl.ex_senpoTachi = function() {
 	//$gameScreen._particle.particleSet(0,'aura_bp2','player');
 	//$gameScreen._particle.particleGroupSet(0,'weapon_b1','player');
+	
+	if($gameParty.leader()._characterName !== "$player") return;
 	if($gameMap.getGroupBulletListQJ('playerSkill').length > 0) return;
 	if(!$gameParty.leader().equips()[0]) return;
 	let weaponType = $dataWeapons[$gameParty.leader().equips()[0].baseItemId].wtypeId;
@@ -2604,6 +2606,7 @@ QJ.MPMZ.tl.ex_senpoTachiCharge = function() {
 //闪步太刀-释放
 QJ.MPMZ.tl.ex_senpoTachiRelease = function() {
 	
+	if($gameParty.leader()._characterName !== "$player") return;
 	if(!$gameParty.leader().equips()[0]) return;
 	let weaponType = $dataWeapons[$gameParty.leader().equips()[0].baseItemId].wtypeId;
 	let staffType = [1,2];
