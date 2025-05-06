@@ -11,6 +11,50 @@
             "Update available: Version ${} game data detected. ",
 			"Would you like to download and update now?"
         ]		
-    }
+    },
+  "MaxPlayerMsgs": {
+        "0": [
+            "玩家讯息最大显示数量"
+		],	  
+        "1": [
+            "プレイヤーメッセージ表示上限"
+		],
+        "2": [
+            "Max Player Msgs"
+		]	
+    },	
+  "GameFAQ": {
+        "0": [
+            "游戏常见问题解答"
+		],	  
+        "1": [
+            "ゲームQ&A"
+		],
+        "2": [
+            "Game FAQ"
+		]	
+    },
+  "ShowWeaponDurability": {
+        "0": [
+            "武器耐久度常时显示"
+		],	  
+        "1": [
+            "武器耐久表示常時"
+		],
+        "2": [
+            "Show Weapon Durability"
+		]	
+    },
+  "DisableAutoUpdate": {
+        "0": [
+            "禁止自动更新"
+		],	  
+        "1": [
+            "自動更新を無効化"
+		],
+        "2": [
+            "Disable Auto Update"
+		]	
+    }	
 		
 }
