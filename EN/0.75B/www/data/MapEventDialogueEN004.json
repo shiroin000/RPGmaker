@@ -15,7 +15,7 @@
 			"You did that on purpose, didn’t you!?\"  \\w[150]\\^"
 		],
 		"1": [
-            "\\nl< >\"—Uwehhhhh!?\"  \\w[40]\\^"
+            "\\nl< >\"—Uwehhhhh!?\"  \\w[20]\\^"
         ],
 		"2": [
             "\\nl< >\"Onii-chan~~!!\"  \\w[120]\\^"
@@ -77,32 +77,94 @@
             "\\nl< >\"Hmmngh…!\"   \\w[45]\\^"
         ],
 		"16": [
-            "\\nl< >\"Onii-chan……   \\w[90]",
-			"It was an accident…? O-Okay, I get it…\"    \\w[120]\\^"
+            "\\nl< >\"Onii-chan……   \\w[150]",
+			"It was an accident…? O-Okay, I get it…\"    \\w[210]\\^"
         ],	
 		"17": [
-            "\\nl< >\"D-Don’t mess with me like that…  \\w[90]",
-			"It feels weird…!\"    \\w[90]\\^"
+            "\\nl< >\"D-Don’t mess with me like that…  \\w[150]",
+			"It feels weird…!\"    \\w[150]\\^"
         ],	
 		"18": [
-            "\\nl< >\"Eh… Did I gain weight…?\"    \\w[90]\\^"
+            "\\nl< >\"Eh… Did I gain weight…?\"    \\w[180]\\^"
         ],
 		"19": [
-            "\\nl< >\"Nnngh…! It tickles when you touch my ears. \\w[90]",
-			"Onii-chan, cut it out already!\"    \\w[90]\\^"
+            "\\nl< >\"Nnngh…! It tickles when you touch my ears. \\w[180]",
+			"Onii-chan, cut it out already!\"    \\w[210]\\^"
         ],	
 		"20": [
             "\\nl< >\"Umm… Onii-chan, ",
-			"it really tickles when you touch there,   \\w[90]",
-			"maybe you should stop…\"    \\w[90]\\^"
+			"it really tickles when you touch there,   \\w[180]",
+			"maybe you should stop…\"    \\w[210]\\^"
         ],
 		"21": [
-            "\\nl< >\"Geez, don’t go poking me all over!  \\w[90]",
-			"I’m not your toy, you know!\"    \\w[90]\\^"
+            "\\nl< >\"Geez, don’t go poking me all over!  \\w[240]",
+			"I’m not your toy, you know!\"    \\w[120]\\^"
         ],
 		"22": [
-            "\\nl< >\"Uweh-eh-eh… Onii-chan, \\w[90]",
-			"you’re getting way too into this…!?\"    \\w[90]\\^"
+            "\\nl< >\"Uweh-eh-eh… Onii-chan, \\w[150]",
+			"you’re getting way too into this…!?\"    \\w[180]\\^"
+        ]		
+    },
+  "7": {
+        "0": [
+            "Imouto looks like she’s sleeping so peacefully..."
+		],
+		"1": [
+            "Sneak Closer",
+			"Workout!",
+			"Go back"
+        ],
+		"2": [
+            "It's finally time to show off ",
+			"the silent movement technique ",
+			"I've been practicing for days—"
+        ],	
+		"3": [
+            "Sneaky, sneaky..."
+        ],	
+		"4": [
+            "Yeah, it's already late,  ",
+			"I should head back and get some rest—"
+        ],
+		"5": [
+            "Go Sleep",
+			"Hold on"
+        ],
+		"6": [
+            "Maybe I'll stay a little longer..."
+        ],
+		"7": [
+            "Can’t really sleep anyway...   \\w[30]",
+			"\\{Time for a quick workout!"
+        ],
+		"8": [
+            "\\{To avoid waking Imouto, I have to control",
+			"every movement with perfect precision!",
+			"This is the ideal training environment!"
+        ],
+		"9": [
+            "Huff—! Huff—! Huff—!",
+			"Huff—! Huff—! Huff—!"
+        ],
+		"10": [
+            "Fully focused, I knocked out several sets of ",
+			"push-ups right next to sleeping Imouto."
+        ],
+		"11": [
+            "Fully focused, I knocked out several sets of ",
+			"squats right next to sleeping Imouto."
+        ],	
+		"12": [
+            "After a tense, satisfying workout,",
+			"I can feel my muscles growing stronger…"
+        ],
+		"13": [
+            "\\nl< >\"Mmm… hmm hmm…\""
+        ],
+		"14": [
+            "Uh-oh, looks like she’s about to wake up",
+			"Better not stick around any longer...",
+			"Time to head back."
         ]		
     },	  
   "15": {
