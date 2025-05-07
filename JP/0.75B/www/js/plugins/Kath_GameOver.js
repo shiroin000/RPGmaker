@@ -196,8 +196,9 @@ BattleManager.processDefeat = function() {
 // replacement method
 Scene_Base.prototype.checkGameover = function() {
     if ($gameParty.isAllDead() && !$gameTemp._eventReserved) {
+
         if (Kath.Param.PartyDeathCommonEventID) {
-            $gameParty.reviveLeader();
+            $gameParty.leader().setHp(1);
             $gameTemp.reserveCommonEvent(Kath.Param.PartyDeathCommonEventID);
 			//$gameMap.steupCEQJ(4,1);
         } else if (!Kath.Param.PartyDeathCommonEventID) {

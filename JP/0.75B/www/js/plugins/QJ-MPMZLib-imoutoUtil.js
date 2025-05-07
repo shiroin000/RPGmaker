@@ -569,7 +569,7 @@ QJ.MPMZ.tl._imoutoDifferentStateClickEffects = function () {
     // 睡着的妹妹
     if (imouto.isStateAffected(31)) {
         if ($gameScreen.picture(1) && $gameScreen.picture(1)._name === "sister_room_night2_fine") {
-            $gameMap.event(38).start(); // 触发夜袭流程
+            $gameMap.event(7).steupCEQJ(2); // 触发夜袭流程
 			return;
         }
         if ($gameMap.mapId() === 54) {
@@ -3089,8 +3089,8 @@ QJ.MPMZ.tl._imoutoUtilSkinship = function() {
             }
         ],
         moveF: [
-            [30, 2, QJ.MPMZ.tl._imoutoUtilSkinshipAhogeDetection],
-            [30, 6, QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection]
+            [30, 1, QJ.MPMZ.tl._imoutoUtilSkinshipAhogeDetection],
+            [30, 1, QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection]
         ]
         // deadJS: ["$gameMap.event(4).steupCEQJ(1)"]
     });
@@ -3159,14 +3159,14 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
 	  }
   }
 	
-  if (TouchInput.drill_isLeftPressed()) {
+  if ( TouchInput.drill_isLeftPressed() || TouchInput.drill_isLeftTriggered() ) {
 	  
 	  this._idleTime = 0;
 	
 	if ($gameScreen.isPointerInnerPicture(20)) return;
 	
 	// 穿着T恤
-	if ($gameActors.actor(2).isStateAffected(23)) {
+	if ( $gameActors.actor(2).isStateAffected(23) && TouchInput.drill_isLeftPressed() ) {
 		
 		if ( chahuiUtil.pointInPolygo('TshirtCollar') && TouchInput.isMoved() ) {
 		 	 this._coolDown = 999;
@@ -3190,11 +3190,11 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
          return;		 
 	}
     // 乳头判定-左
-    if ( chahuiUtil.pointInCircle('tachieLeftNipple') && !TouchInput.isMoved() ) {
+    if ( chahuiUtil.pointInCircle('tachieLeftNipple') ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 let type;
-		 if (TouchInput.isMoved()) {
+		 if ( TouchInput.isMoved() && TouchInput.drill_isLeftPressed() ) {
            type = "stroke";
 		 } else {
 		   type = "poke";
@@ -3207,7 +3207,7 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 let type;
-		 if (TouchInput.isMoved()) {
+		 if ( TouchInput.isMoved() && TouchInput.drill_isLeftPressed() ) {
            type = "stroke";
 		 } else {
 		   type = "poke";
@@ -3216,7 +3216,7 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
          return;	
 	}	
     // 揉胸判定-左
-    if ( chahuiUtil.pointInCircle('tachieLeftBreast') ) {
+    if ( chahuiUtil.pointInCircle('tachieLeftBreast') && TouchInput.drill_isLeftPressed() ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 $gameVariables.setValue(10, 0);
@@ -3224,7 +3224,7 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
          return;	
 	}
     // 揉胸判定-右
-    if ( chahuiUtil.pointInCircle('tachieRightBreast') ) {
+    if ( chahuiUtil.pointInCircle('tachieRightBreast') && TouchInput.drill_isLeftPressed() ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 $gameVariables.setValue(10, 0);
@@ -3232,7 +3232,7 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
          return;		
 	}
     // 摸肚脐判定
-    if ( chahuiUtil.pointInCircle('tachieNavel') ) {
+    if ( chahuiUtil.pointInCircle('tachieNavel') && TouchInput.drill_isLeftPressed() ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 let type;
@@ -3269,7 +3269,7 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
 		 }
 	}	
     // 锁骨区域判定	
-    if ( chahuiUtil.pointInPolygo('tachieClavicle') ) {
+    if ( chahuiUtil.pointInPolygo('tachieClavicle') && TouchInput.drill_isLeftPressed() ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 let type;
@@ -3282,11 +3282,11 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
          return;		 
 	}
     // 右耳区域判定	
-    if ( chahuiUtil.pointInPolygo('tachieRightEar') ) {
+    if ( chahuiUtil.pointInPolygo('tachieRightEar') && TouchInput.isMoved() ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 let type;
-		 if (TouchInput.isMoved()) {
+		 if ( TouchInput.isMoved() && TouchInput.drill_isLeftPressed() ) {
            type = "stroke";
 		 } else {
 		   type = "poke";
@@ -3295,11 +3295,11 @@ QJ.MPMZ.tl._imoutoUtilSkinshipHitboxDetection = function() {
 		 return;
 	}	
     // 左耳区域判定	
-    if ( chahuiUtil.pointInPolygo('tachieLeftEar') ) {
+    if ( chahuiUtil.pointInPolygo('tachieLeftEar') && TouchInput.isMoved() ) {
 		 this._coolDown = 5;
 		 this._suspend = true;
 		 let type;
-		 if (TouchInput.isMoved()) {
+		 if ( TouchInput.isMoved() && TouchInput.drill_isLeftPressed() ) {
            type = "stroke";
 		 } else {
 		   type = "poke";

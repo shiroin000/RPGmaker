@@ -1185,6 +1185,7 @@ chahuiUtil.imoutoOutfitloading = function (posX, posY, bathTowel) {
             $gameScreen.showPicture(11, "imoto_tachie/mio_tachie_body", 0, posX, posY, 100, 100, 255, 0);
 			$gameScreen.showPicture(12, "imoto_tachie/mio_tachie_boobShake1", 0, posX, posY, 100, 100, 255, 0);
             $gameScreen.showPicture(13, "mio_tachie_T-shirt_nemui", 0, posX, posY, 100, 100, 255, 0);
+			$gameScreen.erasePicture(14);
             $gameScreen.showPicture(17, "mio_tachie_hand_nemui_extra", 0, posX, posY, 100, 100, 255, 0);
         } else {
             let nail = $gameVariables.value(60);

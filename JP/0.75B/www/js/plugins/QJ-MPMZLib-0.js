@@ -1872,6 +1872,7 @@ QJ.MPMZ.tl.ex_spaceTimeRift = function() {
     };
 */
 
+// 大熔岩地带-绳子判定
 QJ.MPMZ.tl.ex_ropeCollisionBox = function() {
 	
     QJ.MPMZ.Shoot({
@@ -1929,7 +1930,8 @@ QJ.MPMZ.tl.ex_checkPlayerIsOnRope = function() {
 	
 	if ( QJ.MPMZ.rangeAtk([['S', xx],['S', yy]],['B','rope'],[],['R',20,4],{anchorX:0.5,anchorY:0.86}).length == 0 ) {
 		
-		if ($gameStrings.value(20).trim() == "") {
+		if ($gameStrings.value(20).trim() == "" ) {
+			
 		$gameMap.steupCEQJ(135,1,{skipFall:true});
 		
 	   }	   
