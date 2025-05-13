@@ -1967,3 +1967,15 @@ Game_Interpreter.prototype.command352 = function() {
 	}
     return true;
 };
+
+// 为防止子弹数据被存入导致坏档而采取的措施
+  const _DM_extractSaveContents = DataManager.extractSaveContents;
+  DataManager.extractSaveContents = function(contents) {
+    _DM_extractSaveContents.call(this, contents);
+    // 读档之后，手动把它们重置为空数组或其它初始值
+    if ($gameMap) {
+      $gameMap._mapBulletsQJ = {};
+      $gameMap._mapBulletsNameQJ = {};
+	  $gameMap._mapBulletsQJLength = 0;
+    }
+};
