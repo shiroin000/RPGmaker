@@ -1,0 +1,150 @@
+{
+  "3": {
+        "0": [
+            "…Imouto is still sound asleep. ",
+			"What should I do?"
+		],
+		"1": [
+            "Wake her up",
+			"Pat her head",
+			"Leave her be"
+        ],
+        "2": [
+            "The Elixir Rubrum seemed to have improved ",
+            "my sister's condition, but I couldn’t help ",
+			"worrying that the effects might only be temporary."
+        ],
+        "3": [
+            "I gently rubbed Imouto's cheek. Maybe it ",
+            "tickled a little, she immediately made a face like ",
+			"she was trying hard to endure it."
+        ],
+        "4": [
+            "\\nl< >\"Mmm... hmm…\""
+        ],
+        "5": [
+            "\"It's morning already. Think you can get up?\""
+        ],	
+        "6": [
+            "Because of her condition, Imouto always has ",
+			"trouble waking up in the morning,",
+			"maybe I shouldn't force her to get up…?"
+        ],	
+        "7": [
+            "Keep trying",
+			"Leave her be"
+        ],	
+        "8": [
+            "\\nl< >\"Mnyaa…\"",
+			"\\nl< >\"—Onii-chan…\"",
+			"\\nl< >\"Mmm… mmhm…\""
+        ],
+        "9": [
+            "She just murmured a little and kept right on sleeping.",
+			"This kind of thing can't be rushed. ",
+			"Better let her sleep a bit longer…"
+        ],	
+        "10": [
+            "I gently patted her head."
+        ],
+        "11": [
+            "…Guess it's time to start getting breakfast ready."
+        ]		
+    },
+  "4": {
+        "0": [
+            "\"How are you feeling? ",
+			"You're not pushing yourself too hard, are you?\""
+		],
+        "1": [
+            "\\nl< >\"Mnyaa… \\w[180]I'm fine yiiiiii——\"\\w[30]\\^"
+		],
+        "2": [
+            "\"Careful!\\w[45] Seriously,\\w[45]",
+			"you’re clearly still half-asleep, aren’t you?\""
+		],
+        "3": [
+            "\"Hey~ still not fully awake?",
+			"Then Onii-chan’s gonna get serious~!\""
+		],
+        "4": [
+            "\\nl< >\"Mmmmmm…\""
+		],
+        "5": [
+            "\"Here we go———\""
+		],
+        "6": [
+            "\"Feeling more awake now?\""
+		],
+        "7": [
+            "\\nl< >\"Uweh… there’s… so many of you, Onii-chan…\""
+		],
+        "8": [
+            "\"If you're still not feeling well, ",
+			"try washing your face first.\""
+		],
+        "9": [
+            "\\nl< >\"Just carry me over… Onii-chan…\""
+		],	
+        "10": [
+            "Yikes, maybe that prank went a little too far…",
+			"Imouto still looks super dizzy."
+		],
+        "11": [
+            "\"Spin spin spin spin spin spin spin~!\""
+		],
+        "12": [
+            "\\nl< >\"Roll roll roll roll roll roll roll~!\""
+		],
+        "13": [
+            "\\nl< >\"Uweeeeh~~~~\"  \\w[120]"
+		],
+        "14": [
+            "Dizzy and dazed, Imouto flopped back onto the bed...",
+			"Huh? Did I maybe take the prank a bit too far?"
+		],	
+        "15": [
+            "Seeing that she didn’t even have the strength to ",
+			"get up, I had no choice but to give up ",
+			"and stop pushing her."
+		],	
+        "16": [
+            "\"…Guess it’s time to start making breakfast.\""
+		]			
+    },
+  "7": {
+        "0": [
+            "Hmm... I'm starting to get a little hungry. ",
+			"It's about time to make dinner."
+		],
+        "1": [
+            "\"Hey, it’s evening already. ",
+			"Time to wake up, sleepyhead. \""
+		],
+        "2": [
+            "\\nl< >\"Mmnn—\\w[60]just let me sleep for one more hour...\""
+		],
+        "3": [
+            "Imouto is still lazily lying in bed, refusing to move.",
+			"Oh dear, I guess there’s no helping it then…"
+		],
+        "4": [
+            "\"Oh, by the way, ",
+			"there's freshly fried hamburger steak tonight—\""
+		],
+        "5": [
+            "\\nl< >\"Ugh... I'm so sleepy—\""
+		],	
+        "6": [
+            "\\nl< >\"But where's the hamburger steak!? ",
+			"Where is it!?\""
+		],
+        "7": [
+            "\"Sorry, that was something ",
+			"you could only see in your dreams—\""
+		],	
+        "8": [
+            "\\nl< >\"Ehh... seriously!? That’s so mean, Onii-chan!\""
+		]			
+    }	
+}
