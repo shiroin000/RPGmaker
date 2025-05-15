@@ -14,6 +14,11 @@ SceneManager.exit = function() {
   }
 };
 // 系统功能文本需要最先载入
+DataManager._databaseFiles.unshift({
+  name: 'systemFeatureText',
+  src:  'systemFeatureText.json'
+});
+
     DataManager.loadDataFile(
       'systemFeatureText',
       'systemFeatureText.json'
@@ -59,7 +64,7 @@ SceneManager.exit = function() {
         for (let i = 0; i < this._databaseFiles.length; i++) {
             const name = this._databaseFiles[i].name;
             let src = this._databaseFiles[i].src;
-			if ( !['Enemies.json','CommonEvents.json','System.json'].includes(src) ) {
+			if ( !['systemFeatureText.json','Enemies.json','CommonEvents.json','System.json'].includes(src) ) {
             // 从 GameLanguage文件夹读取
             src = `GameLanguage${lang}/${src}`;
 			}
@@ -162,8 +167,13 @@ Scene_Boot.prototype.start = function() {
 	  $dataSystem.terms.messages['bgsVolume'] = window.systemFeatureText["BgsVolume"][String(lang)];
 	  $dataSystem.terms.messages['seVolume'] = window.systemFeatureText["SeVolume"][String(lang)];	
 	  // 适配修改游戏标题
-	  let gameTitle = window.systemFeatureText["gameTitle"][String(lang)];
-	  $dataSystem.gameTitle = $dataSystem.gameTitle.replace( /^存在感薄い妹との簡単生活/, gameTitle );
+	  const oldTitle = $dataSystem.gameTitle;  
+	  const newBaseTitle = window.systemFeatureText["gameTitle"][String(lang)];  
+	  const m = oldTitle.match(/(ver[\d.]+[A-Za-z]*)$/i);  
+	  const version = m ? m[1] : "";  
+	  $dataSystem.gameTitle = version  
+	    ? `${newBaseTitle} ${version}`  
+	    : newBaseTitle;
 	  
 	 const newTitle = $dataSystem.gameTitle;
      document.title = newTitle;
