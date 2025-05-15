@@ -171,9 +171,9 @@ Scene_Boot.prototype.start = function() {
 	  const newBaseTitle = window.systemFeatureText["gameTitle"][String(lang)];  
 	  const m = oldTitle.match(/(ver[\d.]+[A-Za-z]*)$/i);  
 	  const version = m ? m[1] : "";  
-	  $dataSystem.gameTitle = version  
-	    ? `${newBaseTitle} ${version}`  
-	    : newBaseTitle;
+	  if (version) {
+		$dataSystem.gameTitle = `${newBaseTitle} ${version}`;
+	  }
 	  
 	 const newTitle = $dataSystem.gameTitle;
      document.title = newTitle;
@@ -222,8 +222,13 @@ Scene_Map.prototype.start = function() {
 
 // 检查地图数据是否真实存在
 chahuiUtil.checkMapEventExists = function(mapId) {
+
+  $gameSelfSwitches.setValue([$gameMap.mapId(), 2, 'D'], true); 
+  return;
+
 	
   if (!this || !mapId) return;	
+  
   const fs   = require('fs');
   const path = require('path');
   // process.cwd() 在 NW.js 下就是游戏部署 exe 所在的目录
