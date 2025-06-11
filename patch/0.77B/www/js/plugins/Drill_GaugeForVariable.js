@@ -2428,7 +2428,11 @@ Drill_GFV_StyleSprite.prototype.drill_createForeground = function() {
 	if (data_b.style_id === 14 || data_b.style_id === 15) {
 	    const raw = ConfigManager.language; 
 		const lang = [0,1,2].includes(raw) ? raw : 2;
-		data_s['foreground_src'] = data_s['foreground_src'] + lang;
+  		// 若文件名末尾已是对应数字，则不再追加
+		if (!data_s.foreground_src.endsWith(String(lang))) {
+    		data_s.foreground_src += lang;
+  		}			
+		//data_s['foreground_src'] = data_s['foreground_src'] + lang;
 	}
 	
 	temp_sprite.bitmap = ImageManager.load_SpecialVariable( data_s['foreground_src'] );
