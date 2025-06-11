@@ -39,7 +39,7 @@ chahuiUtil.RefreshTitleScreenAnimation = function (type) {
 	 "peekingBath": {background: 6, video: 0},
 	 "peekingUndressing": {background: 7, video: 5},
 	 "rubEyes": {background: 2, video: 6},
-	 "hamburgerSteak": {background: 2, video: 7},
+	 "hamburgerSteak": {background: 5, video: 7},
    };
 
    // 先取消所有背景图的显示
