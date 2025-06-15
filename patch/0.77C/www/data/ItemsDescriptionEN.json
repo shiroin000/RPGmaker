@@ -447,6 +447,21 @@
             "Melee weapons temporarily enlarge&Attack up"
         ]
     },
+    "56": {
+        "name": [
+            "The Wheel of Fortune"
+        ],
+        "subtitle": [
+            "\"Soul-Gambling Roulette\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, Grants a random buff or debuff"
+        ]
+    },	
     "57": {
         "name": [
             "Justice"
