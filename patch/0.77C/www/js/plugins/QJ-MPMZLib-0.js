@@ -1934,3 +1934,39 @@ Game_Interpreter.prototype.command352 = function() {
 };
 
 
+QJ.MPMZ.tl.fixedItemDataErrors = function() {
+	
+var independentWeaponIds = [];
+if (DataManager._independentWeapons && Array.isArray(DataManager._independentWeapons)) {
+  DataManager._independentWeapons.forEach(function(weapon) {
+    if (weapon && weapon.baseItemId) {  
+      independentWeaponIds.push(weapon.baseItemId);
+    }
+  });
+}
+$gameNumberArray.setValue(66,independentWeaponIds);
+
+var independentArmorIds = [];
+if (DataManager._independentArmors && Array.isArray(DataManager._independentArmors)) {
+  DataManager._independentArmors.forEach(function(armor) {
+    if (armor && armor.baseItemId) {  
+      independentArmorIds.push(armor.baseItemId);
+    }
+  });
+}
+$gameNumberArray.setValue(67,independentArmorIds);
+
+QJ.MPMZ.Shoot({
+   img:"null1",
+   existData: [
+     { t: ['Time', 60] }  
+   ],
+   moveJS:[
+     [15,9999,"DataManager.cleanupIndependentDatabaseItems();$gameParty.cleanupIndependentPartyItems()"],
+	 [25,9999,"$gameNumberArray.value(66).forEach(function(id) {$gameParty.gainItem($dataWeapons[id], 1)})"],
+	 [25,9999,"$gameNumberArray.value(67).forEach(function(id) {$gameParty.gainItem($dataArmors[id], 1)})"]
+   ]
+});
+
+
+};
