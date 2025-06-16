@@ -1970,3 +1970,27 @@ QJ.MPMZ.Shoot({
 
 
 };
+
+//拍立得退出监听
+QJ.MPMZ.tl.polaroidModeExitListener = function() {
+
+     QJ.MPMZ.Shoot({
+        img:"null1",
+        groupName: ['polaroid'],
+        existData: [
+          { t: ["S", "Input.isPressed('cancel')||TouchInput.isCancelled() || Input.drill_isKeyPressed('esc')", true],a: ["C", 267] }  
+        ],
+        moveJS: [
+         [4, 4, `
+         let pictureIds = [22,23,24,25,26,27,28,29,30,31,32,33];
+         pictureIds.forEach(id => {
+           const pic = $gameScreen.picture(id);
+           if (pic && pic.drill_PDr_isDraging()) {
+             pic.drill_PLAZ_restore();
+             pic.drill_PLAZ_setZIndex(99);
+           }
+         });
+       `]
+	   ]
+    });
+};
