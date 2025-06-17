@@ -211,5 +211,16 @@
 			"A newer patch is available—",
 			"Please use auto-update to fix the issue!"
 		]	
+    },
+  "bagFull": {
+        "0": [
+            "超出背包上限！！"
+		],	  
+        "1": [
+            "所持上限超過！！"
+		],
+        "2": [
+            "Inventory limit exceeded!!"
+		]	
     }	
 }

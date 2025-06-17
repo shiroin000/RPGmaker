@@ -2273,8 +2273,38 @@ Game_Party.prototype.cleanupIndependentPartyItems = function() {
     }
 };
 
+/*========================================================================
 
+ ========================================================================*/
+(function() {
+  const _loadIndependentItems = DataManager.loadIndependentItems;
+  DataManager.loadIndependentItems = function() {
 
-//=============================================================================
-// End of File
-//=============================================================================
+    _loadIndependentItems.call(this);          
+
+    /* ---------- 把旧物品写回正确 id ---------- */
+    const reIndex = (db, list) => {
+      if (!Array.isArray(list)) return;
+      list.forEach(item => {
+        if (!item) return;                     // 跳过 null
+        while (db.length <= item.id) db.push(null);
+        db[item.id] = item;                    // “下标 = id”
+      });
+    };
+    reIndex($dataItems,   this._independentItems);
+    reIndex($dataWeapons, this._independentWeapons);
+    reIndex($dataArmors,  this._independentArmors);
+
+    // 清除多余的物品对象数据
+    const sanitize = db => {
+      for (let i = 0; i < db.length; i++) {
+        const it = db[i];
+        if (it && it.id !== i) db[i] = null;   // 仅保留正确槽位
+      }
+    };
+
+    sanitize($dataWeapons);
+    sanitize($dataArmors);
+  };
+})();
+

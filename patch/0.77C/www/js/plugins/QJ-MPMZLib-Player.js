@@ -275,6 +275,79 @@ QJ.MPMZ.tl.ex_playerDropsValueChange = function(item) {
     }
 };
 
+// 背包大小描述
+QJ.MPMZ.tl.ex_playerCheckInventory = function(type) {
+
+  const MAP = {
+    weapon: {
+      pool     : () => $gameParty._weapons,               // 所有武器实例
+      capacity : () => $gameParty.leader()._weaponAmountLimit
+                   +  $gameParty.leader()._weaponAmountBonus
+    },
+    gear  : {
+      pool     : () => $gameParty._armors,                // 所有防具实例
+      capacity : () => $gameParty.leader()._armorAmountLimit
+                   +  $gameParty.leader()._armorAmountBonus
+    }
+  };
+
+  const cfg = MAP[type];
+  if (!cfg) return "";
+   
+  // 统计数量 / 上限
+  const currentValue  = Object.values(cfg.pool()).length;
+  const maximumValue  = cfg.capacity();
+  const rate          = currentValue / maximumValue;
+	
+  // 颜色与超限提示
+  let color = 6, extraDesc = "";
+  if (rate >= 0.5) color = 14;
+  if (rate >= 0.7) color = 2;
+  if (rate >= 1) {
+    color = 10;
+    let lang = ConfigManager.language;
+    extraDesc = "\\fs[18]\\c[10]" + window.systemFeatureText.bagFull[String(lang)];
+  }
+
+  return `\\{\\c[${color}]${currentValue}\\c[0]/${maximumValue}  ${extraDesc}`;
+};
+
+// 技能描述生成
+QJ.MPMZ.tl.ex_playerSetSkillDescription = function(item) {
+
+    if (!window.skillDescription) return "";
+	let lines = [];
+    let skillId = item.id;
+	let skill = window.skillDescription[String(skillId)];
+	if (!skill) return "";
+	
+    let fontSize = "\\fs[18]";
+    if (ConfigManager.language >= 2) fontSize = "\\fs[16]";	
+	let skillName = skill.name;
+	let skillLevel = "";
+	lines.push(`\\c[27]\\fs[28]${skillName}${skillLevel}\\c[0]\\py[16]`);
+	// 导入描述文本
+	let descriptionArray = skill.description;
+    let template = fontSize + "%TEXT%";
+    descriptionArray = descriptionArray.map(t => template.replace("%TEXT%", t));	
+	descriptionArray[0] = "\\fr•" + descriptionArray[0];
+	lines.push(...descriptionArray);
+
+    // 技能特殊效果
+     if (skill["ability"].length >= 1 && skill["ability"][0] !== "") {
+       let abilityArray = skill["ability"];
+       let template = "\\fr•\\c[108]" + fontSize + "%TEXT%";
+       abilityArray = abilityArray.map(t => template.replace("%TEXT%", t));
+       lines.push(...abilityArray);
+    }
+	
+	let combinedText = lines.join("\n");
+    return combinedText;
+
+};
+
+
+// 物品、武器、装备描述生成
 QJ.MPMZ.tl.ex_playerSetItemDescription = function(item) {
     // 保险措施
     if (!item) return "";
@@ -1619,7 +1692,7 @@ QJ.MPMZ.tl.ex_playerAttributeRefresh = function() {
 //玩家水中检查
 QJ.MPMZ.tl.ex_playerSwimmingCheck = function() {  
 
-    if (!$gamePlayer._drill_EASA_enabled) return;
+    if (!this || !$gamePlayer._drill_EASA_enabled) return;
 
 	var playerX = Math.floor($gamePlayer.centerRealX());
 	var playerY = Math.floor($gamePlayer.centerRealY());
