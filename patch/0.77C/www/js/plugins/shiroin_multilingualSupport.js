@@ -67,7 +67,7 @@ DataManager._databaseFiles.unshift({
         for (let i = 0; i < this._databaseFiles.length; i++) {
             const name = this._databaseFiles[i].name;
             let src = this._databaseFiles[i].src;
-			if ( !['systemFeatureText.json','Enemies.json','CommonEvents.json','System.json','Weapons.json','Armors.json','Items.json'].includes(src) ) {
+			if ( !['systemFeatureText.json','Enemies.json','CommonEvents.json','System.json','Items.json'].includes(src) ) {
             // 从 GameLanguage文件夹读取
             src = `GameLanguage${lang}/${src}`;
 			}
@@ -225,6 +225,11 @@ Scene_Boot.prototype.start = function() {
       'prototypeEventTemplate',
       `MapEventDialogue${langKey}001.json`
     );
+    // 加载多语言技能文本
+    /*DataManager.loadDataFile(
+      'skillDescription',
+      `skillDescription${langKey}.json`
+    );*/	
     // 加载多语言物品文本
     DataManager.loadDataFile(
       'itemsDescription',
