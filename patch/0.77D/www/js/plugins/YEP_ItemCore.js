@@ -2276,35 +2276,115 @@ Game_Party.prototype.cleanupIndependentPartyItems = function() {
 /*========================================================================
 
  ========================================================================*/
+/*===========================================================================*
+ *  Independent Item Fix -- Reindex + Template-Stub + Fail-Safe (all-in-one) *
+ *===========================================================================*/
 (function() {
-  const _loadIndependentItems = DataManager.loadIndependentItems;
-  DataManager.loadIndependentItems = function() {
+//---------------------------------------------------------------------
+// 0. failsafe：任何意外空元素都会被过滤掉
+//---------------------------------------------------------------------
+const _traits = Game_BattlerBase.prototype.traits;
+Game_BattlerBase.prototype.traits = function(code) {
+  return _traits.call(this, code).filter(Boolean);  // 跳过 undefined/null
+};
 
-    _loadIndependentItems.call(this);          
+//---------------------------------------------------------------------
+// 1. 在数据库完全载入后，抓取 300 号模板做深拷贝
+//---------------------------------------------------------------------
+let weaponTemplate, armorTemplate;
 
-    /* ---------- 把旧物品写回正确 id ---------- */
-    const reIndex = (db, list) => {
-      if (!Array.isArray(list)) return;
-      list.forEach(item => {
-        if (!item) return;                     // 跳过 null
-        while (db.length <= item.id) db.push(null);
-        db[item.id] = item;                    // “下标 = id”
-      });
-    };
-    reIndex($dataItems,   this._independentItems);
-    reIndex($dataWeapons, this._independentWeapons);
-    reIndex($dataArmors,  this._independentArmors);
+const _isDBLoaded = DataManager.isDatabaseLoaded;
+DataManager.isDatabaseLoaded = function() {
+  if (!_isDBLoaded.call(this)) return false;
+  if (weaponTemplate === undefined) {
+    weaponTemplate = clone($dataWeapons[300]);
+    armorTemplate  = clone($dataArmors[300]);
+  }
+  return true;
+};
 
-    // 清除多余的物品对象数据
-    const sanitize = db => {
-      for (let i = 0; i < db.length; i++) {
-        const it = db[i];
-        if (it && it.id !== i) db[i] = null;   // 仅保留正确槽位
-      }
-    };
+// 深拷贝工具
+function clone(obj) {
+  return obj ? JSON.parse(JSON.stringify(obj)) : undefined;
+}
 
-    sanitize($dataWeapons);
-    sanitize($dataArmors);
+//---------------------------------------------------------------------
+// 2. 重写 loadIndependentItems：迁移 → 去重 → 填充占位壳
+//---------------------------------------------------------------------
+const _loadIndItems = DataManager.loadIndependentItems;
+DataManager.loadIndependentItems = function() {
+
+  _loadIndItems.call(this);                 // 先跑原始流程
+
+  // --- 2-1 旧独立物品回到正确 id ---
+  const reIndex = (db, list) => {
+    if (!Array.isArray(list)) return;
+    list.forEach(item => {
+      if (!item) return;
+      while (db.length <= item.id) db.push(null);
+      db[item.id] = item;
+    });
   };
-})();
+  reIndex($dataItems,   this._independentItems);
+  reIndex($dataWeapons, this._independentWeapons);
+  reIndex($dataArmors,  this._independentArmors);
+
+  // --- 2-2 清掉错位副本 ---
+  const sanitize = db => {
+    for (let i = 0; i < db.length; i++) {
+      const it = db[i];
+      if (it && it.id !== i) db[i] = null;
+    }
+  };
+  sanitize($dataWeapons);
+  sanitize($dataArmors);
+
+  // --- 2-3 null → 占位壳（取模板深拷贝；若无模板则兜底） ---
+  fillStubs($dataWeapons, makeWeaponStub);
+  fillStubs($dataArmors,  makeArmorStub);
+};
+
+//---------------------------------------------------------------------
+// 3. 生成占位壳
+//---------------------------------------------------------------------
+function fillStubs(db, builder) {
+  for (let i = 0; i < db.length; i++) {
+    if (db[i] == null) db[i] = builder(i);
+  }
+}
+
+function makeWeaponStub(id) {
+  let w = clone(weaponTemplate);
+  if (!w) {                                // 模板不存在 → 兜底
+    w = {
+      id, animationId:0, description:'', etypeId:1, traits:[],
+      iconIndex:0, name:'', note:'', params:[0,0,0,0,0,0,0,0],
+      price:0, wtypeId:0, meta:{}
+    };
+  }
+  w.id = id;               // 保证下标＝id
+  w.name = '';
+  w.description = '';
+  w.meta = {};
+  return w;
+}
+
+function makeArmorStub(id) {
+  let a = clone(armorTemplate);
+  if (!a) {
+    a = {
+      id, description:'', etypeId:2, atypeId:0, traits:[],
+      iconIndex:0, name:'', note:'', params:[0,0,0,0,0,0,0,0],
+      price:0, meta:{}
+    };
+  }
+  a.id = id;
+  a.name = '';
+  a.description = '';
+  a.meta = {};
+  return a;
+}
+
+})();   // ⬅ 立即执行封装
+
 
