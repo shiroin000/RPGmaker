@@ -67,7 +67,7 @@ DataManager._databaseFiles.unshift({
         for (let i = 0; i < this._databaseFiles.length; i++) {
             const name = this._databaseFiles[i].name;
             let src = this._databaseFiles[i].src;
-			if ( !['Classes.json','systemFeatureText.json','Enemies.json','CommonEvents.json','Skills.json','System.json','Weapons.json','Armors.json','Items.json'].includes(src) ) {
+			if ( ['States.json'].includes(src) ) {
             // 从 GameLanguage文件夹读取
             src = `GameLanguage${lang}/${src}`;
 			}

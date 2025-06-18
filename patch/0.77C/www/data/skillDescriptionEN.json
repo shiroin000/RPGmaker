@@ -1,4 +1,8 @@
 {
+	"skillToggle": [
+            "Activated",
+			"Inactive"
+    ],	
     "1": {
         "name": [
             "Magic Storage Bag"
@@ -98,7 +102,7 @@
             "Breath Concealment"
         ],
         "subtitle": [
-		    ""
+		    "true"
 		],
         "description": [
             "A ninja technique. I only picked it up in a rush, but…",
@@ -115,7 +119,7 @@
             "Backstab"
         ],
         "subtitle": [
-		    ""
+		    "true"
 		],
         "description": [
             "A ninja technique. Can be activated while in stealth",
@@ -148,7 +152,7 @@
             "Swordsmanship Training"
         ],
         "subtitle": [
-		    ""
+		    "true"
 		],
         "description": [
             "Sought advice from a swordmaster girl on how to get stronger",

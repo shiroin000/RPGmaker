@@ -309,7 +309,7 @@ QJ.MPMZ.tl.ex_playerCheckInventory = function(type) {
     extraDesc = "\\fs[18]\\c[10]" + window.systemFeatureText.bagFull[String(lang)];
   }
 
-  return `\\{\\c[${color}]${currentValue}\\c[0]/${maximumValue}  ${extraDesc}`;
+  return `\\c[${color}]${currentValue}\\c[0]/${maximumValue}  ${extraDesc}`;
 };
 
 // 技能描述生成
@@ -325,7 +325,17 @@ QJ.MPMZ.tl.ex_playerSetSkillDescription = function(item) {
     if (ConfigManager.language >= 2) fontSize = "\\fs[16]";	
 	let skillName = skill.name;
 	let skillLevel = "";
-	lines.push(`\\c[27]\\fs[28]${skillName}${skillLevel}\\c[0]\\py[16]`);
+	// 技能等级显示
+	if (skill.subtitle && skill.subtitle.join() === "true") {
+		skillLevel = QJ.MPMZ.tl.playerSkillLevelDisplay(skillId);  
+	}
+	// 技能开关状态
+	if (item.animationId > 0) {
+	let skillToggle = item.animationId - 1;
+	    skillToggle = window.skillDescription["skillToggle"][String(skillToggle)];
+	    skillLevel += `  \\fr\\fs[18]<${skillToggle}>`;
+	}
+	lines.push(`\\c[27]\\fs[28]${skillName} ${skillLevel}\\c[0]\\py[16]`);
 	// 导入描述文本
 	let descriptionArray = skill.description;
     let template = fontSize + "%TEXT%";

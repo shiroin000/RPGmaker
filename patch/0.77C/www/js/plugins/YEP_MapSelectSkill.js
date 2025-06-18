@@ -395,6 +395,7 @@ Window_MapSelectSkill.prototype.setup = function(varId, actorId, stypeId) {
     this.refresh();
     this.activate();
     this.open();
+	this.select(-1);
     this.select(0);
 };
 
