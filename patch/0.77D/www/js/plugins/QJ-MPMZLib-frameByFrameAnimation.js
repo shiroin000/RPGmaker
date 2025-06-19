@@ -1551,3 +1551,48 @@ QJ.MPMZ.tl._nightVisitImoutoAhogeMonster = function() {
 		this.setDead();
 	}	
 };
+
+
+QJ.MPMZ.tl._batchProcessImageZoomEffects = function (picIds, targetX, targetY, scale) {
+	
+    const DURATION = 30;               
+
+    // 判断参数是否为有限数字
+    const hasX     = Number.isFinite(targetX);
+    const hasY     = Number.isFinite(targetY);
+    const hasScale = Number.isFinite(scale);
+
+    picIds.forEach(id => {
+        const pic = $gameScreen.picture(id);
+        if (!pic) return;              // 槽位为空时直接跳过
+
+        const cmdTank = pic._drill_PSh_commandChangeTank;
+
+        if (hasX) {
+            cmdTank.push({
+                type : 'posX',
+                value: targetX - pic._x,
+                time : DURATION,
+            });
+        }
+        if (hasY) {
+            cmdTank.push({
+                type : 'posY',
+                value: targetY - pic._y,
+                time : DURATION,
+            });
+        }
+        if (hasScale) {
+            cmdTank.push({
+                type : 'scaleX',
+                value: scale - pic._scaleX,
+                time : DURATION,
+            });
+            cmdTank.push({
+                type : 'scaleY',
+                value: scale - pic._scaleY,
+                time : DURATION,
+            });
+        }
+    });
+};
