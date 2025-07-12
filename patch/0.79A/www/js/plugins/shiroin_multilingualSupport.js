@@ -431,7 +431,7 @@ chahuiUtil.multilingualCompatibleDisplayText = function(textArray) {
 	  $gameMap._mapBulletsQJLength = 0;
 
 	// 因多语言模块不写入存档，每次读档必须重新加载
-	const allowMap = [4,21];
+	const allowMap = [4,11,21];
     const mapId = $gameMap.mapId();
 	if (allowMap.includes(mapId)) {
     const key = 'MapEventDialogue' + mapId; 
