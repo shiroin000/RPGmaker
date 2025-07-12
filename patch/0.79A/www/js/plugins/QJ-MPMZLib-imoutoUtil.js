@@ -951,7 +951,7 @@ QJ.MPMZ.tl._imoutoUtilCheckInitialization = function(forbid) {
         $gameVariables.setValue(1, 0);
     } else if (titleText.includes("存在感薄い妹との簡単生活")) {
         $gameVariables.setValue(1, 1);
-    } else if (titleText.includes("A Simple Life with My Unobtrusive Sister")) {
+    } else {
         $gameVariables.setValue(1, 2);
     }
     // 重置鼠标指针
