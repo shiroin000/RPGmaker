@@ -14,7 +14,7 @@ SceneManager.exit = function() {
   }
 };
 
-const LANG_CODE = ["CN", "JP", "EN", "RU"];
+const LANG_CODE = ["CN", "JP", "EN", "RU", "FR"];
 
 // 系统功能文本需要最先载入
 DataManager._databaseFiles.unshift({
@@ -116,7 +116,10 @@ DataManager._databaseFiles.unshift({
   const _DM_loadMapData = DataManager.loadMapData;
   DataManager.loadMapData = function(mapId) {
     // 多语言适配
-    const lang = ConfigManager.language;
+    let lang = ConfigManager.language;
+	
+	// 多语言模块建设完成前，以英语版为主
+	if (lang === 3) lang = 2;
 
     if (mapId > 0) {
 
@@ -127,7 +130,7 @@ DataManager._databaseFiles.unshift({
           filename = `GameLanguage${lang}/Map${padded}.json`;
 		}
 	  // 开发者用
-	  //if (Utils.isOptionValid("test")) filename = `Map${padded}.json`;
+	  if (Utils.isOptionValid("test")) filename = `Map${padded}.json`;
 		
       this._mapLoader = ResourceHandler.createLoader(
         'data/' + filename,
@@ -586,8 +589,8 @@ DataManager.reloadLanguage = async function(needSave=false){
        }
    }
   if ($gameMap && $gameMap.mapId() > 0) {
-  const mark = 'MapEventDialogue' + $gameMap.mapId(); 
-  if (window[mark]) chahuiUtil.loadMapEventDialogue(); 
+      const mark = 'MapEventDialogue' + $gameMap.mapId(); 
+      if (window[mark]) chahuiUtil.loadMapEventDialogue(); 
   }
 
   /*  批量加载多语 JSON --------------------------------------*/
@@ -647,14 +650,15 @@ chahuiUtil.loadMapEventDialogue = function (Specified) {
   const mapIdPad = String(mapIdRaw).padStart(3, '0'); // "004"
   const key      = `MapEventDialogue${mapIdRaw}`;     // window 变量
 
-  // ① 英文基准，保证一定有
+  // 小语种默认加载英语
+  if (Specified > 2) {
   extraJsonLoad(key, `data/EN/MapEventDialogueEN${mapIdPad}.json`, {});
+  }
 
   // ② 目标语言（可能缺）
-  const ln = ["CN","JP","EN","RU"][Specified] || "EN";
-  if (ln !== "EN") {
-    extraJsonLoad(key, `data/${ln}/MapEventDialogue${ln}${mapIdPad}.json`, {});
-  }
+  const ln = LANG_CODE[Specified] || "EN";
+  extraJsonLoad(key, `data/${ln}/MapEventDialogue${ln}${mapIdPad}.json`, {});
+ 
 };
 
 // 动态变化状态描述文本
