@@ -4327,6 +4327,7 @@ Window_FileCommand.prototype.createBackgroundSprite = function() {
     let com = this.mode();
 
     let lang = ConfigManager.language;
+	if (lang > 2) lang = 2;
 	
     if (com === 'save') {
 		let imgName = 'saveCommand' + lang;
