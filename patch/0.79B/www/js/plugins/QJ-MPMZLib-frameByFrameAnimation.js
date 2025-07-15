@@ -5,6 +5,43 @@
  */
 //=============================================================================
 
+
+QJ.MPMZ.tl._imoutoUtilImoutoSoloPlay = function () {
+	
+	this._coolDown = this._coolDown || 0;	
+	if (this._coolDown > 0) {
+	   this._coolDown -= 1;
+	   return;
+	}
+
+	this._frames = this._frames || 0;
+	
+	let IMG = "alt_sister_normal_hand" + this._frames;
+	$gameScreen.showPictureFromPath(8, "game_itazura", IMG, 0, 0, 0, 100, 100, 255, 0);	
+	
+	if (this._frames >= 6) {
+		this._coolDown = Math.randomInt(4) + 2;
+		this._frames -= 1;
+		this._upend = true;
+		return;
+	}
+
+	if (this._upend && this._frames <= 0) {
+		this._coolDown = Math.randomInt(4) + 2;
+		this._frames += 1;
+		this._upend = false;
+		return;
+	}
+	
+	if (this._upend) {
+		this._frames -= 1;
+	} else {
+		this._frames += 1;
+	}
+    this._coolDown = Math.randomInt(4) + 2;	
+};
+
+// 洗面所偷窥妹妹脱衣服拉门监听
 QJ.MPMZ.tl._imoutoUtilDragToOpenWashroomDoorDetection = function (Reverse) {
 
     const pic = $gameScreen.picture(50);

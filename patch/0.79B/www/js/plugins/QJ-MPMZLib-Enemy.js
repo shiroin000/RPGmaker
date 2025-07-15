@@ -87,7 +87,9 @@ QJ.MPMZ.tl.ex_toEnemyAttack = function (weaponDamage, attackData = {}, args) {
         case 2:
           // 拳套/棍棒类
           let srandomSeName = ["ボグッ（殴る音・弱）", "ボグッ（殴る音・中）"];
-          seNames = srandomSeName[Math.floor(Math.random() * srandomSeName.length)];
+		  // 玩具锤音效
+		  if (weaponData.id === 40)  srandomSeName = ["ピコピコハンマーで軽く叩いた音", "ピコピコハンマーで強めに叩いた音", "ピコピコハンマーの音１（少し強め）"];
+          seNames = srandomSeName[Math.floor(Math.random() * srandomSeName.length)];		  
           hitImg = 'EVFX03_20_TerminusStrike[5,4,1]';
           time = 19;
           posX = args.target.screenBoxXShowQJ();
@@ -138,7 +140,9 @@ QJ.MPMZ.tl.ex_toEnemyAttack = function (weaponDamage, attackData = {}, args) {
 	  	  
       // 受击音效
       let randomPitch = Math.randomInt(40) + 81;
-      AudioManager.playSe({ name: seNames, volume: 50, pitch: randomPitch, pan: 0 });
+	  let volumeValue = 50;
+	  if (weaponData.id === 40)  volume = 90;
+      AudioManager.playSe({ name: seNames, volume: volumeValue, pitch: randomPitch, pan: 0 });
 
       // 受击动画
       let angle = Math.randomInt(360);
@@ -165,7 +169,7 @@ QJ.MPMZ.tl.ex_toEnemyAttack = function (weaponDamage, attackData = {}, args) {
     if (weaponDamage > 0) {
 		
 		args.target.requestAnimation(141);
-        AudioManager.playSe({ name: "Damage5", volume: 40, pitch: 80+Math.randomInt(40), pan: 0 });
+        AudioManager.playSe({ name: "Damage5", volume: 20, pitch: 80+Math.randomInt(40), pan: 0 });
 		
 	 // 伤害输入预处理-敌人标签识别
       let realDamage = QJ.MPMZ.tl.getEnemyRaceDamageFactor(weaponDamage, args.target);

@@ -125,7 +125,7 @@ DataManager._databaseFiles.unshift({
 
       const padded = String(mapId).padStart(3, '0');
 	  let filename = `Map${padded}.json`;
-	  const mapIdArray = [2,10,11,21,26,28,33,36,37,47,48,49,51,52,54,55];
+	  const mapIdArray = [2,10,11,14,21,26,28,33,36,37,45,47,48,49,51,52,54,55];
 	    if ( !mapIdArray.includes(mapId) ) {
           filename = `GameLanguage${lang}/Map${padded}.json`;
 		}
@@ -200,6 +200,13 @@ DataManager.loadSpawnMapData = function(mapId) {
                                  "Пожалуйста, наберитесь терпения и дождитесь следующих обновлений и дополнений."];
 						text = text.join('\n');
                     alert(text);							 
+				} else if (ConfigManager.language === 4) {
+				    let text =  ["La version française est en cours de traduction. ",
+                                 "Cette option sert uniquement d’annonce pour le moment.",
+                                 "Merci de patienter pour les prochaines mises à jour !"];
+						text = text.join('\n');
+                    alert(text);
+                    ConfigManager.language = 2;					
 				}
 				DataManager.reloadLanguage(true);				
          } 
@@ -583,7 +590,11 @@ DataManager.reloadLanguage = async function(needSave=false){
            case 3:                             // 俄语
                DrillUp.g_DFF_fontFace = "Huninn";
                break;
-
+			   
+           case 4:                             // 法语
+               DrillUp.g_DFF_fontFace = "Huninn";
+               break;
+			   
            default:                            // 日语、英语等
                DrillUp.g_DFF_fontFace = "FOT-NewCinemaA Std D";
        }

@@ -284,6 +284,14 @@ QJ.MPMZ.tl.ex_playerDropsValueChange = function(item) {
 
 // 背包大小描述
 QJ.MPMZ.tl.ex_playerCheckInventory = function(type) {
+	
+  //保险
+  if ($gameParty.leader()._weaponAmountBonus < 0) {
+	  $gameParty.leader()._weaponAmountBonus = 0;
+  }
+  if ($gameParty.leader()._armorAmountBonus < 0) {
+	  $gameParty.leader()._armorAmountBonus = 0;
+  }
 
   const MAP = {
     weapon: {

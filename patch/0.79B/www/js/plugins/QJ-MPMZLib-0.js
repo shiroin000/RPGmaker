@@ -170,7 +170,7 @@ QJ.MPMZ.tl.ex_mapThemeNameFadeIn = function() {
     }
 
     // 语言索引	
-    let lang = $gameVariables.value(1);
+    let lang = ConfigManager.language;
 	if (lang > 2) lang = 2;
 	
 

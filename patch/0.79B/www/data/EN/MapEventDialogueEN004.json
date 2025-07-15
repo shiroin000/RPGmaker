@@ -216,272 +216,288 @@
     },	
   "10": {
         "0": [
-            "我开动了——"
+            "itadakimasu——"
 		],
 		"1": [
-            "噗哈——"
+            "Puhah—"
         ],
 		"2": [
-            "诶嘿嘿..."
+            "Ehehe..."
         ],
 		"3": [
-            "刚洗完澡的妹妹，一口气喝光了一整瓶牛奶……"
+            "My Imouto, fresh out of the bath, ",
+			"downed an entire bottle of milk in one go..."
         ]		
     },		
   "13": {
         "0": [
-            "……哥哥？",
-			"嗯？怎么了？"
+            "…Onii-chan?",
+            "Hm? What's up?"
 		],
 		"1": [
-            "\\nl< >「哥哥真是粗心大意呢！",
-			"偷窥又被发现了哟！」"
+            "\\nl< >\"You're so careless, Onii-chan!",
+            "Caught peeking again!\""
         ],
         "2": [
-            "\\nl< >「……哥哥大色鬼。」"
+            "\\nl< >\"...Onii-chan, you perv.\""
         ],
         "3": [
-            "\\nl< >「哥哥、在盯着哪看呢？」"
+            "\\nl< >\"Onii-chan, where are you staring at?\""
         ],
         "4": [
-            "\\nl< >「擦头发擦累了…哥哥、帮帮忙嘛〜」"
+            "\\nl< >\"Drying my hair is tiring... ",
+			"Onii-chan, give me a hand~\""
         ],
         "5": [
-            "\\nl< >「怎么了、哥哥？」"
+            "\\nl< >\"What's wrong, Onii-chan?\""
         ],	
         "6": [
-            "看着妹妹有些无聊地擦头发的模样，我不禁有了一些想法……   \\w[60]",
-			"好！让我来给妹妹吹干头发吧！"
+            "Watching my Imouto idly drying her hair got me thinking... \\w[60]",
+            "Alright! Let me help her dry it!"
         ],
         "7": [
-            "\\nl< >「……哥哥？」"
+            "\\nl< >\"...Onii-chan?\""
         ],
         "8": [
-            "「让哥哥来帮你吹干吧。平时自己打理很辛苦吧？」"
+            "\"Let me dry it for you. ",
+			"Must be tiring doing it all by yourself, right?\""
         ],
         "9": [
-            "我俯下身子，一手拿着吹风机，一手轻轻托起妹妹的一缕发丝。",
-			"虽然她已经用毛巾擦过一遍，但那缠绕指尖的湿润仍清晰可感。"
+            "I leaned forward, holding the dryer in one hand, ",
+			"and gently lifted a strand of her hair with the other.",
+            "Even though she'd already toweled it off, ",
+			"the dampness was still clearly felt between my fingers."
         ],
         "10": [
-            "「好了、低下头吧，要吹咯！」"
+            "\"Alright, lower your head. Time to dry!\""
         ],
         "11": [
-            "\\nl< >「嗯〜」"
+            "\\nl< >\"Mm〜\""
         ],
         "12": [
-            "我打开吹风机，开始小心地向手里吹着热风。"
+            "I turned on the dryer and carefully blew warm air ",
+			"into my hand."
         ],
         "13": [
-            "妹妹低着头，静静地闭着眼睛摆弄着手指，",
-			"从我这边看不太清她的表情，但感觉她似乎有什么想说的——"
+            "With her head down, she quietly fiddled with her fingers,",
+            "I couldn’t see her expression from this angle, ",
+			"but it felt like she wanted to say something—"
         ],
         "14": [
-            "已经有多久没有这样和妹妹安静地相处了呢？",
-			"不知为何，记忆开始变得有些模糊了。"
+            "How long has it been since we spent time like ",
+			"this together so peacefully?",
+            "For some reason, my memories began to blur."
         ],
         "15": [
-            "「头发、已经很长了呢，",
-			"记得小时候还没有这么长……」"
+            "\"Your hair's gotten so long.",
+            "I remember it wasn’t this long when you were little...\""
         ],
         "16": [
-            "\\nl< >「嗯……哥哥是喜欢短发吗？」"
+            "\\nl< >\"Hmm... Do you prefer short hair, Onii-chan?\""
         ],		
         "17": [
-            "「长度吗…果然还是很喜欢长发吧？",
-			"不能浪费了这么漂亮的头发呢。」"
+            "\"Length, huh... I still really like long hair.",
+            "It would be a waste not to treasure such beautiful hair.\""
         ],
         "18": [
-            "毕竟，",
-			"那可是妹妹从小细心养护、健康长大的证明啊。"
+            "After all,it's proof of how carefully you've cared for it ",
+			"and how healthy you've grown since you were little."
         ],
         "19": [
-            "\\nl< >「嘿嘿……被哥哥夸奖了……」"
+            "\\nl< >\"Hehe... Onii-chan praised me...\""
         ],
         "20": [
-            "就这么和妹妹闲聊着，妹妹的头发逐渐变得干爽起来了。"
+            "As we chatted, her hair gradually became nice and dry."
         ],
         "21": [
-            "\\nl< >「哥哥……明天还是会继续去探索吗？」"
+            "\\nl< >\"Onii-chan... ",
+			"are you heading back out to explore tomorrow?\""
         ],
         "22": [
-            "「——怎么了？」"
+            "\"—What's wrong?\""
         ],
         "23": [
-            "妹妹看起来有些扭扭捏捏的，",
-			"但从这个角度看不清她的表情，",
-			"映入眼帘的，只有那被浴巾紧紧包裹的饱满曲线，",
-			"让我一时不知该将视线放在哪里才好。"
+            "She looked a bit bashful,",
+            "but I couldn’t make out her face from this angle.",
+            "All I could see were the full curves tightly wrapped in her towel,",
+            "making it hard to know where to rest my eyes."
         ],
         "24": [
-            "妹妹突如其来的提问让我一瞬间分了心，",
-			"握着吹风机的右手下意识地朝着旁边移动，然后——"	
+            "Her sudden question made me lose focus for a second,",
+            "and my right hand holding the dryer shifted slightly ",
+			"to the side, then—"
         ],
         "25": [
-            "「……………！？」"
+            "\"………!?\""
         ],
         "26": [
-            "妹妹睡衣的肩带被强劲的风流吹动，",
-			"从肩膀处快速地滑落下去了。"
+            "The strong airflow from the dryer blew the strap of her pajamas,",
+            "causing it to swiftly slide off her shoulder."
         ],
         "27": [
-            "\\nl< >「因为游戏更新了，有两个人一起的玩法内容了   \\w[90]",
-			"明天、想和哥哥一起玩……」"	
+            "\\nl< >\"The game updated, and there's new content we can play together   \\w[90]",
+            "So tomorrow... I want to play with you, Onii-chan...\""
         ],
         "28": [
-            "\\nl< >「会不会让哥哥感觉困扰了……」"
+            "\\nl< >\"Would that bother you...?\""
         ],
         "29": [
-            "妹妹那撒娇的模样格外惹人怜爱，",
-			"让我不由自主地露出了会心的微笑。"
+            "Her coy, affectionate expression was irresistibly adorable,",
+            "and I couldn’t help but smile."
         ],
         "30": [
-            "「好啊、明天我会早点回来的，到时一起来玩吧。」"
+            "\"Sure, I’ll come back early tomorrow. Let’s play together then.\""
         ],
         "31": [
-            "妹妹似乎正认真地说着什么重要的话，",
-			"但我的注意力早已被那抹桃色所彻底夺走，",
-			"根本听不进去她的声音。"
+            "She seemed to be saying something really important,",
+            "but my attention was completely stolen by that pinkish hue,",
+            "and I didn’t catch a word of what she said."
         ],
         "32": [
-            "「困扰吗…说的好像也是呢……」"
+            "\"Bothersome... yeah, I guess you could say that...\""
         ],
         "33": [
-            "我死死地盯着妹妹无意泄漏出来的春光，",
-			"这个状况确实让哥哥感到很困扰呢。"			
+            "I stared hard at the glimpse of skin she accidentally revealed,",
+            "and yeah, Onii-chan really is troubled right now."		
         ],
         "34": [
-            "\\nl< >「这样啊……」"		
+            "\\nl< >\"I see...\""		
         ],	
         "35": [
-            "「——！！！」"		
+            "\"—!!!\""		
         ],	
         "36": [
-            "听到妹妹语气中明显透着一丝难过，我终于冷静了下来。",
-			"手忙脚乱地装作若无其事，一边替她整理好衣服，一边轻声安慰着。"
+            "Hearing the sadness in her voice snapped me back to reality.",
+            "Panicking, I quickly pretended nothing happened, ",
+			"gently fixing her clothes while speaking softly to reassure her."
         ],	
         "37": [
-            "「一起玩是吗…！很不错呢！",
-			"明天就一起玩吧！我会早点回来的噢！」"
+            "\"You want to play together...? That sounds great!",
+            "Let’s do that tomorrow! I’ll be home early!\""
         ],
         "38": [
-            "\\nl< >「真的吗？那约定好了呢！」"		
+            "\\nl< >\"Really? It’s a promise then!\""		
         ],	
         "39": [
-            "「……约好了！」"		
+            "\"...It’s a promise!\""		
         ],
         "40": [
-            "在妹妹为新的约定感到开心时，",
-			"头发也刚好顺利吹干了。"
+            "As she smiled happily at our new promise,",
+            "her hair had just finished drying."
         ],	
         "41": [
-            "妹妹并没有察觉刚才那场小小的意外，",
-            "只是单纯地因为新的约定而感到高兴。",
-            "这时，她的头发也刚好吹干了。"			
+            "She didn’t seem to notice the little accident just now,",
+            "just purely happy about our new promise.",
+            "At that moment, her hair had just dried completely."			
         ],
         "42": [
-            "\\nl< >「头发软篷篷……！     \\w[45] ",
-			"哥哥、谢谢~！」"		
+            "\\nl< >\"It’s all fluffy now...!     \\w[45]",
+            "Thanks, Onii-chan~!\""			
         ],	
         "43": [
-            "「太好了呢！」"		
+            "\"That’s great!\""		
         ],	
         "44": [
-            "「太好了呢！     \\w[60]\\}",
-			"啊~累了……」"		
+            "\"That’s great!     \\w[60]\\}",
+            "Ah~ I’m tired...\""		
         ],
         "45": [
-            "我一边细心地调整吹风机的角度，一边轻柔地梳理着她的长发，",
-			"妹妹也安静地配合着，我们彼此无言，却一同享受着这份宁静时光。"		
+            "As I carefully adjusted the angle of the dryer and ",
+			"gently combed through her hair,",
+            "my Imouto quietly cooperated, and though we said nothing, ",
+			"we both enjoyed this peaceful moment together."		
         ],	
         "46": [
-            "但由于角度的关系，",
-            "只要低头一瞥，便能清楚看见妹妹那饱满的胸部轮廓，",
-            "以及仿佛能将手掌都吞没的深深乳沟。"			
+            "But due to the angle,",
+            "just glancing down revealed the full outline of her ample chest,",
+            "and the deep cleavage that looked like it could swallow my hand."	
         ],
         "47": [
-            "怎、怎么办……好想看看里面！     \\w[45]",
-			"我忍不住开始胡思乱想，一边强忍着伸手的冲动,",
-            "一边突然灵光一闪，冒出了一个自认为相当机智的主意"			
+            "W-What do I do... I really want to see inside!     \\w[45]",
+            "I couldn't stop my wild thoughts, trying to ",
+			"suppress the urge to reach out, when suddenly, ",
+            "I had a flash of genius—an idea that felt clever enough to work!"		
         ],
         "48": [
-            "仔细想想，我不是拿着吹风机嘛！",
-			"是不是可以用这阵风来创造奇迹呢！？"		
+            "Now that I think about it, I’m holding the dryer!",
+            "Could I maybe use the wind to make a miracle happen!?"		
         ],	
         "49": [
-            "试试看吧！",
-            "算了吧…"			
+            "Let’s try it!",
+            "Maybe not..."			
         ],	
         "50": [
-            "说干就干！",
-			"我若无其事地悄悄调转了吹风机的方向，",
-			"将热风朝着妹妹胸口吹去——"
+            "Alright, here goes!",
+            "Acting casual, I subtly adjusted the dryer’s direction,",
+            "and aimed the hot air straight at her chest—"
         ],
         "51": [
-            "风啊、创造奇迹吧！"	
+            "Come on wind, make a miracle happen!"	
         ],	
         "52": [
-            "然而奇迹没有发生…"
+            "But no miracle happened..."
         ],	
         "53": [
-            "妹妹那条包裹得紧紧的浴巾，在强劲的风流面前依然纹丝不动，",
-			"完全没有要松脱的迹象！"
+            "Her tightly wrapped towel stood firm against the strong gusts,",
+            "showing no signs of slipping loose!"
         ],
         "54": [
-            "\\nl< >「嗯？哥哥……吹风机歪了噢？」"	
+            "\\nl< >\"Huh? Onii-chan... the dryer's off angle.\""	
         ],	
         "55": [
-            "「啊啊、抱歉。」"
+            "\"Ah, sorry.\""
         ],
         "56": [
-            "妹妹还好没有察觉到发生了什么，",
-			"我抱着遗憾的心情只能继续吹着头发。"
+            "Luckily, she didn’t notice anything unusual,",
+            "so I resigned myself and kept drying her hair with a bit of regret."
         ],	
         "57": [
-            "\\{奇迹发生了！"
+            "\\{A miracle happened!"
         ],
         "58": [
-            "风流成功推开了妹妹的衣领，露出了里面的樱桃小点。"	
+            "The gust of air managed to push open her collar, ",
+			"revealing a little pink cherry inside."	
         ],	
         "59": [
-            "妹妹似乎没有察觉到发生了什么，",
-			"我若无其事地扶好妹妹的肩带，心满意足地继续吹着头发。"
+            "She didn’t seem to notice what had happened,",
+            "so I casually fixed her strap and continued drying, completely satisfied."
         ],
         "60": [
-            "现在可是在给妹妹吹头发，怎么能老是想这种事呢！"	
+            "I'm drying her hair right now—no more weird thoughts!"	
         ],
         "61": [
-            "目前这副美景已经很不错了、",
-			"我这么说服了自己，默默地继续手上的工作。"
+            "This view alone is already pretty great.",
+            "I convinced myself and silently focused on the task at hand."
         ],
         "62": [
-            "「好了、吹干了哟！」"
+            "\"Alright, all dry!\""
         ],	
         "63": [
-            "受到激烈的风流的影响，",
-			"妹妹包裹在身上的浴巾迅速地就被吹散开，直接滑落下去——"
+            "Hit by the powerful gust,",
+            "the towel wrapped around her body was suddenly blown away—"
         ],
         "64": [
-            "\\nl< >「诶……？！」"	
+            "\\nl< >\"Eh...?!\""	
         ],
         "65": [
-            "但浴巾突然脱落下来，妹妹马上就察觉到了异样。"
+            "But the sudden loss of the towel immediately caught her attention."
         ],
         "66": [
-            "\\nl< >\\{「呜诶诶、浴巾掉了……！」"
+            "\\nl< >\\{\"Uwaah, my towel fell...!\""
         ],
         "67": [
-            "\\nl< >「……刚才是哥哥搞得鬼吧？」"	
+            "\\nl< >\"...That was your doing, wasn't it, Onii-chan?\""	
         ],
         "68": [
-            "「啊、怎么说呢…   \\w[45]",
-			"今天的风、很喧嚣啊。」"
+            "\"Ah, how should I put it...   \\w[45]",
+            "The wind today... was quite rowdy.\""
         ],
         "69": [
-            "不好、说完连我自己都觉得羞耻了……"
+            "Crap, even I feel embarrassed after saying that..."
         ],
         "70": [
-            "虽然出现了些小插曲，但结果来说还是帮妹妹吹干头发了！"
+            "Though there were a few hiccups, ",
+			"in the end, I still helped her dry her hair!"       
         ]
     },		  
   "15": {
@@ -700,190 +716,237 @@
     },
   "20": {
         "0": [
-            "「————ge」    \\w[60]\\^"
+            "\"————Oni\"    \\w[60]\\^"
 		],
 		"1": [
-            "「————哥哥」    \\w[60]\\^"
+            "\"————Onii-chan\"    \\w[60]\\^"
         ],
         "2": [
-            "好像在被谁呼唤着。"
+            "It feels like someone’s calling me."
 		],
 		"3": [
-            "\\nl< >「哥哥没事吧？脸色看起来很糟糕哦？」 "
+            "\\nl< >\"Onii-chan, are you okay? ",
+			"You look really pale.\" "
         ],
 		"4": [
-            "「——是妹妹吗？」 "
+            "\"—Was that Imouto’s voice?\" "
         ],
 		"5": [
-            "我是在这里打盹了吗、 ",
-			"头脑昏昏沉沉的，什么也想不起来…"
+            "Was I dozing off here? ",
+			"My head feels foggy… I can’t remember anything…"
         ],	
 		"6": [
-            "\\nl< >「还没睡醒吗？呐ー」  \\w[90]\\^"
+            "\\nl< >\"Still half-asleep? Heyー\"  \\w[90]\\^"
         ],
 		"7": [
-            "抱住妹妹",
-			"「已经醒了。」"
+            "Hug Imouto",
+			"Wake up"
         ],	
 		"8": [
-            "少女那张可爱的脸就在眼前，",
-			"我下意识地伸出手，把她紧紧抱住。"
+            "Her cute little face was right in front of me",
+			"and before I knew it, ",
+			"I reached out and pulled her into a hug."
         ],	
 		"9": [
-            "嗯嗯……软软的，味道也好香——",
-			"鼻子里全是那种像橘子一样的甜香味。",
-			"啊……感觉困意又涌上来了……"
+            "Mmm... so soft, and she smells nice—",
+			"a sweet citrusy scent filled my nose.",
+			"Ahh… now I’m feeling sleepy again..."
         ],
 		"10": [
-            "\\nl< >「真是的、哥哥又睡过去了！」"
+            "\\nl< >\"Geez, Onii-chan fell asleep again!\""
         ],	
 		"11": [
-            "是错觉吗？总感觉……",
-			"眼前的妹妹，跟记忆里的样子比，好像长大了不少。"
+            "Was it just my imagination? I could’ve sworn...",
+			"Imouto looks a lot more grown up compared to how I remember her."
         ],	
 		"12": [
-            "我不由自主地伸出手，在她身上轻轻摸索——",
-			"很快就碰到了某个软软的地方。"
+            "Before I knew it, my hand wandered over her body—",
+			"and I ended up touching something soft."
         ],
 		"13": [
-            "\\nl< >「呀啊ー！哥哥！？」"
+            "\\nl< >\"Kyaaah! Onii-chan!?\""
         ],
 		"14": [
-            "「嗯————果然感觉变得更大了啊——」"
+            "\"Mmm—yep, definitely feels bigger now—\""
         ],	
 		"15": [
-            "\\nl< >「才没有变大呢……  \\w[60]",
-			"话说哥哥、你在摸什么地方呀！」"
+            "\\nl< >\"It hasn’t gotten bigger at all...  \\w[60]",
+			"Also, Onii-chan, where exactly are you touching!?\""
         ],	
 		"16": [
-            "\\{「咕……！」"
+            "\\{\"Guh...!\""
         ],	
 		"17": [
-            "感觉被什么沉重的东西砸中了头、",
-			"一瞬间眼前感觉变得天旋地转起来。"
+            "It felt like something heavy slammed into my head,",
+			"and everything spun for a second."
         ],	
 		"18": [
-            "\\nl< >「已经清醒过来了吗？」"
+            "\\nl< >\"Are you fully awake now?\""
         ],	
 		"19": [
-            "「多亏了您这一拳、现在已经完全清醒了。」"
+            "\"Thanks to your punch, I’m wide awake now.\""
         ],
 		"20": [
-            "\\nl< >「那么、知道现在是什么情况吗？」"
+            "\\nl< >\"Then, do you know what’s going on right now?\""
         ],
 		"21": [
-            "「知道、刚刚摸到了妹妹的屁股、",
-			"手感非常不错————」  \\w[60]\\^"
+            "\"I know—I just touched your butt、",
+			"and it felt amazing———\"  \\w[60]\\^"
         ],
 		"22": [
-            "\\nl< >\\{「才没有在问摸的感想！",
-			"哥哥大笨蛋！」"
+            "\\nl< >\\{\"That’s not what I was asking!",
+			"You big dummy, Onii-chan!\""
         ],
 		"23": [
-            "哎呀，好像有点捉弄过头了。",
-			"不过刚才被那么来了一下，确实完全清醒过来了。"
+            "Whoops, maybe I went a bit too far teasing her.",
+			"Still, that punch really did wake me up."
         ],	
 		"24": [
-            "而且……刚才好像做了个特别重要的梦，",
-			"但现在怎么都想不起来了——"
+            "And... I think I had a really important dream just now,",
+			"but I can’t remember what it was—"
         ],	
 		"25": [
-            "算了，就先这样吧，迟早会想起来的。",
-			"眼下还是得先哄哄妹妹才行。"
+            "Oh well, it’ll come back to me eventually.",
+			"Right now, I need to calm Imouto down first."
         ],
 		"26": [
-            "\\nl< >「太好了。做噩梦了？看起来很难受的样子呢。」"
+            "\\nl< >\"That’s a relief. Were you having a nightmare? ",
+			"You looked really distressed.\""
         ],
 		"27": [
-            "噩梦吗……确实感觉刚才做了个不得了的梦。",
-			"现在这阵隐隐作痛的头疼，就跟宿醉一样难受，",
-			"眼角也还残留着点泪痕……"		
+            "A nightmare, huh... I do feel like I just had something intense.",
+			"The dull headache lingering now feels like a hangover,",
+			"and there’s still a bit of tear left at the corner of my eye..."		
         ],
 		"28": [
-            "身体这种说不清的异样感，好像自己真的经历了什么似的，",
-			"一点点在印证那个梦的痕迹……"
+            "There’s this weird sense of discomfort in my body, ",
+			"like I really experienced something,",
+			"and it’s slowly confirming the traces of that dream..."
         ],
 		"29": [
-            "\\nl< >「哦〜都梦见了什么呢？」"
+            "\\nl< >\"Oh~? What did you dream about?\""
         ],
 		"30": [
-            "是啊、我到底梦见了什么？"
+            "Yeah... what exactly did I dream about?"
         ],	
 		"31": [
-		    "和父亲最后一次见面",
-            "梦见了小时候",
-			"梦见了妹妹",
-			"梦见了牛排",
-			"什么也想不起来…"
+		    "Last time with Dad",
+            "Childhood memory",
+			"Dreamed of Imouto",
+			"Dreamed of steak",
+			"Can't remember"
         ],
 		"32": [
-            "\\nl< >「小时候的哥哥吗？",
-			"好想见一见还是小孩子的哥哥呀~」"
+            "\\nl< >\"Onii-chan when he was little?",
+			"I wish I could’ve seen tiny Onii-chan~\""
         ],	
 		"33": [
-            "\\nl< >「拿着木剑到处奔跑、  \\w[60]",
-			"大声喊着『将来我要成为勇者！』的那个样子  \\w[90]",
-			"肯定超级可爱的呀！」"
+            "\\nl< >\"Running around with a wooden sword,  \\w[60]",
+			"yelling, ‘I’m gonna be a hero one day!’  \\w[90]",
+			"That must’ve been super adorable!\""
         ],	
 		"34": [
-            "不不不、那是谁的可爱黑历史啊。",
-			"现在让我看到那副场景、",
-			"可是会一边哭一边挖个洞躲起来哦？"
+            "No no no, whose embarrassing past are we bringing up here?",
+			"If I had to see that now,",
+			"I’d probably cry and dig a hole to hide in."
         ],	
 		"35": [
-            "「啊、不过说起这个、",
-			"仓库里好像确实放着以前父亲用过的装备。",
-			"以前父亲好像是当过一阵子冒险者的……」"
+            "\"Ah, speaking of which,",
+			"I think there’s some of Dad’s old gear stored in the basement.",
+			"I remember he used to be an adventurer for a while...\""
         ],	
 		"36": [
-            "「父亲大人还做过这种事情吗？」"
+            "\"Dad used to do stuff like that?\""
         ],			
 		"37": [
-            "「那个男人年轻时可是做过不少笨蛋一样的事情啊——  \\w[60]",
-			"好、机会难得、去找找看吧！」"
+            "\"That guy did all sorts of dumb stuff when he was young—   \\w[60]",
+			"Alright, this is a good chance, let’s go find it!\""
         ],	
 		"38": [
-            "这里是父亲曾经进行各种炼金术研究的房间，",
-			"但现在也已经和荒废了没什么区别……"
+            "This was the room where Dad did all sorts of alchemy research,",
+			"but now it’s basically abandoned..."
         ],	
 		"39": [
-            "「嘿咻！」"
+            "\"Heave-ho!\""
         ],	
 		"40": [
-            "在已经不再使用的地下室里。",
-			"我环顾着四周，寻找有用的东西。"
+            "In the old basement that hasn’t been used in ages,",
+			"I looked around for anything useful."
         ],	
 		"41": [
-            "「嗯……\\w[30]哦？\\w[30]哦哦！？ \\w[30]",
-			"噢噢噢噢噢ー！\\w[30]",
-			"这是——————！」"
+            "\"Hmm...\\w[30] Oh?\\w[30] Ohhh!? \\w[30]",
+			"Ooooooh!\\w[30]",
+			"This is——————!\""
         ],
 		"42": [
-            "「这是父亲以前用过的装备啊！",
-			"好耶、看起来真帅啊！」"
+            "\"It’s Dad’s old gear!",
+			"Yes! It looks awesome!\""
         ],	
 		"43": [
-            "\\nl< >「啊、嗯……  \\w[60]",
-			"哥哥开心就好呢…」"
+            "\\nl< >\"Ah, um... \\w[60]",
+			"As long as you’re happy, Onii-chan...\""
         ],	
 		"44": [
-            "「看啊、吾妹哟、只要有了这个、",
-			"就算是在深渊里哥哥也能畅通无阻了！」"
+            "\"Look, dear sister! With this gear,",
+			"Onii-chan can go anywhere in the Abyss without a problem!\""
         ],
 		"45": [
-            "\\nl< >(哥哥……看起来像小孩子一样兴奋呢……)"
+            "\\nl< >(Onii-chan... ",
+			"he looks as excited as a little kid...)"
         ],
 		"46": [
-            "我兴奋地挥舞着还沾满灰尘的装备、",
-			"不过妹妹看起来并没有什么兴趣的样子啊。"
+            "I waved the dusty old gear around in excitement,",
+			"but Imouto didn’t seem all that interested."
         ],
 		"47": [
-            "哎呀、没想到真能找到宝贝……",
-			"不过说起来我是不是忘记了什么重要的事情啊。"
+            "Wow, I didn’t think I’d actually find a treasure...",
+			"But wait, wasn’t I forgetting something important?"
         ],
 		"48": [
-            "算了、记不清了也就那样了。",
-			"好想赶紧明天快点用上新装备啊！"
+            "Oh well, if I can’t remember, then it’s fine.",
+			"I just want to try this new gear out as soon as possible!"
+        ],
+		"49": [
+            "Since I couldn’t remember what happened in the dream,",
+			"I just made something up."
+        ],
+		"50": [
+            "\\nl< >\"Ahhh—no fair! Steak buffet!",
+			"I want some too!\""
+        ],
+		"51": [
+            "Ah, right—Imouto’s a total meat lover.",
+			"All-you-can-eat steak must sound amazing to her."
+        ],
+		"52": [
+            "\"Then next time I’ll bring back more meat,",
+			"and we’ll have a big BBQ party together, okay?\""
+        ],
+		"53": [
+            "\\nl< >\"Yay! Onii-chan, you’re the best!\""
+        ],
+		"54": [
+            "\\nl< >\"Filet~♪ Sirloin~♪    \\w[90]",
+			"Chateaubriand~♪ T-bone and Ribeye~♪\"   \\w[90]"
+        ],
+		"55": [
+            "Imouto looked so happy, ",
+			"she started singing a weird and off-key song.",
+			"Oh well, as long as she’s happy...",
+			"I just hope we can actually make that promise happen soon..."
+        ],
+		"56": [
+            "\\nl< >\"Onii-chan... are you really okay?  \\w[60]",
+			"You’re starting to forget things like an old man, you know?\""
+        ],
+		"57": [
+            "Yeah... why is that?",
+			"It feels like something invisible is keeping me from remembering."
+        ],
+		"58": [
+            "Hmm... whatever.",
+			"I’ll remember it eventually.",
+			"No need to stress over it now."
         ]		
     },			
   "23": {
