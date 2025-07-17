@@ -119,7 +119,7 @@ DataManager._databaseFiles.unshift({
     let lang = ConfigManager.language;
 	
 	// 多语言模块建设完成前，以英语版为主
-	if (lang === 3) lang = 2;
+	if (lang > 2) lang = 2;
 
     if (mapId > 0) {
 
@@ -130,7 +130,7 @@ DataManager._databaseFiles.unshift({
           filename = `GameLanguage${lang}/Map${padded}.json`;
 		}
 	  // 开发者用
-	  //if (Utils.isOptionValid("test")) filename = `Map${padded}.json`;
+	  if (Utils.isOptionValid("test")) filename = `Map${padded}.json`;
 		
       this._mapLoader = ResourceHandler.createLoader(
         'data/' + filename,
@@ -206,7 +206,7 @@ DataManager.loadSpawnMapData = function(mapId) {
                                  "Merci de patienter pour les prochaines mises à jour !"];
 						text = text.join('\n');
                     alert(text);
-                    ConfigManager.language = 2;					
+                    if (!Utils.isOptionValid("test"))  ConfigManager.language = 2;					
 				}
 				DataManager.reloadLanguage(true);				
          } 
@@ -729,5 +729,38 @@ DataManager.changeDifferenceStateDescription = function(id,index) {
   // 导出到全局
   if (typeof module !== 'undefined') module.exports = garble;
   else                               window.garble = garble;
+
+})();
+
+
+
+// 优化设置界面不同语言的显示效果
+(function() {
+
+  const GAP = 100;                               // 额外间距值
+
+Window_Options.prototype.windowWidth = function() {
+	let value = 500;
+	if (ConfigManager.language > 1)  value = 640;   // 中日语不提升窗口宽度
+    return value;
+};
+
+  const _drawItem = Window_Options.prototype.drawItem;
+  Window_Options.prototype.drawItem = function(index) {
+
+    const title  = this.commandName(index);
+    const status = this.statusText(index);
+    const rect   = this.itemRectForText(index);
+    const sw     = this.statusWidth();          
+
+    // 标题区域 = 总宽 - 数值宽 - GAP
+    let tw = rect.width - sw - GAP;
+    if (ConfigManager.language <= 1)  tw += GAP;
+	
+    this.resetTextColor();
+    this.changePaintOpacity(this.isCommandEnabled(index));
+    this.drawText(title, rect.x, rect.y, tw);
+    this.drawText(status, rect.x, rect.y, rect.width, 'right');
+  };
 
 })();
