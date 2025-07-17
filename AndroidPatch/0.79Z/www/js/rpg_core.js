@@ -9497,5 +9497,5 @@ Decrypter.decryptImg = function(url, bitmap) {
         }
     );
 };
+})();
 	
-};
