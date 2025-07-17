@@ -1073,6 +1073,9 @@ QJ.MPMZ.tl._imoutoUtilWashRoomImoutoTekokiAction = function(type) {
     // 后续动作关键帧的预加载
 	if (!this._preload && !noPanties) {
 		this._preload = true;
+		// 动作音效
+		let	voice = { name: "washroom_event_sis_tekoki_panties1", volume: 90, pitch: 100, pan: 0 };
+    	AudioManager.playVoice(voice, true, 3);
 		let action = type.replace(/(tekoki_)/, '$1action2_');
 		for (let i = 1; i <= 26; i++) {
            ImageManager.reservePicture(`washroom_tekoki/${action}_` + i);
@@ -1133,13 +1136,20 @@ QJ.MPMZ.tl._imoutoUtilWashRoomImoutoTekokiAction2 = function(noPanties,type) {
     // 后续动作关键帧的预加载
 	if (!this._preload && !noPanties) {
 		this._preload = true;
+        AudioManager.stopVoice(null, 3);		
 		let action = type.replace(/(tekoki_)/, '$1action3_');
 		for (let i = 1; i <= 44; i++) {
            ImageManager.reservePicture(`washroom_tekoki/${action}_` + i);
 		   ImageManager.reservePicture("washroom_tekoki/washroom_tekoki_action3_" + i);
         }
-	}	
+	}
 	
+	if (!this._preVoice && !noPanties && this._frames > 7) {
+		// 动作音效
+		this._preVoice = true;
+		let	voice = { name: "washroom_event_sis_tekoki_panties2", volume: 70, pitch: 100, pan: 0 };
+    	AudioManager.playVoice(voice, true, 3);		
+	}	
 };
 
 // 洗面所手交事件-妹妹第三动作
@@ -1189,13 +1199,20 @@ QJ.MPMZ.tl._imoutoUtilWashRoomImoutoTekokiAction3 = function(noPanties,type) {
     // 后续动作关键帧的预加载
 	if (!this._preload && !noPanties) {
 		this._preload = true;
+        AudioManager.stopVoice(null, 3);			
 		let action = type.replace(/(tekoki_)/, '$1action4_');
 		for (let i = 1; i <= 28; i++) {
            ImageManager.reservePicture(`washroom_tekoki/${action}_` + i);
 		   ImageManager.reservePicture("washroom_tekoki/washroom_tekoki_action4_" + i);
         }
-	}	
+	}
 	
+	if (!this._preVoice && !noPanties && this._frames > 15) {
+		// 动作音效
+		this._preVoice = true;
+		let	voice = { name: "washroom_event_sis_tekoki_panties3", volume: 70, pitch: 100, pan: 0 };
+    	AudioManager.playVoice(voice, true, 3);		
+	}	
 };
 
 // 洗面所手交事件-妹妹第四动作
@@ -1225,6 +1242,7 @@ QJ.MPMZ.tl._imoutoUtilWashRoomImoutoTekokiAction4 = function(noPanties,type) {
 		
        if ( $gameVariables.value(25) > 80 && noPanties) {
 		  // 满足条件后哥哥射爆
+          AudioManager.stopVoice(null, 3);			  
           QJ.MPMZ.Shoot({
              img:"null1",groupName: ['tekokiActionShasei'],
              existData: [ ],
@@ -1251,7 +1269,14 @@ QJ.MPMZ.tl._imoutoUtilWashRoomImoutoTekokiAction4 = function(noPanties,type) {
 	}	
 
    	this._frames += 1;
-	this._coolDown = this._speed;	
+	this._coolDown = this._speed;
+
+	if (!this._preload && !noPanties && this._frames > 14) {
+		this._preload = true;
+		// 动作音效
+		let	voice = { name: "washroom_event_sis_tekoki_panties4", volume: 70, pitch: 100, pan: 0 };
+    	AudioManager.playVoice(voice, true, 3);		
+	}	
 	
 };
 
