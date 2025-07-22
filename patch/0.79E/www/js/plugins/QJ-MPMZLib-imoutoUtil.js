@@ -19,6 +19,7 @@
 QJ.MPMZ.tl._imoutoUtilLivingRoomEventTriggerCheck = function() {
 
    if (!this) return;
+   if ( $gameSystem.day() === 1 ) return;
    // 后续还没写
    if ($gameSelfVariables.value([54, 5, 'animeEpisode']) > 5) return;
    
