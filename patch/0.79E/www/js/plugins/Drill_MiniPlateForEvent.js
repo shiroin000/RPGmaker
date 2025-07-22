@@ -2065,8 +2065,10 @@ Drill_MPFE_Window.prototype.drill_refreshMessage = function( context_list ){
 	
 	
 	// > 绘制内容
-	if (!Utils.isMobileDevice() && ConfigManager.language > 1) {	
-	   options['lineheight'] = 24;
+	if (!Utils.isMobileDevice() ) {
+       let value = 26;
+       if (ConfigManager.language > 1)	value = 24;   
+	   options['lineheight'] = value;
 	}
 	this.drill_COWA_drawTextListEx( context_list, options );
 

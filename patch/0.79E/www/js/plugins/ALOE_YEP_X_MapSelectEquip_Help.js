@@ -94,8 +94,8 @@ Imported["ALOE_YEP_X_MapSelectEquip_Help"] = 1.00;
         this._mapSelectEquipHelpWindow = new Window_MapSelectEquipHelp(x, y);
         // 创建 Sprite 对象并加载背景图片
         var layoutSprite = new Sprite(ImageManager.loadPicture('equip'));
-        layoutSprite.x = -640;
-        layoutSprite.y = -763;
+        layoutSprite.x = 0;
+        layoutSprite.y = -540;
         layoutSprite.opacity = 255;
         this._mapSelectEquipHelpWindow.addChild(layoutSprite);
         this._mapSelectEquipHelpWindow.addChildAt(layoutSprite, 0);

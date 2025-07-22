@@ -780,3 +780,19 @@ Window_Options.prototype.windowWidth = function() {
   };
 
 })();
+
+
+
+//修改了item描述的显示格式
+Window_Help.prototype.setItem = function(item) {
+
+  if (item) {
+    const combinedText = DataManager.isSkill(item)
+        ? QJ.MPMZ.tl.ex_playerSetSkillDescription(item)
+        : QJ.MPMZ.tl.ex_playerSetItemDescription(item);
+    this.setText(combinedText);
+  } else {
+    this.setText("");
+  }
+
+};
