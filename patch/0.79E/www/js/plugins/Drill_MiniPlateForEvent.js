@@ -2069,7 +2069,7 @@ Drill_MPFE_Window.prototype.drill_refreshMessage = function( context_list ){
 	   options['lineheight'] = 24;
 	}
 	this.drill_COWA_drawTextListEx( context_list, options );
-	console.log(options);
+
 }
 	
 	
