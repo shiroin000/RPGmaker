@@ -842,13 +842,13 @@ DataManager.extractSaveContents = function( contents ){
 	_drill_MPFE_sys_extractSaveContents.call( this, contents );
 	
 	// > 参数存储 启用时（检查数据）
-	if( DrillUp.g_MPFE_saveEnabled == true ){	
-		$gameSystem.drill_MPFE_checkSysData();
+	//if( DrillUp.g_MPFE_saveEnabled == true ){	
+	//	$gameSystem.drill_MPFE_checkSysData();
 		
 	// > 参数存储 关闭时（直接覆盖）
-	}else{
+	//}else{
 		$gameSystem.drill_MPFE_initSysData();
-	}
+	//}
 };
 //##############################
 // * 存储数据 - 初始化数据【标准函数】
@@ -2065,7 +2065,11 @@ Drill_MPFE_Window.prototype.drill_refreshMessage = function( context_list ){
 	
 	
 	// > 绘制内容
+	if (!Utils.isMobileDevice()) {
+	   options['lineheight'] = 24;
+	}
 	this.drill_COWA_drawTextListEx( context_list, options );
+	console.log(options);
 }
 	
 	
