@@ -4782,6 +4782,7 @@ QJ.MPMZ.tl.ex_cleanupDeathExtraEffects = function() {
     $gameSwitches.setValue(3, false);
 	// 禁止玩家移动
 	$gameSystem._drill_PAlM_enabled = false;	
+	Zzy.TWF.ToTheWorld(true) 
 };
 
 // 玩家复活跳跃演出
