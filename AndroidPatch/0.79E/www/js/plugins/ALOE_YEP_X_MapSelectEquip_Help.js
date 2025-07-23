@@ -50,8 +50,8 @@ Imported["ALOE_YEP_X_MapSelectEquip_Help"] = 1.00;
 (function () {
 
     var params = PluginManager.parameters("ALOE_YEP_X_MapSelectEquip_Help");
-    var x = Number(params.helpWindowX) || 0;
-    var y = Number(params.helpWindowY) || 0;
+    var x = 630;
+    var y = 715;
 
     //=============================================================================
     // Scene_Map
@@ -94,7 +94,7 @@ Imported["ALOE_YEP_X_MapSelectEquip_Help"] = 1.00;
         this._mapSelectEquipHelpWindow = new Window_MapSelectEquipHelp(x, y);
         // 创建 Sprite 对象并加载背景图片
         var layoutSprite = new Sprite(ImageManager.loadPicture('equip'));
-        layoutSprite.x = 0;
+        layoutSprite.x = -5;
         layoutSprite.y = -540;
         layoutSprite.opacity = 255;
         this._mapSelectEquipHelpWindow.addChild(layoutSprite);
