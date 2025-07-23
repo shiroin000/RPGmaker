@@ -1082,6 +1082,22 @@ QJ.MPMZ.tl._imoutoUtilWashRoomImoutoTekokiAction = function(type) {
 		   ImageManager.reservePicture("washroom_tekoki/washroom_tekoki_action2_" + i);
         }
 	}
+	
+    // 和白手套冲突的临时对策
+	if (!this._conflict) {	
+	this._conflict = true;    
+    let actor = $gameActors.actor(1); 
+    let equips = actor.equips(); 
+    for (let index = 1; index < equips.length; index++) {
+        let equip = equips[index];
+        if (!equip) continue; // 跳过空装备
+        if ( equip.baseItemId === 56 ) {
+			actor.changeEquipById(index+1, null);	
+            $gameVariables.setValue(25, 30);			
+        }
+	  }
+    }	
+	
 };
 
 // 洗面所手交事件-妹妹第二动作
