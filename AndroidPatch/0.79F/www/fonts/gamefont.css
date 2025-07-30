@@ -1,0 +1,46 @@
+@font-face {
+    font-family: GameFont;
+    src: url("FOT-NewCinemaAStd-D.otf");
+}
+@font-face {
+    font-family: RiiTegakiFude;
+    src: url("RiiT_F.otf");
+}
+@font-face {
+    font-family: Haiyanzhishidongdong;
+    src: url("Haiyanzhishidongdong-Regular-2.ttf");
+}
+@font-face {
+    font-family: FOT-NewCinemaA Std D;
+    src: url("FOT-NewCinemaAStd-D.otf");
+}
+@font-face {
+    font-family: Natsuzemi Maru Gothic Black;
+    src: url("夏蝉丸ゴシック.ttf");
+}
+@font-face {
+    font-family: Dela Gothic One;
+    src: url("DelaGothicOne-Regular.ttf");
+}
+@font-face {
+    font-family: MPLUS2ExtraBold;
+    src: url("MPLUS2-ExtraBold.ttf");
+}
+@font-face {
+    font-family: HonobonoPopTTF;
+    src: url("HonobonoPopTTF-Regular.ttf");
+}
+@font-face {
+    font-family: Huninn;
+    src: url("Huninn-Regular.ttf");
+}
+@font-face {
+    font-family: Nagurigaki Crayon;
+    src: url("crayon_1-1.ttf");
+}
+.IIV::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button {
+    opacity: 0;
+    pointer-events: none;
+    width: 5px;
+}
