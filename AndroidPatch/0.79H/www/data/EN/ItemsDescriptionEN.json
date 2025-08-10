@@ -1,0 +1,1701 @@
+{
+    "1": {
+        "name": [
+            "Tea Gift Voucher"
+        ],
+        "subtitle": "",
+        "description": [
+            "Voucher issued by NLCH, used to redeem delicious tea snacks",
+            "But… where’s NLCH’s shop anyway?"
+        ],
+        "ability": [
+		    "Can be fed to gacha machine without damage to trigger a pull",
+			"Always gives an 11-pull with at least one gold ball"
+		]
+    },
+    "3": {
+        "name": [
+            "Junk"
+        ],
+        "subtitle": "",
+        "description": [
+            "Various scraps, useless",
+            "Why did I even pick this up?"
+        ],
+        "ability": ""
+    },
+    "4": {
+        "name": [
+            "10Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },
+    "5": {
+        "name": [
+            "50Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },
+    "6": {
+        "name": [
+            "100Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },
+    "7": {
+        "name": [
+            "500Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },
+    "8": {
+        "name": [
+            "1000Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },
+    "9": {
+        "name": [
+            "5000Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },
+    "10": {
+        "name": [
+            "10000Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },	
+    "11": {
+        "name": [
+            "50000Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },	
+    "12": {
+        "name": [
+            "100000Yen"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+        ],
+        "ability": ""
+    },
+    "14": {
+        "name": [
+            "Magic Camera"
+        ],
+        "subtitle": "",
+        "description": [
+            "Said to be an Eastern artifact, exquisitely crafted yet lost",
+            "in the Abyss... It freezes scenes into images, but it’s",
+            "easily affected by magic, sometimes capturing strange things"
+        ],
+        "ability": [
+            "Press F7 to take a photo"
+        ]
+    },
+    "15": {
+        "name": [
+            "JoyStation V"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+
+        ],
+        "ability": [
+            ""
+        ]
+    },
+    "16": {
+        "name": [
+            "Shadow Souls DLC"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+
+        ],
+        "ability": [
+            ""
+        ]
+    },	
+    "17": {
+        "name": [
+            "Sister's Ahoge"
+        ],
+        "subtitle": "",
+        "description": [
+            "An ahoge pulled from my sister's head,",
+            "but she doesn't seem to notice...This ahoge still stubbornly",
+            "stands up and has a strangely resilient spring to it"
+        ],
+        "ability": ""
+    },
+    "18": {
+        "name": [
+            "Rubber Ducky"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+
+        ],
+        "ability": [
+            ""
+        ]
+    },
+    "19": {
+        "name": [
+            "Electric Fan"
+        ],
+        "subtitle": "",
+        "description": [
+            ""
+
+        ],
+        "ability": [
+            ""
+        ]
+    },
+    "20": {
+        "name": [
+            "Philosopher's Fragment"
+        ],
+        "subtitle": [
+            "\"This is the strong fortitude of all fortitudes,",
+            "every solid and overcoming every subtle thing\""
+		],
+        "description": [
+            "Even just a fragment contains immense power—"
+        ],
+        "ability": ""
+    },
+    "23": {
+        "name": [
+            "Delicious Milk"
+        ],
+        "subtitle": [
+            "\"Sponsored by:NLCH\""		
+		],
+        "description": [
+            "A drink from a strange vending machine",
+            "Never mind the taste, why is there a vending machine?"
+        ],
+        "ability": [
+            "HP+120、gained the Delicious!! status"
+        ]
+    },
+    "24": {
+        "name": [
+            "Carrot Milk"
+        ],
+        "subtitle": [
+            "\"Sponsored by:NLCH\""		
+		],
+        "description": [
+            "A drink from a strange vending machine",
+            "Never mind the taste, why is there a vending machine?"
+        ],
+        "ability": [
+            "HP+75、randomly remove 1 status ailment"
+        ]
+    },
+    "25": {
+        "name": [
+            "Strawberry Milk"
+        ],
+        "subtitle": [
+            "\"Sponsored by:NLCH\""		
+		],
+        "description": [
+            "A drink from a strange vending machine",
+            "Never mind the taste, why is there a vending machine?"
+        ],
+        "ability": [
+            "HP+75、Attack+50% for a while"
+        ]
+    },
+    "26": {
+        "name": [
+            "Melon Milk"
+        ],
+        "subtitle": [
+            "\"Sponsored by:NLCH\""		
+		],
+        "description": [
+            "A drink from a strange vending machine",
+            "Never mind the taste, why is there a vending machine?"
+        ],
+        "ability": [
+            "HP+75、Magic Attack+50% for a while"
+        ]
+    },
+    "27": {
+        "name": [
+            "Banana Milk"
+        ],
+        "subtitle": [
+            "\"Sponsored by:NLCH\""		
+		],
+        "description": [
+            "A drink from a strange vending machine",
+            "Never mind the taste, why is there a vending machine?"
+        ],
+        "ability": [
+            "HP+75、Speed up for a while"
+        ]
+    },
+    "30": {
+        "name": [
+            "Pink Konpeito"
+        ],
+        "subtitle": [
+            "\"Fufufu... Better not to know the ingredients~♥\""		
+		],
+        "description": [
+            "Delicately crafted konpeitō handmade by the Archdemon",
+            "Gives off a peach-like aroma that makes you dizzy just smelling it…"
+        ],
+        "ability": [
+            "Makes your whole body feel hot after eating!"
+        ]
+    },
+    "31": {
+        "name": [
+            "Blue Konpeito"
+        ],
+        "subtitle": [
+            "\"Fufufu... Better not to know the ingredients~♥\""	
+		],
+        "description": [
+            "Delicately crafted konpeitō handmade by the Archdemon",
+            "Gives off a blueberry-like aroma that brings calm just smelling it…"
+        ],
+        "ability": [
+            "Brings a sense of calm after eating..."
+        ]
+    },
+    "32": {
+        "name": [
+            "Green Konpeito"
+        ],
+        "subtitle": [
+            "\"Fufufu... Better not to know the ingredients~♥\""		
+		],
+        "description": [
+            "Delicately crafted konpeitō handmade by the Archdemon",
+            "Gives off a melon-like aroma that lifts you up just smelling it…"
+        ],
+        "ability": [
+            "Effect not implemented"
+        ]
+    },
+    "33": {
+        "name": [
+            "Springy Mizumanju"
+        ],
+        "subtitle": [
+            "\"Fufufu... Better not to know the ingredients~♥\""
+        ],
+        "description": [
+            "Handcrafted by an Archdemon, bouncy, refreshing Mizumanju",
+            "Hits like a shock the moment it touches your tongue!"
+        ],
+        "ability": [
+            "Effect not implemented"
+        ]
+    },
+    "35": {
+        "name": [
+            "NLCH's Cola(L)"
+        ],
+        "subtitle": [
+            "\"Sponsored by:NLCH\""		
+		],
+        "description": [
+            "A drink from a strange vending machine",
+            "Never mind the taste, why is there a vending machine?"
+        ],
+        "ability": [
+            "Violent shaking may trigger a powerful explosion"
+        ]
+    },
+    "43": {
+        "name": [
+            "Ansuz"
+        ],
+        "subtitle": [
+            "\"Power of Revelation\""		
+		],
+        "description": [
+            "A rune-inscribed stone. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "Leaves a text-marked sign at the location when used",
+            "After updating, the sign becomes visible to other players"
+        ]
+    },
+    "44": {
+        "name": [
+            "Raido"
+        ],
+        "subtitle": [
+            "\"Power of Riding\""
+        ],
+        "description": [
+            "A rune-inscribed stone. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "Throws a marker that allows position swapping"
+        ]
+    },
+    "45": {
+        "name": [
+            "Ehwaz"
+        ],
+        "subtitle": [
+            "\"Power of Change\""
+        ],
+        "description": [
+            "A rune-inscribed stone. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "Throws and swaps positions with the target it touches"
+        ]
+    },
+    "46": {
+        "name": [
+            "The Fool"
+        ],
+        "subtitle": [
+            "\"The endless curiosity of a foolish adventurer\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "used forcibly teleports you to a random map"
+        ]
+    },
+    "48": {
+        "name": [
+            "The High Priestess"
+        ],
+        "subtitle": [
+            "\"May you receive her favor...\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, summons a gate leading to the Fallen Church"
+        ]
+    },
+    "50": {
+        "name": [
+            "The Emperor"
+        ],
+        "subtitle": [
+            "\"The dragon's majesty, inviolable\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "Used Dragon's Roar to stuns all enemies on screen"
+        ]
+    },
+    "52": {
+        "name": [
+            "The Lovers"
+        ],
+        "subtitle": [
+            "\"The Witch’s Lingering Scent\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, summons monsters and drives them berserk briefly"
+        ]
+    },
+    "53": {
+        "name": [
+            "Chariot"
+        ],
+        "subtitle": [
+            "\"At your service! Hell Express!\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, a NLCH truck slams into the player"
+        ]
+    },
+    "54": {
+        "name": [
+            "Strength"
+        ],
+        "subtitle": [
+            "\"Unleash the power of the Giant God Soldier\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "Melee weapons temporarily enlarge&Attack up"
+        ]
+    },
+    "56": {
+        "name": [
+            "The Wheel of Fortune"
+        ],
+        "subtitle": [
+            "\"Soul-Gambling Roulette\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, Grants a random buff or debuff"
+        ]
+    },	
+    "57": {
+        "name": [
+            "Justice"
+        ],
+        "subtitle": [
+            "\"Ashes to ashes, dust to dust\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, removes all statuses from the player"
+        ]
+    },
+    "59": {
+        "name": [
+            "Death"
+        ],
+        "subtitle": [
+            "\"The goal of all life is death\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, the Death Devil’s power manifests here"
+        ]
+    },
+    "60": {
+        "name": [
+            "Temperance"
+        ],
+        "subtitle": [
+            "\"Pandora's Box of the Abyss\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "When used, summons a gacha machine"
+        ]
+    },
+    "63": {
+        "name": [
+            "The Star"
+        ],
+        "subtitle": [
+            "\"The star is the guiding beacon home\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+			"Summons a Star Door near the player to return to start"
+        ]
+    },
+    "65": {
+        "name": [
+            "The Sun"
+        ],
+        "subtitle": [
+            "\"Rebirth from the ashes\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "Grants the Blessing of the Firebird upon use"
+        ]
+    },
+    "67": {
+        "name": [
+            "The World"
+        ],
+        "subtitle": [
+            " \"Invites you to the mysterious miniature garden world...\""
+        ],
+        "description": [
+            "A magic card imbued with spells. Designed so",
+            "even novices can easily activate its effects"
+        ],
+        "ability": [
+            "Resets the countdown for drop-related events upon use"
+        ]
+    },
+    "70": {
+        "name": [
+            "Jack Bomb"
+        ],
+        "subtitle": [
+            "\"Look over here...!\""
+        ],
+        "description": [
+            "An alchemical bomb infused with frenzied fire elements",
+            "Due to its highly unstable nature, it will detonate immediately",
+            "just by holding it",
+            "It’ll explode instantly in hot environments!"
+        ],
+        "ability": ""
+    },
+    "71": {
+        "name": [
+            "Frost Jack Bomb"
+        ],
+        "subtitle": [
+            "\"Look over here...!\""
+        ],
+        "description": [
+            "An alchemical bomb infused with frigid ice elements",
+            "Due to its highly unstable nature, it will detonate immediately",
+            "just by holding it"
+        ],
+        "ability": ""
+    },
+    "72": {
+        "name": [
+            "Venom Jack Bomb"
+        ],
+        "subtitle": [
+            "\"Look over here...!\""
+        ],
+        "description": [
+            "An alchemical bomb infused with lethal poison",
+            "Due to its highly unstable nature, it will detonate immediately",
+            "just by holding it"
+        ],
+        "ability": ""
+    },
+    "75": {
+        "name": [
+            "Sealed Timepiece"
+        ],
+        "subtitle": "",
+        "description": [
+            "A special magical artifact inscribed with a sealing spell",
+            "When shattered, it activates its effect, causing everything",
+            "within a certain range—including time itself—to come to a halt"
+        ],
+        "ability": ""
+    },
+    "77": {
+        "name": [
+            "Sushi Pudding"
+        ],
+        "subtitle": "",
+        "description": [
+            "A familiar of a certain Archdemon. Letting it loose",
+            "will lead you to the Archdemon’s whereabouts. But",
+            "is it a Neko, sushi, or pudding? It still looks delicious"
+        ],
+        "ability": ""
+    },
+    "88": {
+        "name": [
+            "Bird Leg Meat"
+        ],
+        "subtitle": "",
+        "description": [
+            "Thigh meat harvested from various birds",
+            "The meat is tender and plump,",
+            "making it perfect for meat dishes"
+        ],
+        "ability": ""
+    },
+    "89": {
+        "name": [
+            "Large Beast Meat"
+        ],
+        "subtitle": "",
+        "description": [
+            "Fresh meat carved from a monster. Delicious meat dishes can",
+            "be made from it. Monsters eat people, and people eat monsters",
+            "This is the natural order"
+        ],
+        "ability": ""
+    },
+    "90": {
+        "name": [
+            "Small Beast Meat"
+        ],
+        "subtitle": "",
+        "description": [
+            "Fresh meat carved from a monster. Delicious meat dishes can",
+            "be made from it. Monsters eat people, and people eat monsters",
+            "This is the natural order"
+        ],
+        "ability": ""
+    },
+    "97": {
+        "name": [
+            "WaterWeird Mucus"
+        ],
+        "subtitle": "",
+        "description": [
+            "Mucus secreted by a WaterWeird, commonly used as a general",
+            "ingredient in alchemy",
+            "It is sometimes also used as a lubricant"
+        ],
+        "ability": ""
+    },
+    "98": {
+        "name": [
+            "Walking Mushrooms"
+        ],
+        "subtitle": "",
+        "description": [
+            "A mushroom from Walking Mushroom, now immobile",
+            "When sliced, it looks just like a regular mushroom"
+        ],
+        "ability": ""
+    },
+    "100": {
+        "name": [
+            "Slime Mucus"
+        ],
+        "subtitle": "",
+        "description": [
+            "Mucus secreted by a slime, commonly used as a general",
+            "ingredient in alchemy",
+            "It is sometimes also used as a lubricant"
+        ],
+        "ability": ""
+    },
+    "101": {
+        "name": [
+            "Apple"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly picked fruit, full of refreshing flavor",
+            "Eating it directly slightly restores health"
+        ],
+        "ability": ""
+    },
+    "102": {
+        "name": [
+            "Curry Block"
+        ],
+        "subtitle": "",
+        "description": [
+            "A spicy curry block made from exotic spices",
+            "Pairs well with rice and can be added to various ingredients"
+        ],
+        "ability": ""
+    },
+    "103": {
+        "name": [
+            "White Rice"
+        ],
+        "subtitle": "",
+        "description": [
+            "Simple yet comforting white rice",
+            "Can be eaten plain or combined with various ingredients"
+        ],
+        "ability": ""
+    },
+    "104": {
+        "name": [
+            "Carrot"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common vegetable, but it's strange to find it in the abyss",
+            "Needs proper preparation before eating"
+        ],
+        "ability": ""
+    },
+    "105": {
+        "name": [
+            "Potato"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common vegetable, but it's strange to find it in the abyss",
+            "Needs proper preparation before eating"
+        ],
+        "ability": ""
+    },
+    "106": {
+        "name": [
+            "Chili"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common vegetable, but it's strange to find it in the abyss",
+            "Needs proper preparation before eating"
+        ],
+        "ability": ""
+    },
+    "107": {
+        "name": [
+            "Tomato"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common vegetable, but it's strange to find it in the abyss",
+            "Needs proper preparation before eating"
+        ],
+        "ability": ""
+    },
+    "108": {
+        "name": [
+            "Banana"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly picked fruit, full of refreshing flavor",
+            "Eating it directly slightly restores health"
+        ],
+        "ability": ""
+    },
+    "109": {
+        "name": [
+            "Strawberry"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly picked fruit, full of refreshing flavor",
+            "Eating it directly slightly restores health"
+        ],
+        "ability": ""
+    },
+    "110": {
+        "name": [
+            "Grape"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly picked fruit, full of refreshing flavor",
+            "Eating it directly slightly restores health"
+        ],
+        "ability": ""
+    },
+    "111": {
+        "name": [
+            "Pineapple"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly picked fruit, full of refreshing flavor",
+            "Eating it directly slightly restores health"
+        ],
+        "ability": ""
+    },
+    "112": {
+        "name": [
+            "Watermelon"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly picked fruit, full of refreshing flavor",
+            "Eating it directly slightly restores health"
+        ],
+        "ability": ""
+    },
+    "113": {
+        "name": [
+            "Spaghetti"
+        ],
+        "subtitle": "",
+        "description": [
+            "Springy, elastic noodles that go well with any dish",
+            "Delicious with just a bit of sauce"
+        ],
+        "ability": ""
+    },
+    "114": {
+        "name": [
+            "Tomato Sauce"
+        ],
+        "subtitle": "",
+        "description": [
+            "Made from tomatoes, with a tangy and sweet flavor",
+            "It's best not to think about why monster would drop this"
+        ],
+        "ability": ""
+    },
+    "115": {
+        "name": [
+            "Wheat Flour"
+        ],
+        "subtitle": "",
+        "description": [
+            "Flour made from ground wheat, useful for various dishes"
+        ],
+        "ability": ""
+    },
+    "116": {
+        "name": [
+            "Oyster Mushroom"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common mushroom often seen outside",
+            "However, finding it in the abyss is quite unusual"
+        ],
+        "ability": ""
+    },
+    "117": {
+        "name": [
+            "Shiitake"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common mushroom often seen outside",
+            "However, finding it in the abyss is quite unusual"
+        ],
+        "ability": ""
+    },
+    "118": {
+        "name": [
+            "Beech Mushroom"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common mushroom often seen outside",
+            "However, finding it in the abyss is quite unusual"
+        ],
+        "ability": ""
+    },
+    "119": {
+        "name": [
+            "Lilac Mushroom"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common mushroom often seen outside",
+            "However, finding it in the abyss is quite unusual"
+        ],
+        "ability": ""
+    },
+    "120": {
+        "name": [
+            "Moonlight Mushroom"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common mushroom often seen outside",
+            "However, finding it in the abyss is quite unusual"
+        ],
+        "ability": ""
+    },
+    "121": {
+        "name": [
+            "Bamboo Mushroom"
+        ],
+        "subtitle": "",
+        "description": [
+            "A common mushroom often seen outside",
+            "However, finding it in the abyss is quite unusual"
+        ],
+        "ability": ""
+    },
+    "127": {
+        "name": [
+            "Octopus tentacles"
+        ],
+        "subtitle": "",
+        "description": [
+            "Broken octopus tentacles fished from the sea, they smell great when grilled",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "130": {
+        "name": [
+            "Sea Bream"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "131": {
+        "name": [
+            "Tuna"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "132": {
+        "name": [
+            "Striped Beakfish"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "133": {
+        "name": [
+            "Grouper"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "134": {
+        "name": [
+            "Pacific Saury"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "135": {
+        "name": [
+            "Sweet shrimp"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught shrimp from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "136": {
+        "name": [
+            "Spiny lobster"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught lobster from the sea, be careful not to get pinched",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "137": {
+        "name": [
+            "Hairy crab"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught crab from the sea, be careful not to get pinched",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "142": {
+        "name": [
+            "Salmon"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "143": {
+        "name": [
+            "King Salmon"
+        ],
+        "subtitle": "",
+        "description": [
+            "Freshly caught from the sea, perfect for sashimi",
+            "It can also be cooked with other ingredients"
+        ],
+        "ability": ""
+    },
+    "151": {
+        "name": [
+            "Beast Meat"
+        ],
+        "subtitle": "",
+        "description": [
+            "Meat taken from a monster. It can be used to make delicious dishes",
+            "Monsters eat humans, and humans eat monsters—it's only natural"
+        ],
+        "ability": ""
+    },
+    "153": {
+        "name": [
+            "A Large Egg"
+        ],
+        "subtitle": "",
+        "description": [
+            "A huge egg from the abyss. What creature is it from?",
+            "I didn't think too much—an egg is an egg"
+        ],
+        "ability": ""
+    },
+    "173": {
+        "name": [
+            "Banana fairy"
+        ],
+        "subtitle": "",
+        "description": [
+            "What on earth is this?"
+        ],
+        "ability": ""
+    },
+    "175": {
+        "name": [
+            "Apple fairy"
+        ],
+        "subtitle": "",
+        "description": [
+            "What on earth is this?"
+        ],
+        "ability": ""
+    },
+  "190": {
+        "name": [
+            "Yuri Doujinshi"
+		],
+		"subtitle": [
+		    "\"Onee-chan... I feel like... I can’t live without you anymore...\""
+		],
+        "description": [
+            "A doujinshi with beautiful art.",
+			"But it depicts a forbidden love between two beautiful girls...",
+			"Story’s so steamy, even the pages give off a faint pink scent."
+		],
+        "ability": [
+            "Increases desire after reading!"
+		]	
+    },
+  "191": {
+        "name": [
+            "Moe Doujinshi"
+		],
+		"subtitle": [
+		    "\"Moe moe kyun~♡\""
+		],
+        "description": [
+            "A doujinshi filled with pink bubbles and heart-shaped effects.",
+			"Characters blush and get flustered over the tiniest things...",
+			"They say you might end up sighing \"so moe~\" after reading it."
+		],
+        "ability": [
+            "Increases desire after reading!"
+		]	
+    },
+  "192": {
+        "name": [
+            "Catgirl Doujinshi"
+		],
+		"subtitle": [
+		    "\"Master... nya~ Can I get some headpats?\""
+		],
+        "description": [
+            "A doujinshi that smells faintly of catnip.",
+			"Shows catgirls purring, rolling, and wagging their tails.",
+			"May make you consider getting a talking nyan-wife..."
+		],
+        "ability": [
+            "Increases desire after reading!"
+		]	
+    },		
+    "199": {
+        "name": [
+            "Sister's reward coupon"
+        ],
+        "subtitle": [
+            "\"It's covered in lots of scribbles....\""
+		],
+        "description": [
+            "It's a special reward from the sister for hard-working onii-chan",
+            "You can make any request to her, even unreasonable ones",
+            "But even without it, she still wants to help carry onii-chan's burdens"
+        ],
+        "ability": ""
+    },
+    "200": {
+        "name": [
+            "NLCH's polaroid#1"
+        ],
+        "subtitle": [
+            "\"What are you doing, staring over here like that…!\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "201": {
+        "name": [
+            "NLCH's polaroid#2"
+        ],
+        "subtitle": [
+            "\"this is just how rabbits show affection~\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "202": {
+        "name": [
+            "NLCH's polaroid#3"
+        ],
+        "subtitle": [
+            "\"…It's clean enough already, right?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "203": {
+        "name": [
+            "NLCH's polaroid#4"
+        ],
+        "subtitle": [
+            "\"N-No, this is bad... the medicine's too strong!\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "204": {
+        "name": [
+            "NLCH's polaroid#5"
+        ],
+        "subtitle": [
+            "\"Oh, Lord, forgive me for being tempted by money...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "205": {
+        "name": [
+            "NLCH's polaroid#6"
+        ],
+        "subtitle": [
+            "\"Woof... Isn't that enough already...?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "206": {
+        "name": [
+            "NLCH's polaroid#7"
+        ],
+        "subtitle": [
+            "\"Hehe~♥ You didn't see anything, right?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "207": {
+        "name": [
+            "NLCH's polaroid#8"
+        ],
+        "subtitle": [
+            "\"Come on, this pose should be fine, right?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "208": {
+        "name": [
+            "NLCH's polaroid#9"
+        ],
+        "subtitle": [
+            "\"What’s with that amused look on your face...?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "209": {
+        "name": [
+            "NLCH's polaroid#10"
+        ],
+        "subtitle": [
+            "\"I can't... keep singing anymore...!\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "210": {
+        "name": [
+            "NLCH's polaroid#11"
+        ],
+        "subtitle": [
+            "\"So, this is your New Year's wish?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "211": {
+        "name": [
+            "NLCH's polaroid#12"
+        ],
+        "subtitle": [
+            "\"Ah, even the tea is starting to taste sweeter!\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "212": {
+        "name": [
+            "NLCH's polaroid#13"
+        ],
+        "subtitle": [
+            "\"Well, it’s a part-time job, so I can't help it...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "213": {
+        "name": [
+            "NLCH's polaroid#14"
+        ],
+        "subtitle": [
+            "\"Oh my, you came in without knocking~\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "214": {
+        "name": [
+            "NLCH's polaroid#15"
+        ],
+        "subtitle": [
+            "\"Is that so...? A confession style I've never heard of...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "215": {
+        "name": [
+            "NLCH's polaroid#16"
+        ],
+        "subtitle": [
+            "\"Haa... Haa... My body can't take it anymore...!\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "216": {
+        "name": [
+            "NLCH's polaroid#17"
+        ],
+        "subtitle": [
+            "\"Oh, Lord... please forgive me...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "217": {
+        "name": [
+            "NLCH's polaroid#18"
+        ],
+        "subtitle": [
+            "\"Woof... Isn't that enough already...?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "218": {
+        "name": [
+            "NLCH's polaroid#19"
+        ],
+        "subtitle": [
+            "\"...Meow?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "219": {
+        "name": [
+            "NLCH's polaroid#20"
+        ],
+        "subtitle": [
+            "\"...Huh? Still not cleaned up?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "220": {
+        "name": [
+            "NLCH's polaroid#21"
+        ],
+        "subtitle": [
+            "\"Haa... This is the 11th song... Isn't that enough?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "221": {
+        "name": [
+            "NLCH's polaroid#22"
+        ],
+        "subtitle": [
+            "\"Why does the gaze feel hotter...?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "222": {
+        "name": [
+            "NLCH's polaroid#23"
+        ],
+        "subtitle": [
+            "\"Your New Year's wish came true right away, happy?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "223": {
+        "name": [
+            "NLCH's polaroid#24"
+        ],
+        "subtitle": [
+            "\"Did you feel the bunny's love~♥\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "224": {
+        "name": [
+            "NLCH's polaroid#25"
+        ],
+        "subtitle": [
+            "\"A strange bunny has been abandoned...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "225": {
+        "name": [
+            "NLCH's polaroid#26"
+        ],
+        "subtitle": [
+            "\"Almost got caught...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "226": {
+        "name": [
+            "NLCH's polaroid#27"
+        ],
+        "subtitle": [
+            "\"Coming in without knocking... what are you up to~♥\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "227": {
+        "name": [
+            "NLCH's polaroid#28"
+        ],
+        "subtitle": [
+            "\"That's strange... I can't seem to fasten it...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "228": {
+        "name": [
+            "NLCH's polaroid#29"
+        ],
+        "subtitle": [
+            "\"...No one's watching over here, right?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "229": {
+        "name": [
+            "NLCH's polaroid#30"
+        ],
+        "subtitle": [
+            "\"Hehe~♥ Nothing happened, okay?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "230": {
+        "name": [
+            "NLCH's polaroid#31"
+        ],
+        "subtitle": [
+            "\"Mmm... The tea tastes even sweeter now...!\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "231": {
+        "name": [
+            "NLCH's polaroid#32"
+        ],
+        "subtitle": [
+            "\"I know it's part of the job, but just this once, okay?\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "232": {
+        "name": [
+            "NLCH's polaroid#33"
+        ],
+        "subtitle": [
+            "\"P-Please don't touch the merchandise carelessly!\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "233": {
+        "name": [
+            "NLCH's polaroid#34"
+        ],
+        "subtitle": [
+            "\"Chew, chew... It's so-so, I guess...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "234": {
+        "name": [
+            "NLCH's polaroid#35"
+        ],
+        "subtitle": [
+            "\"Master? Please don't tease me at a time like this...\""
+        ],
+        "description": [
+            "Photos capturing the daily lives of the girls",
+            "the tea party, but… who took these pictures?"
+        ],
+        "ability": ""
+    },
+    "235": {
+        "name": [
+            "Polaroid Collection Album"
+        ],
+        "subtitle": [
+            "\"Soft and adorable girls♥ I wanna take every one of them home—!\""
+        ],
+        "description": [
+            "A photo album specially made for collecting cute girl snapshots.",
+            "Opening it releases a faint scent of black tea..."
+        ],
+        "ability": [
+		    "Polaroids Collected: \\c[6]${QJ.MPMZ.tl.checkPolaroidCount()}\\c[0]/35"
+		]
+    },
+    "236": {
+        "name": [
+            "Polaroid Collection Album"
+        ],
+        "subtitle": [
+            "\"Soft and adorable girls♥ I wanna take every one of them home—!\""
+        ],
+        "description": [
+            "A photo album specially made for collecting cute girl snapshots.",
+            "Opening it releases a faint scent of black tea..."
+        ],
+        "ability": [
+		    "Complete collection! Luck permanently increased!"
+		]
+    },
+    "311": {
+        "name": [
+            "Blue Radiant Stone"
+        ],
+        "subtitle": "",
+        "description": [
+            "A blue gemstone with a captivating glow",
+            "While lacking practical value, someone might pay a high price for it…",
+            "or have other intentions?"
+        ],
+        "ability": ""
+    },
+    "312": {
+        "name": [
+            "Small Mana Gel"
+        ],
+        "subtitle": "",
+        "description": [
+            "A jelly-like substance formed purely from condensed mana",
+            "It’s edible, but its taste varies greatly with one’s magical aptitude",
+            "Its main use is as a consumable material for magic"
+        ],
+        "ability": ""
+    }
+}

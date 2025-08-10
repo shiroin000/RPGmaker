@@ -244,10 +244,13 @@ Scene_Boot.prototype.start = function() {
 	  DrillUp.g_MPFE_fontsize = 20;
 	  DrillUp.g_MBB_default["style_id"] = 2;
 	  if (DrillUp.g_GFTH_style) {
-         for (const style of DrillUp.g_GFTH_style) {
-            style.regist_x = 1090;
-			style.regist_y = 880;
-         }			
+  	    for (let i = 0; i < DrillUp.g_GFTH_style.length; i++) {
+    	  if (i === 4) continue;            
+    	  const style = DrillUp.g_GFTH_style[i];
+    	  if (!style) continue;
+    	  style.regist_x = 1090;
+    	  style.regist_y = 880;
+  	    }
 	  }
 	}
     
