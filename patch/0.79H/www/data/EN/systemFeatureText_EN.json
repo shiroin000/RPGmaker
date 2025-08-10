@@ -1,0 +1,122 @@
+{
+  "gameTitle": [
+    "A Simple Life with My Unobtrusive Girl "
+  ],
+  "quantityHeld": [
+    "\\fs[16]•Quantity Held:\\c[17] ${} \\c[0]\\py[-8]"
+  ],
+  "autoUpdate": [
+    "Update available: Version ${} game data detected. ",
+    "Would you like to download and update now?"
+  ],
+  "fullScreen": [ 
+    "Full Screen"
+  ],
+  "masterVolume": [ 
+    "Master Volume"
+  ],
+  "voiceVolume": [ 
+    "Voice Volume"
+  ],    
+  "BgmVolume": [
+    "BGM Volume"
+  ],
+  "BgsVolume": [
+    "BGS Volume"
+  ],
+  "SeVolume": [
+    "SE Volume"
+  ],
+  "MaxPlayerMsgs": [
+    "Max Player Msgs"
+  ],
+  "GameFAQ": [
+    "Game FAQ"
+  ],
+  "ShowWeaponDurability": [
+    "Show Weapon Durability"
+  ],
+  "DisableAutoUpdate": [
+    "Disable Auto Update"
+  ],
+  "LockedFPS": [
+    "Locked 60 FPS"
+  ],
+  "Language": [
+    "Game Language"
+  ],
+  "SwitchLanguage": [
+    "Game language change detected!",
+    "Restarting now to apply the new language settings!"
+  ],
+  "ErrorReport": [
+    "An error occurred. Please report the bug on the NLCH Discord server.",
+    "(Click 'OK' to open the invite link)",
+    "(Attach a screenshot of the error)"
+  ],
+  "UpdateComplete1": [
+    "Game update completed!",
+    "The game will restart automatically after closing this window.",
+    "You can load the auto-save to resume progress!"
+  ],
+  "UpdateComplete2": [
+    "Game update completed!",
+    "The game will restart shortly to apply the update!"
+  ],
+  "RemindToUpdate": [
+    "An error has occurred and the game is frozen.",
+    "A newer patch is available—",
+    "Please use auto-update to fix the issue!"
+  ],
+  "bagFull": [
+    "Inventory limit exceeded!!"
+  ],
+  "noStatusEffects": [
+    "No status effects at all!"
+  ],
+  "unimplementedDoor": [
+    "This door won't push open from this side"
+  ],
+  "zipUpdateComplete": [
+    "Patch installed successfully. ",
+	"Restarting the game to apply the update!"
+  ],
+  "zipUpdateFail": [
+    "Failed to extract and install the patch!",
+    "Please try the auto-update again or",
+    "manually extract the patch files to install!"
+  ],
+  "fileDownloadedSuccessfully": [
+    "${} downloaded successfully!"
+  ],
+  "fileDownloadFailed": [
+    "${} failed to download! Retrying now!"
+  ],
+  "installPatch": [
+    "Patch requires extraction—installing now. This may cause the game to lag, please be patient!"
+  ],
+  "totalFilesToUpdate": [
+    "Detected ${} file(s) to update—starting download process!"
+  ],
+  "renameCharacter": [
+    "I remember now—",
+	"she is..."
+  ],
+  "heroName": [
+    "Onii-chan"
+  ],
+  "heroineName": [
+    "Imouto"
+  ],  
+  "nonHardwareAccelerated": [
+    "The game is currently running on integrated graphics!",
+	"If your PC has a dedicated GPU, we recommend setting Game.exe ",
+	"to use it in your graphics control panel for a smoother gaming experience."
+  ],  
+  "isAmdCPU": [
+    "Your CPU is detected as an AMD processor.",
+	"Some AMD chips may experience frame drops when playing VP9 (WebM) videos ",
+	"in a Chromium environment. If you encounter this issue, try forcing the game to",
+	"use GPU rendering or update your drivers to help alleviate the problem."
+  ]    
+}
