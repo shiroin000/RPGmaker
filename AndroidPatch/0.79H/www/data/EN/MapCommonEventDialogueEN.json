@@ -1,0 +1,337 @@
+{
+  "autoUpdateReminder": {
+        "0": [
+            "The update process will automatically start when you wake up the next day.",
+			"Please make sure your internet connection is stable throughout the process!",
+			"\\w[120]"
+		],
+		"1": [
+            "Unable to view update log!",
+			"The network connection may have failed!",
+			"\\w[120]"
+        ]		
+    },		
+  "imoutoAhoge": {
+        "0": [
+            "Accidentally pulled out Imouto’s ahoge."
+		],
+		"1": [
+            "She didn’t seem to notice anything unusual, ",
+			"and it grew back quickly.",
+			"...Could this be some kind of renewable resource?"
+        ],
+        "2": [
+            "\\nl< >\"...What’s wrong, Onii-chan?",
+			"You look really serious.\""
+        ],
+        "3": [
+            "Since it seems complicated, ",
+			"I’d better not think too deeply about it."
+        ],
+        "4": [
+            "Better not touch it again..."
+        ],	
+        "5": [
+            "\\nl< >\"...My head feels a bit itchy.   \\w[30]",
+			"Did you do something, Onii-chan?\""
+        ],
+        "6": [
+            "\"I-I didn’t do anything… I mean it!\""
+        ]		
+    },
+  "cookingSystem": {
+        "0": [
+            "\\ii[\\v[\\v[85]]]is ready. What should I do?"
+		],
+		"1": [
+            "Swap it",
+			"Remove it"
+        ],
+        "2": [
+            "Still picking ingredients!!"
+        ]	
+    },	
+  "inventoryExpansion": {
+        "0": [
+            "It seems like using \\ii[312]",
+			"can expand the backpack capacity..."
+		],	  
+        "1": [
+            "Expand weapon slots",
+			"Expand gear slots",
+			"Never mind"
+		],
+        "2": [
+            "The quantity of \\ii[312]",
+			"seems insufficient..."
+		]	
+    },
+  "loadingEasterEgg": {
+        "0": [
+            "\\nl< >\"Hamburg steak is the most delicious food.\"  \\w[180] \\^"
+		],	  
+        "1": [
+            "\\nl< >\"Onii-chan will surely bring back ",
+			"a mountain of meat for his Imouto...\"   \\w[360] \\^"
+		],
+        "2": [
+            "My sister seems to be saying something..."
+		],
+        "3": [
+            "\\nl< >\"But green peppers are the enemy.   \\w[120]",
+			"Onii-chan, you have to eat them all…       \\w[120]",
+			"Go defeat the green enemy~!\"               \\w[120]\\^"
+		],	  
+        "4": [
+            "\\nl< >\"Ah, you’re awake…     \\w[60]",
+			"Onii-chan, did you sleep well?\""
+		],
+        "5": [
+            "\"Not really… By the way, ",
+			"I’ve been hearing some strange sounds ",
+			"for a while now…\""
+		],	
+        "6": [
+            "\\nl< >\"Eh hehe, that was my    \\w[60]",
+			"special sleep service for you, Onii-chan!\""
+		],	
+        "7": [
+            "\\nl< >\"My sister is so cute...               \\w[120]",
+			"She's my favorite girl in the whole world...  \\w[210]",
+			"My sister is————                              \\w[150]\\^"
+		],	
+        "8": [
+            "My sister seems to be saying something..."
+		],	
+        "9": [
+            "\\nl< >\"Ah, onii-chan! Good evening—!\""
+		],
+        "10": [
+            "\\nl< >\"Um... Did you hear everything I just said?\""
+		],
+        "11": [
+            "\\nl< >\"Onii-chan, your sleeping face ",
+			"was so funny just now~\""
+		],
+        "12": [
+            "\\nl< >\"It's rare to see you dozing off~\""
+		]		
+    },
+  "rubberDuck": {
+        "0": [
+            "A lonely rubber duck ",
+			"floats on the water..."
+		],	  
+        "1": [
+            "Pick it up",
+			"Leave it be"
+		],
+        "2": [
+            "Did someone throw this away?",
+			"Looks a bit sad, huh…"
+		],	
+        "3": [
+            "Come to think of it…",
+			"I got washed down from upstream too..."
+		],	
+        "4": [
+            "If I take this home...",
+			"Would my sister be happy?"
+		],
+        "5": [
+            "But it seems a bit dirty,",
+			"so maybe I should just leave it..."
+		]
+    },
+  "drowning": {
+        "0": [
+            "Ahhh... that was close... ",
+			"I slipped from the riverbank and almost drowned!"
+		]
+    },
+  "erohon": {
+        "0": [
+            "(There are still people or monsters nearby...",
+			"better not take out this book.)"
+		]
+    },
+   "ninja": {
+        "0": [
+            "I can’t believe there’s a man-made secret room in a place like this.",
+			"Who could’ve built it…?"
+		],
+        "1": [
+            "Whoa…!?",
+			"There’s even a girl passed out here…"
+		],
+        "2": [
+            "Now that I think about it, I’ve been hearing weird rumbling noises…",
+			"Was it her stomach making those sounds…?"
+		],	
+        "3": [
+            "Ugh…",
+			"So hungry…"
+		],	
+        "4": [
+            "…………",
+			"Is she so hungry she’s barely conscious…?"
+		],	
+        "5": [
+            "There’s a campfire here, perfect.",
+			"I’ll cook her something to eat!"		
+		],
+        "6": [
+            "Should I just use \\ii[\\v[90]]     ",
+			"and whip up something simple?"
+		],	
+        "7": [
+            "Let’s do it!",
+			"…Never mind."
+		],	
+        "8": [
+            "Hmm… Maybe I should swap in",
+			"better ingredients…"
+		],	
+        "9": [
+            "Hey~ I made some hot food for you!",
+			"Do you think you can eat?"
+		],	
+        "10": [
+            "Sniff sniff… sniff sniff…",
+			"That smell… is it food?"
+		],		
+        "11": [
+            "The smell of food!!"
+		],		
+        "12": [
+            "\\{Alright, I’m digging in!!"
+		],		
+        "13": [
+            "You… you little…",
+			"I made that, you know…"
+		],		
+        "14": [
+            "(She finished it in just a few bites…",
+			"She really must’ve been starving…)"
+		],		
+        "15": [
+            "Munch munch… You totally saved me!",
+			"I haven’t eaten in days… munch munch…"
+		],			
+        "16": [
+            "I thought I was gonna turn into some hungry ghost",
+			"haunting this dungeon… Grrrr…"
+		],		
+        "17": [
+            "Hey… just eat a bit slower… By the way,",
+			"why are you here alone in a place like this?"
+		],		
+        "18": [
+            "Ah! So—!",
+			"I was seriously working on my mission, okay!"
+		],		
+        "19": [
+            "I wanted to search for the hidden treasure in this area,",
+			"so I dug out a secret room in a secluded spot!"
+		],		
+        "20": [
+            "But then… munch munch.",
+			"After I got in, the entrance got blocked by a tombstone!"
+		],		
+        "21": [
+            "Ugh, I totally didn’t expect that,",
+			"so my rations ran out super fast… and then…"
+		],	
+        "22": [
+            "A ninja running into a mess like this…",
+			"I can’t face the organization now…"
+		],	
+        "23": [
+            "Huh… huh? But why’d you even",
+			"dig a secret room in the first place…"
+		],	
+        "24": [
+            "Because that treasure doesn’t always show up,",
+			"so I had to be ready for a long stay… munch munch."
+		],	
+        "25": [
+            "Plus, I can’t let anyone else know about this,",
+			"this is a super secret mission directly from the boss!"
+		],	
+        "26": [
+            "If anyone else finds out…",
+			"what do you think’ll happen…"
+		],	
+        "27": [
+            "Of course, I’d have to quietly take care of them…",
+			"otherwise, I’d be a failed ninja… munch munch."
+		],	
+        "28": [
+            "…Wait, what?!",
+			"I totally just leaked intel!"
+		],	
+        "29": [
+            "Um… I promise I won’t say anything…",
+			"so, uh…"
+		],		
+        "30": [
+            "…Huh!?"
+		],		
+        "31": [
+            "I can’t believe I messed up this badly again…",
+			"Ugh… even if you did save me…"
+		],		
+        "32": [
+            "W-wait a sec!",
+			"You’re gonna kill me just for that!?"
+		],		
+        "33": [
+            "That’s what being a ninja is all about…",
+			"You gotta fight to survive…"
+		],		
+        "34": [
+            "I mean, I don’t really wanna hurt you, either,",
+			"but I still owe you a meal…"
+		],	
+        "35": [
+            "I-if that’s how it is—",
+			"\\^"
+		],	
+        "36": [
+            "Then there’s only one answer—",
+			"You have to become a ninja, too!"
+		],	
+        "37": [
+            "If you join our group,",
+			"there’s no reason for us to fight each other!"
+		],	
+        "38": [
+            "W-wait a second!",
+			"I don’t really have a choice here, do I!?"
+		],	
+        "39": [
+            "It’s fine,",
+			"I’ll be gentle…"
+		],
+        "40": [
+            "…Wah!?",
+			"Stay away from me!!"
+		],
+        "41": [
+            "You really do have a knack for this ninja stuff…!",
+			"You learned it all with just a bit of practice!"
+		],
+        "42": [
+            "Now,",
+			"you’re one of us, too!"
+		],
+        "43": [
+            "But I’ll have to wait until my mission’s done",
+			"before I can introduce you to the boss!"
+		],
+        "44": [
+            "At this point,",
+			"nothing really matters anymore…"
+		]		
+    }	
+}

@@ -834,6 +834,11 @@ QJ.MPMZ.tl._imoutoUtilautoUpdataIcon = function() {
 	if ($gameMap.mapId() !== 4) return;
 	if ($gameScreen.picture(81)) return;
 	if ($gameSwitches.value(28)) return;
+
+	if ($gameMap.isEventRunningQJ()) {
+	   setTimeout(() => QJ.MPMZ.tl._imoutoUtilautoUpdataIcon(), 2000);
+	   return;
+	}
 	
 	var IMG = "autoUpdataIcon";
 	$gameScreen.showPictureFromPath(81, "characters", IMG, 0, 388, 360, 100, 100, 0, 0);

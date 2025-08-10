@@ -732,7 +732,7 @@ chahuiUtil.newSaveRecord = function() {
 chahuiUtil.autoUpdataCheck = function() {
 
 	//if (Utils.isMobileDevice()) return;	
-	if ($gameStrings.value(1).trim() !== "") {		
+	if ($gameStrings.value(1).trim() !== "" || $dataSystem.updateLog) {		
 		QJ.MPMZ.tl._imoutoUtilautoUpdataIcon();
 	}
 	// 同步游戏公告
