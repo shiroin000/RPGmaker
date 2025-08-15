@@ -1879,6 +1879,34 @@ Game_Map.prototype.isEventRunningQJ = function() {
 };
 
 
+Game_Map.prototype.cleanCommonEventQJ = function(keepMapId = 4) {
+  const q = $gameMap && $gameMap._commonEventQJ;
+  if (!q) return 0;
+
+  let removed = 0;
+
+  if (Array.isArray(q)) {
+    for (let i = q.length - 1; i >= 0; i--) {
+      const it = q[i];
+      const id = it && typeof it === 'object' ? it._mapId : undefined;
+      if (id !== keepMapId) {          // 包含 id 为 undefined 的情况
+        q.splice(i, 1);
+        removed++;
+      }
+    }
+  } else if (typeof q === 'object') {
+    for (const k of Object.keys(q)) {
+      const it = q[k];
+      const id = it && typeof it === 'object' ? it._mapId : undefined;
+      if (id !== keepMapId) {
+        delete q[k];
+        removed++;
+      }
+    }
+  }
+  return removed; // 返回删除数量，方便调试
+};
+
 
 // 打开存档界面前消灭所有子弹
 Game_Interpreter.prototype.command352 = function() {
@@ -1978,90 +2006,101 @@ function hasRainParticle() {
 
 
 // 显示哥哥战败次数
-QJ.MPMZ.tl.displayOniichanDefeatCount = function() {
+QJ.MPMZ.tl.displayOniichanDefeatCount = function () {
+  const zoom  = $gameScreen.zoomScale();
+  const scale = 1 / zoom;
 
+  // —— 屏幕上的目标位置（像素）——
+  const baseX = 960;   
+  const baseY = 440;
 
-     $gameParty.leader()._deadCount = $gameParty.leader()._deadCount || 0;
-     let BulletText = $gameParty.leader()._deadCount;
-     let code = "ffffff";
-     if (BulletText > 50) {code = "#570000";}
-     else if (BulletText > 40) {code = "#a50000";}
-     else if (BulletText > 30) {code = "#c51e1e";}
-     else if (BulletText > 20) {code = "#da4545";}
-     else if (BulletText > 10) {code = "#fd7777";}
-     else if (BulletText > 0) {code = "#ffc0c0";}
+  // 两行的垂直间距
+  const gapPx = 120; 
 
+  // 折算成 QJ 坐标系
+  const posX1 = baseX / zoom;
+  const posY1 = baseY / zoom;
+  const posX2 = baseX / zoom;
+  const posY2 = (baseY + gapPx) / zoom;
 
-	let posX = 960 / $gameScreen.zoomScale();
-    let posY = 480 / $gameScreen.zoomScale();
-	let Scale = 1 / $gameScreen.zoomScale();
-       /*
-        QJ.MPMZ.Shoot({
-            img:"black",
-            position: [['S',0], ['S',0]],
-            initialRotation: ['S', 0],
-            imgRotation: ['F'],
-            opacity:'0|0~30|0.5~9999999/0.5',
-            moveType:['S','0'],
-            z:"A",
-			scale:Scale,
-			onScreen:true,
-			anchor:[0,0],
-            existData: [
-		      {t:['Time',240],d:[0,30]}
-			],			
-        });
-	    */
-        QJ.MPMZ.Shoot({
-            img:['T',{
-    text:BulletText,
-    arrangementMode:0,
-    textColor:code,
-    fontSize:96,
-    outlineColor:"#e53789",
-    outlineWidth:0,
-    fontFace:"Nagurigaki Crayon",
-    fontItalic:false,
-    fontBold:true,
-    width:-1,
-    height:-1,
-    textAlign:5,
-    lineWidth:0,
-    lineColor:"#ffffff",
-    lineRate:1.0,
-    backgroundColor:null,
-    backgroundOpacity:1,
-    shadowBlur:5,
-    shadowColor:"#d1075b",
-    shadowOffsetX:0,
-    shadowOffsetY:0
-}],
-            position: [['S',posX], ['S',posY]],
-            initialRotation: ['S', 0],
-            imgRotation: ['F'],
-            opacity:'0|0~30|0~60/1~9999999/1',
-            moveType:['S','0'],
-            z:"A",
-			scale:Scale,
-			onScreen:true,
-			anchor:[0,0],
-            existData: [
-		      {t:['Time',240],d:[0,30]}
-			],
-			timeline:['S',0,12,[-1,1,6]],
-        });	
+  const BulletText1 = ($gameParty.leader()._deadCount = $gameParty.leader()._deadCount || 0);
+  let BulletText2 = "Apocalypse";
+		switch (ConfigManager.language) {
+                case 0: 
+				BulletText2 = "無法逃避的終末";
+                break;
+                case 1: 
+				BulletText2 = "不可避の終末";			
+                break;	         
+		}  
+
+  // 公共的文本样式
+  const baseTextStyle = {
+    arrangementMode: 0,
+    textColor: "#bdbab7",
+    fontSize: 96,
+    outlineColor: "#e53789",
+    outlineWidth: 0,
+    fontFace: "Nagurigaki Crayon",
+    fontItalic: false,
+    fontBold: true,
+    width: -1,
+    height: -1,
+    textAlign: 5,
+    lineWidth: 0,
+    lineColor: "#ffffff",
+    lineRate: 1.0,
+    backgroundColor: null,
+    backgroundOpacity: 1,
+    shadowBlur: 0,
+    shadowColor: "#d1075b",
+    shadowOffsetX: 0,
+    shadowOffsetY: 0
+  };
+
+  function shootLabel(text, x, y, styleOverride) {
+    QJ.MPMZ.Shoot({
+      img: ['T', Object.assign({}, baseTextStyle, { text }, styleOverride || {})],
+      position: [['S', x], ['S', y]],
+      initialRotation: ['S', 0],
+      imgRotation: ['F'],
+      opacity: '0|0~30|0~60/1~9999999/1',
+      moveType: ['S', '0'],
+      z: 'A',
+      scale: scale,
+      onScreen: true,
+      anchor: [0.5, 0],         
+      existData: [{ t: ['Time', 240], d: [0, 30] }],
+      timeline: ['S', 0, 12, [-1, 1, 6]]
+    });
+  }
+
+  // 第一行（计数）
+  shootLabel(String(BulletText1), posX1, posY1);
+  // 第二行（文字）
+  shootLabel(BulletText2, posX2, posY2, {
+    fontSize: 64,              
+    textColor: '#bdbab7'
+  });
 };
 
 
-// GPUProbe.plus.js
+/*
+ 玩家掉帧问题检测（检测玩家配置）: GPUProbe.warnByPolicies({ hasVp9Assets: true })
+ 获取完整情报： GPUProbe.detectAll().then(console.log)
+ */
 (function () {
-  const Env = { isNW: !!(window?.process?.versions?.node && typeof require==='function') };
+  const Env = {
+    isNW: !!(window?.process?.versions?.node && typeof require === 'function')
+  };
 
+  // --- WebGL 采样 --- //
   function getGL(powerPreference) {
     const c = document.createElement('canvas');
     const attrs = { powerPreference, antialias: false, preserveDrawingBuffer: false };
-    const gl = c.getContext('webgl2', attrs) || c.getContext('webgl', attrs) || c.getContext('experimental-webgl', attrs);
-    return gl;
+    return c.getContext('webgl2', attrs)
+        || c.getContext('webgl', attrs)
+        || c.getContext('experimental-webgl', attrs);
   }
   function readGLInfo(gl) {
     if (!gl) return null;
@@ -2069,90 +2108,226 @@ QJ.MPMZ.tl.displayOniichanDefeatCount = function() {
     const vendor   = ext ? gl.getParameter(ext.UNMASKED_VENDOR_WEBGL)   : gl.getParameter(gl.VENDOR);
     const renderer = ext ? gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
     const version  = gl.getParameter(gl.VERSION);
-    return { vendor: String(vendor||''), renderer: String(renderer||''), version: String(version||''), webgl2: !!(window.WebGL2RenderingContext && gl instanceof WebGL2RenderingContext) };
+    const webgl2   = !!(window.WebGL2RenderingContext && gl instanceof WebGL2RenderingContext);
+    return {
+      vendor: String(vendor || ''),
+      renderer: String(renderer || ''),
+      version: String(version || ''),
+      webgl2
+    };
   }
-  function classifyRenderer(info) {
-    const r = info.renderer.toLowerCase(), v = info.vendor.toLowerCase();
-    const isSwift  = r.includes('swiftshader') || r.includes('software') || r.includes('basic render');
-    const isNvidia = r.includes('nvidia') || r.includes('geforce') || v.includes('nvidia');
-    const isAmd    = r.includes('amd') || r.includes('radeon') || r.includes('vega') || v.includes('advanced micro');
-    const isIntel  = r.includes('intel');
+
+  // --- GPU 名称分类（更细化：区分 AMD 集显 vs 独显） --- //
+  function classifyGpuName(name, vendorHint='') {
+    const s = (name || '').toLowerCase();
+    const v = vendorHint.toLowerCase();
+
+    const isSwift  = /swiftshader|software|basic render/.test(s);
+    const isNvidia = /nvidia|geforce|rtx|gtx|quadro/.test(s) || v.includes('nvidia');
+    const isIntel  = /intel|iris|uhd|xe|hd\s*graphics/.test(s) || v.includes('intel');
+
+    // AMD：区分集显与独显
+    const isAmd = /amd|radeon|vega|gfx\d+/i.test(s) || v.includes('advanced micro');
+    // 常见 AMD 集显命名：Radeon(TM) Graphics / Vega 6/8/11 / “Radeon Graphics” 不带 RX/XT
+    const isAmdIgp = isAmd && (
+      /radeon\(tm\)\s*graphics/.test(s) ||
+      /\bvega\s?\d+\b/.test(s) ||
+      /\bradeon\s+graphics\b/.test(s) ||
+      /\brdna\b/.test(s) && /gfx\d+/.test(s) && !/\brx\b/.test(s)
+    );
+    // 常见 AMD 独显：RX/PRO/W/XT/“Radeon VII”等
+    const isAmdDgpu = isAmd && (
+      /\brx\s?\d{3,4}\b/.test(s) ||
+      /\bradeon\s+(pro|w)\b/.test(s) ||
+      /\b(vii|fury|nano)\b/.test(s) ||
+      /xt\b/.test(s)
+    );
+
     let tier = 'unknown';
     if (isSwift) tier = 'software';
-    else if (isNvidia || isAmd) tier = 'dedicated';
-    else if (isIntel) tier = 'integrated';
-    return { tier, isSwift, isNvidia, isAmd, isIntel };
+    else if (isNvidia || isAmdDgpu) tier = 'dedicated';
+    else if (isIntel || isAmdIgp) tier = 'integrated';
+
+    return {
+      tier, isSwift, isNvidia, isIntel, isAmd,
+      isAmdIgp, isAmdDgpu
+    };
   }
+
+  function classifyRenderer(info) {
+    if (!info) return { tier: 'unknown' };
+    return classifyGpuName(info.renderer, info.vendor);
+  }
+
+  // --- CPU 供应商（仅作参考，不直接决定提示） --- //
   function detectCpuVendor() {
-    // NW.js: 用 Node 的 os.cpus() 可靠拿到 "AMD Ryzen..." / "Intel(R) ..."
     if (Env.isNW) {
       try {
         const os = require('os');
-        const model = (os.cpus()?.[0]?.model || '').toLowerCase();
-        if (model.includes('amd'))   return { vendor: 'amd',   model: os.cpus()[0].model };
-        if (model.includes('intel')) return { vendor: 'intel', model: os.cpus()[0].model };
-        if (model.includes('apple') || model.includes('m1') || model.includes('m2')) return { vendor: 'apple', model: os.cpus()[0].model };
+        const m = (os.cpus()?.[0]?.model || '').toLowerCase();
+        if (m.includes('amd'))   return { vendor: 'amd',   model: os.cpus()[0].model };
+        if (m.includes('intel')) return { vendor: 'intel', model: os.cpus()[0].model };
+        if (m.includes('apple') || m.includes('m1') || m.includes('m2') || m.includes('m3'))
+          return { vendor: 'apple', model: os.cpus()[0].model };
         return { vendor: 'unknown', model: os.cpus()[0].model || '' };
-      } catch(e) {}
+      } catch {}
     }
-    // 浏览器端退化：从 UA 猜（不一定准）
     const ua = navigator.userAgent.toLowerCase();
     if (ua.includes('amd')) return { vendor: 'amd', model: '' };
     if (ua.includes('intel')) return { vendor: 'intel', model: '' };
     return { vendor: 'unknown', model: '' };
   }
-  async function probeVp9Power() {
-    // 媒体能力探测（可选），拿不到就返回 null
-    if (!navigator.mediaCapabilities?.decodingInfo) return { supported: null, powerEfficient: null };
+
+  // --- 枚举系统中可用显卡（NW.js 可用；其他平台返回空） --- //
+  function listSystemGpus() {
+    if (!Env.isNW) return [];
+    const { execSync } = require('child_process');
+    const plat = process.platform;
     try {
-      const conf = { type: 'file', video: { contentType: 'video/webm; codecs="vp09.00.10.08"', width: 1280, height: 720, bitrate: 2_000_000, framerate: 30 } };
-      const r = await navigator.mediaCapabilities.decodingInfo(conf);
-      return { supported: !!r.supported, powerEfficient: !!r.powerEfficient };
-    } catch { return { supported: null, powerEfficient: null }; }
+      let out = '';
+      if (plat === 'win32') {
+        try {
+          out = execSync('wmic path win32_VideoController get Name', { encoding: 'utf8' });
+        } catch {
+          out = execSync('powershell -Command "Get-CimInstance Win32_VideoController | Select-Object -ExpandProperty Name"', { encoding: 'utf8' });
+        }
+      } else if (plat === 'darwin') {
+        out = execSync('system_profiler SPDisplaysDataType', { encoding: 'utf8' });
+      } else {
+        out = execSync('sh -lc "lspci | grep -iE \'VGA|3D|Display\'"', { encoding: 'utf8' });
+      }
+      // 粗略拆行取名称
+      const lines = String(out).split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+      const names = [];
+      for (const line of lines) {
+        // Windows: 直接就是名称行；macOS/Linux: 行内包含厂商与型号
+        const m = line.replace(/^Name\s*|\s*AdapterCompatibility.*$/i, '').trim();
+        names.push(m);
+      }
+      // 去重、清洗
+      const uniq = [...new Set(names)]
+        .filter(s => s && !/microsoft basic render|vga compatible controller/i.test(s));
+      return uniq.map(n => ({ name: n, class: classifyGpuName(n) }));
+    } catch {
+      return [];
+    }
   }
 
+  // --- 媒体能力（可选） --- //
+  async function probeVp9Power() {
+    if (!navigator.mediaCapabilities?.decodingInfo) return { supported: null, powerEfficient: null };
+    try {
+      const conf = {
+        type: 'file',
+        video: {
+          contentType: 'video/webm; codecs="vp09.00.10.08"',
+          width: 1280, height: 720, bitrate: 2_000_000, framerate: 30
+        }
+      };
+      const r = await navigator.mediaCapabilities.decodingInfo(conf);
+      return { supported: !!r.supported, powerEfficient: !!r.powerEfficient };
+    } catch {
+      return { supported: null, powerEfficient: null };
+    }
+  }
+
+  // --- 总探测 --- //
   async function detectAll() {
     const glHi = getGL('high-performance');
     const glLo = getGL('low-power');
     const hi = readGLInfo(glHi), lo = readGLInfo(glLo) || hi;
     const cur = hi || lo;
-    const cls = cur ? classifyRenderer(cur) : { tier: 'unknown' };
+    const cls = classifyRenderer(cur);
     const honoredPowerPref = !!(hi && lo && hi.renderer && lo.renderer && hi.renderer !== lo.renderer);
     const hwAccelerated = !!cur && cls.tier !== 'software';
     const cpu = detectCpuVendor();
+
+    const available = listSystemGpus(); // [{name, class:{tier,...}}]
+    const hasDedicatedAvailable = available.some(g => g.class.tier === 'dedicated');
+    const hasIntegratedAvailable = available.some(g => g.class.tier === 'integrated');
+
+    const currentIsIntegrated = cls.tier === 'integrated';
+    const currentIsAmdIgp = !!cls.isAmd && !!cls.isAmdIgp && currentIsIntegrated;
+
+    const likelyWrongGpu =
+      // 当前是集显或软件渲染
+      (currentIsIntegrated || cls.tier === 'software')
+      // 并且系统里存在独显
+      && hasDedicatedAvailable
+      // 并且 powerPreference 没被尊重（很多用户默认这种情况）
+      && !honoredPowerPref;
+
     const vp9 = await probeVp9Power();
-    return { curInfo: cur, curClass: cls, honoredPowerPref, hwAccelerated, cpu, vp9 };
+
+    return {
+      curInfo: cur,           // 当前 WebGL 渲染器信息
+      curClass: cls,          // 当前渲染器分类
+      honoredPowerPref,       // 浏览器是否会在 hi/low 之间切换
+      hwAccelerated,          // 是否硬件加速
+      cpu,                    // CPU 信息（仅参考）
+      vp9,                    // VP9 能力
+      availableGpus: available,
+      hasDedicatedAvailable,
+      hasIntegratedAvailable,
+      currentlyUsingIntegrated: currentIsIntegrated,
+      currentlyUsingAmdIntegrated: currentIsAmdIgp,
+      likelyWrongGpu
+    };
+  }
+
+  // --- 统一提示 --- //
+  function joinLines(arrOrStr) {
+    if (Array.isArray(arrOrStr)) return arrOrStr.join('\n');
+    return String(arrOrStr || '');
   }
 
   async function warnByPolicies(opts = {}) {
-    const { hasVp9Assets = true } = opts; // 你的工程是否使用了 VP9/WEBM 视频
+    const { hasVp9Assets = true } = opts; // 你的工程是否有 VP9(WebM) 视频
     const r = await detectAll();
 
-    // 情况①：当前在集显/软件渲染（极大可能需要玩家去把 Game.exe 设为高性能）
-    if (!r.hwAccelerated || r.curClass.tier === 'integrated') {
-		let textArray = window.systemFeatureText && window.systemFeatureText.nonHardwareAccelerated;
-		if (!textArray) textArray =  [ "The game is currently running on integrated graphics!",
-	                                   "If your PC has a dedicated GPU, we recommend setting Game.exe ",
-	                                   "to use it in your graphics control panel for a smoother gaming experience." ];
-        let text = Array.isArray(textArray) ? textArray.join("\n") : (textArray ?? "");
-		alert(text);
+    // A) 系统装了独显但当前跑在集显/软件渲染（最大可能的掉帧根因）
+    if (r.likelyWrongGpu) {
+      let text = window.systemFeatureText?.wrongGpuInUse;
+      if (!text) {
+        text = [
+          "The game is currently running on integrated or software rendering.",
+          "A dedicated GPU is detected in your system, but it's not being used.",
+          "Please force 'Game.exe' to use the high-performance GPU in your graphics control panel."
+        ];
+      }
+      alert(joinLines(text));
     }
 
-    // 情况②：CPU 为 AMD，且你项目里用 VP9（或探测到 VP9 非高效）
-    const isAmdCpu = r.cpu.vendor === 'amd';
+    // B) 仅当“当前为 AMD 集显路径”且存在 VP9 风险时提示
     const vp9Risk = hasVp9Assets || (r.vp9.supported === true && r.vp9.powerEfficient === false);
-    if (isAmdCpu && vp9Risk) {
-		let textArray = window.systemFeatureText && window.systemFeatureText.isAmdCPU;
-		if (!textArray) textArray =  [ "Your CPU is detected as an AMD processor.",
-	                                   "Some AMD chips may experience frame drops when playing VP9 (WebM) videos ",
-	                                   "in a Chromium environment. If you encounter this issue, try forcing the game to",
-	                                   "use GPU rendering or update your drivers to help alleviate the problem." ];
-        let text = Array.isArray(textArray) ? textArray.join("\n") : (textArray ?? "");
-		alert(text);
+    if (r.currentlyUsingAmdIntegrated && vp9Risk) {
+      let text = window.systemFeatureText?.amdIgpVp9;
+      if (!text) {
+        text = [
+          "Detected AMD integrated graphics in use.",
+          "VP9 (WebM) playback on some AMD iGPUs may drop frames in Chromium environments.",
+          "If you encounter stutter, please force 'Game.exe' to use your dedicated GPU or update drivers."
+        ];
+      }
+      alert(joinLines(text));
+    }
+
+    // C) 兜底：完全软渲染（SwiftShader）也提示
+    if (!r.hwAccelerated || r.curClass.tier === 'software') {
+      let text = window.systemFeatureText?.softwareRendering;
+      if (!text) {
+        text = [
+          "Hardware acceleration is not active (software rendering detected).",
+          "Please enable GPU acceleration or force the game to use a dedicated GPU."
+        ];
+      }
+      alert(joinLines(text));
     }
 
     return r;
   }
 
+  // 导出
   window.GPUProbe = Object.assign(window.GPUProbe || {}, { detectAll, warnByPolicies });
 })();
+
