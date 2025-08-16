@@ -156,7 +156,7 @@ QJ.MPMZ.tl.ex_refreshFarEventDisabledCounters = function () {
   const viewH = rs?.height || Math.ceil(Graphics.height / scale);
 
   const tw = $gameMap.tileWidth(), th = $gameMap.tileHeight();
-  const margin = tw; // 边缘缓冲一格，避免抖动频繁进出
+  const margin = tw + 48; // 边缘缓冲一格，避免抖动频繁进出
 
   for (let i = 0; i < list.length; i++) {
     const ev = list[i];
@@ -171,7 +171,7 @@ QJ.MPMZ.tl.ex_refreshFarEventDisabledCounters = function () {
 					  
     ev._perfOffscreen = !onScreen;
 	if (!onScreen) {
-      ev._IsDisabledCounter = (ev._IsDisabledCounter || 0) + 11;
+      ev._IsDisabledCounter = (ev._IsDisabledCounter || 0) + 10;
 	}
   }
   
@@ -2412,7 +2412,7 @@ QJ.MPMZ.tl.ex_senpoTachiListener = function() {
 
 //闪步结束效果
 QJ.MPMZ.tl.ex_senpoFinish = function() {
-	
+
 	var character = $gamePlayer;
 	character._opacity = 255;
 	character._moveSpeed = 8;
@@ -2735,6 +2735,18 @@ QJ.MPMZ.tl.meleeAttack = function() {
         trailEffect:TrailEffect,		
     });	
 
+	//日轮-陨石术
+	if ($gameParty.leader().hasSkill(57)) {
+        let baseValue = 300;
+        let luk = $gameParty.leader().luk;
+        luk = Math.max(0, Math.min(600, luk));
+        let adjustedValue = baseValue + (luk / 660) * 660;
+        if (Math.randomInt(1001) < adjustedValue) {
+	    $gameParty.leader().equips()[0].durability -= 40;	
+		realBullet.addMoveData("JS",[skillTime,999,'QJ.MPMZ.tl.ex_meteorStrike.call(this)']);
+		}
+	}
+
 	//斩裂剑-斩剑波
 	if ($gameParty.leader().hasSkill(44)) {
 		realBullet.addMoveData("JS",[skillTime,999,'QJ.MPMZ.tl.ex_swordEnergyAttack.call(this)']);
@@ -3025,6 +3037,14 @@ QJ.MPMZ.tl.ex_senpoTachiRelease = function() {
 		let swordEnergyAttackCode = 'QJ.MPMZ.tl.ex_swordEnergyAttack.call(this,' + swordEnergyAttackScale + ')';
 		Tachi.addMoveData("JS",[5,999,swordEnergyAttackCode]);
 	}	
+
+	//日轮-陨石术
+	if ($gameParty.leader().hasSkill(57)) {
+	    const playerX = $gamePlayer.screenBoxXShowQJ();
+	    const playerY = $gamePlayer.screenBoxYShowQJ();
+	    $gameParty.leader().equips()[0].durability -= 40;	
+        Tachi.addMoveData("JS",[20,999,`QJ.MPMZ.tl.ex_meteorStrike.call(this,${playerX},${playerY})`]);		
+	}
 	
 	//剑圣-免许皆传
 	if ($gameParty.leader().hasSkill(100)) {	
@@ -3185,6 +3205,7 @@ QJ.MPMZ.tl.ex_senpuuGiri = function(GamepadsAttack,Tsubame = false) {
     $gameSwitches.setValue(181, true);
     $gameParty.leader().addState(62);
     $dataMap.disableDashing = true;
+	
 	if ($gamePlayer._drill_EASe_controller !== undefined) {
 	  var curSpeed = 1 + $gameParty.leader().cnt;
       $gamePlayer.drill_EASe_setStateNode("旋风斩");
@@ -3234,7 +3255,8 @@ QJ.MPMZ.tl.ex_senpuuGiri = function(GamepadsAttack,Tsubame = false) {
         existData: [
             { t: ['S', 'Fuku_Plugins.EventTremble.getRemainingCycles(-1) == 0', false] },
             { t: ['S', '$gameParty.leader().equips()[0] && $gameParty.leader().equips()[0].baseItemId == 4', true] },
-            { t: ['S', '$gameMap.regionId(Math.floor($gamePlayer.centerRealX()), Math.floor($gamePlayer.centerRealY())) === 8', true] }
+            { t: ['S', '$gameMap.regionId(Math.floor($gamePlayer.centerRealX()), Math.floor($gamePlayer.centerRealY())) === 8', true] },
+			{ t: ['B', 'throwImmediately'],a: ['F', QJ.MPMZ.tl.ex_senpuuGiriThrow, [GamepadsAttack,Tsubame,{throwImmediately:true}]]  }
         ],
         z: zz,
         collisionBox: ['C', 1],
@@ -3275,6 +3297,17 @@ QJ.MPMZ.tl.ex_senpuuGiri = function(GamepadsAttack,Tsubame = false) {
         });		  
 	  }
     }
+
+	// 接住回旋镖的场合，立即投掷
+    if ($gameParty.leader().hasSkill(70)) {
+	  if ($gameMap.getGroupBulletListQJ('throwImmediately').length > 0) {
+		senpuuGiri._throwImmediately = true;  
+		senpuuGiri.addExistData({
+		   t: ['Time', 1],
+           a: ['F', QJ.MPMZ.tl.ex_senpuuGiriThrow, [GamepadsAttack,Tsubame,{throwImmediately:true}]]		   
+		 });
+	   }
+	}
 
     // 柳叶剑特效
     if (weapon.baseItemId === 80) {
@@ -3384,7 +3417,18 @@ QJ.MPMZ.tl.ex_senpuuGiriAccelerationEffect = function(Phase,Tsubame) {
 	  if ($gameParty.leader().hasSkill(44)) {
 		  QJ.MPMZ.tl.ex_swordEnergyAttack.call(this, undefined, 1);
 	  }
-
+	  
+	//日轮-陨石术
+	if ($gameParty.leader().hasSkill(57)) {
+        let baseValue = 450;
+        let luk = $gameParty.leader().luk;
+        luk = Math.max(0, Math.min(600, luk));
+        let adjustedValue = baseValue + (luk / 550) * 550;
+        if (Math.randomInt(1001) < adjustedValue) {
+	    $gameParty.leader().equips()[0].durability -= 40;	
+		QJ.MPMZ.tl.ex_meteorStrike.call(this);
+	  }
+	}
 };
 
 //旋风斩结束动作
@@ -3401,6 +3445,11 @@ QJ.MPMZ.tl.ex_senpuuGiriFinishAction = function(GamepadsAttack,Tsubame) {
    $gameParty.leader().removeState(62);
    $dataMap.disableDashing = false;
    let rotationSpeed = this.data.imgRotation[1].get();
+   
+   if (this._throwImmediately) {
+	   rotationSpeed = Math.max(rotationSpeed,9);
+   }
+   
    $gameMap.steupCEQJ(163,1,{rotation:rotationSpeed});
          
 };
@@ -3435,11 +3484,15 @@ QJ.MPMZ.tl.ex_checkSenpuuGiriAlignment = function(GamepadsAttack,Tsubame) {
 };
 
 //投掷出去的旋风斩
-QJ.MPMZ.tl.ex_senpuuGiriThrow = function(GamepadsAttack,Tsubame) {
+QJ.MPMZ.tl.ex_senpuuGiriThrow = function(GamepadsAttack,Tsubame,extraData = {}) {
 	
 	if (Tsubame) return;
 	if(!$gameParty.leader().equips()[0]) return;
 	let rotationSpeed = this.data.imgRotation[1].get();
+	
+	if (extraData.throwImmediately) {
+	    rotationSpeed = 12;
+	}
     if (rotationSpeed < 9) return;
 	var BulletImage = "weapon/weapon" + $gameParty.leader().equips()[0].baseItemId;
 	if (this.data.img != BulletImage ) return;
@@ -3555,12 +3608,19 @@ QJ.MPMZ.tl.ex_senpuuGiriThrow = function(GamepadsAttack,Tsubame) {
 
 //旋风斩三段效果
 QJ.MPMZ.tl.ex_senpuuGiriHold = function(chargeTime,args) {
+	
 	if(!$gameParty.leader().equips()[0]) {
 	AudioManager.fadeOutBgsByLine(1,9);
 	$gameSwitches.setValue(182, false);	
 	return;
 	}
 	
+	// 回旋镖
+    if ($gameParty.leader().hasSkill(70)) {
+    QJ.MPMZ.tl.ex_senpuuGiriReturnToPlayer.call(this,args);
+	return;
+	}
+    // 巨大蟹钳	
 	if ($gameParty.leader().equips()[0].baseItemId === 14) {
 	   AudioManager.fadeOutBgsByLine(1,9);
 	   $gameSwitches.setValue(182, false);	
@@ -3646,7 +3706,7 @@ QJ.MPMZ.tl.ex_senpuuGiriHold = function(chargeTime,args) {
 	
 };
 
-//旋风斩三段效果
+//旋风斩结束效果
 QJ.MPMZ.tl.ex_senpuuGiriFinishEffect = function() {
 	AudioManager.fadeOutBgsByLine(1,9);
 	$gameSwitches.setValue(182, false);
