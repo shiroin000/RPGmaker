@@ -689,15 +689,10 @@ Scene_Map.prototype.terminate = function() {
 
   // 仅“地图→地图”时清缓存；再延迟 2 帧更稳（避免新场景刚创建但还没把图挂上）
   if (toMap) {
-    const runAfterFrames = (n, fn) => {
-      const step = () => (n-- > 0) ? requestAnimationFrame(step) : fn();
-      requestAnimationFrame(step);
-    };
-    runAfterFrames(2, () => {
-      // 此时 SceneManager._scene 已是新 Scene_Map，工具会跳过“仍在用”的位图
-      chahuiUtil.freePictureSubdirCache({ ignoreReservation: true, verbose: true });
-    });
-  }
+  chahuiUtil.runWhenSafeToFree(function(){
+    chahuiUtil.freePictureSubdirCache({ ignoreReservation: true, verbose: true });
+  }, 4); 
+ }
 };
 
 

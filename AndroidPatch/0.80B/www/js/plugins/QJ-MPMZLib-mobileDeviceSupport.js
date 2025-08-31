@@ -255,3 +255,25 @@ QJ.MPMZ.tl._imoutoUtilFastForwardButtonEffect = function() {
 
 
 
+(function(){
+  window.chahuiUtil = window.chahuiUtil || {};
+  chahuiUtil._snapDepth = 0;                  // >0 表示正在截图
+
+  const _snap = Bitmap.snap;
+  Bitmap.snap = function(stage){
+    chahuiUtil._snapDepth++;
+    try { return _snap.call(this, stage); }
+    finally { chahuiUtil._snapDepth--; }
+  };
+
+  // 等“安全时机”再执行 fn：无 snap、且至少 N 帧后
+  chahuiUtil.runWhenSafeToFree = function(fn, frames){
+    frames = frames || 4; // 建议安卓至少 2~4 帧
+    const tick = () => {
+      if (chahuiUtil._snapDepth > 0) return requestAnimationFrame(tick);
+      if (frames-- > 0) return requestAnimationFrame(tick);
+      fn();
+    };
+    requestAnimationFrame(tick);
+  };
+})();
