@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>PayPal $15 test</title>
+
+  <!-- 用你的 Client ID，币种 USD -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Ab4ikhqcf96DaZD5aIlCp7dBURa-UmwDGUDXMJnGZzGNqtdcgPTGXgSMyrY4vJAgmOkIxUiyeav9Cbzw&currency=USD"></script>
+
+  <div id="paypal-button-container"></div>
+
+  <script>
+    paypal.Buttons({
+      // 创建一笔 15.00 USD 的订单
+      createOrder: (data, actions) => {
+        return actions.order.create({
+          intent: 'CAPTURE',
+          purchase_units: [{
+            amount: { value: '15.00', currency_code: 'USD' },
+            description: 'Game purchase'
+          }]
+        });
+      },
+      // 买家批准后，直接在前端进行捕获（仅测试用）
+      onApprove: async (data, actions) => {
+        const details = await actions.order.capture();
+        console.log('CAPTURED:', details);
+        alert('Payment completed: ' + details.id);
+        // TODO: 测试阶段你可以把 details.id 显示/带回游戏
+      },
+      onError: (err) => { console.error(err); alert('PayPal error: ' + err); }
+    }).render('#paypal-button-container');
+  </script>
+</html>

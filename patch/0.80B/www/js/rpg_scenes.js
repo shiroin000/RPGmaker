@@ -651,50 +651,28 @@ Scene_Map.prototype.isBusy = function() {
 };
 
 Scene_Map.prototype.terminate = function() {
-  Scene_Base.prototype.terminate.call(this);
-
-  const toBattle = SceneManager.isNextScene(Scene_Battle);
-  const toMap    = SceneManager.isNextScene(Scene_Map);
-
-  if (!toBattle) {
-    if (this._spriteset) this._spriteset.update();
-    if (this._mapNameWindow) this._mapNameWindow.hide();
-    SceneManager.snapForBackground();   // 截老画面
-  } else {
-    ImageManager.clearRequest();
-  }
-
-  if (toMap) {
-    $gameMap.resetMapeventSequence();
-    ImageManager.clearRequest();
-    if (this._spriteset) this._spriteset.update();   // 推进一次，让 Picture 真正换掉
-  }
-
-  $gameScreen.clearZoom();
-
-  // 彻底断开 Picture 对旧 bitmap 的引用
-  const pc = this._spriteset && this._spriteset._pictureContainer;
-  if (pc && pc.children && pc.children.length) {
-    for (let i = 0; i < pc.children.length; i++) {
-      const sp = pc.children[i];
-      if (sp) sp.bitmap = null;
+    Scene_Base.prototype.terminate.call(this);
+    if (!SceneManager.isNextScene(Scene_Battle)) {
+        this._spriteset.update();
+        this._mapNameWindow.hide();
+        SceneManager.snapForBackground();
+    } else {
+        ImageManager.clearRequest();
     }
-  }
 
-  // 从舞台上摘掉
-  if (this._fadeSprite)   this.removeChild(this._fadeSprite);
-  if (this._mapNameWindow) this.removeChild(this._mapNameWindow);
-  if (this._windowLayer)  this.removeChild(this._windowLayer);
-  if (this._spriteset)    this.removeChild(this._spriteset);
+    if (SceneManager.isNextScene(Scene_Map)) {
+    	//新增方法，主要用于重置演出事件
+	    $gameMap.resetMapeventSequence();				
+        ImageManager.clearRequest();
+    }
 
-  // 仅“地图→地图”时清缓存；再延迟 2 帧更稳（避免新场景刚创建但还没把图挂上）
-  if (toMap) {
-  chahuiUtil.runWhenSafeToFree(function(){
-    chahuiUtil.freePictureSubdirCache({ ignoreReservation: true, verbose: true });
-  }, 4); 
- }
+    $gameScreen.clearZoom();
+
+    this.removeChild(this._fadeSprite);
+    this.removeChild(this._mapNameWindow);
+    this.removeChild(this._windowLayer);
+    this.removeChild(this._spriteset);
 };
-
 
 Scene_Map.prototype.needsFadeIn = function() {
     return (SceneManager.isPreviousScene(Scene_Battle) ||
