@@ -12,9 +12,9 @@ var chahuiUtil = chahuiUtil || {};
 chahuiUtil.jumpToDiscordServer = function () {
 	
 		if ( Utils.isMobileDevice() ) {
-            window.open('https://discord.gg/KAXzMmGfUJ', '_system');
+            window.open('https://docs.google.com/spreadsheets/d/1fDTga-dhWarmZjoPLGN9X85UqCQwDj1L9NpInVcVVLE/edit?usp=sharing', '_system');
            } else {
-            require('nw.gui').Shell.openExternal('https://discord.gg/KAXzMmGfUJ');
+            require('nw.gui').Shell.openExternal('https://docs.google.com/spreadsheets/d/1fDTga-dhWarmZjoPLGN9X85UqCQwDj1L9NpInVcVVLE/edit?usp=sharing');
         }
 				
 };
