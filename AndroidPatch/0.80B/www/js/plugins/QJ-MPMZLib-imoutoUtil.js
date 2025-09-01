@@ -116,6 +116,7 @@ QJ.MPMZ.tl._imoutoUtilImoutoCookingAnimation = function() {
 
   let itemArray = $gameNumberArray.value(15);
   let item = $dataItems[itemArray[Math.floor(Math.random() * itemArray.length)]];
+  if (!item) item = $dataItems[3];
   let icon = item.iconIndex;
   let posX = 865;
   let posY = 845;  
