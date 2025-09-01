@@ -446,7 +446,7 @@ Game_Map.prototype.chahuiPreloadPicture = function (Path, Id) {
 
     if (selectedImages) {
         selectedImages.forEach(function(imageName) {
-            ImageManager.reservePicture(folderPath + imageName);
+            ImageManager.loadPicture(folderPath + imageName);
         });
     }
 };
@@ -2352,3 +2352,5 @@ Game_Map.prototype.checkPlayerCombatPower = function() {
 
 
 })();
+
+
