@@ -14,6 +14,27 @@
 //妹妹场景相关
 //=============================================================================
 
+// 生成选项文本
+QJ.MPMZ.tl._imoutoUtilGenerateOptionText = function (idx, specified) {
+	
+  let eid = String(this._eventId);
+  if (specified) {
+    eid = String(specified);
+  }
+
+  const mapId = $gameMap.mapId();
+  const key = `MapEventDialogue${mapId}`;
+  const dialogueTable =
+    window[key] || ["textDisplayFailed", "textDisplayFailed", "textDisplayFailed", "textDisplayFailed", "textDisplayFailed"];
+  const textArray = dialogueTable[eid]?.[String(idx)];
+
+  for (let i = 0; i < textArray.length; i++) {
+    let text = textArray[i];
+    let index = 6 + i;
+    $gameStrings.setValue(index, text);
+  }
+};
+
 // 检查是否拥有指定食材
 QJ.MPMZ.tl.checkHasIngredient = function(tag) {
     var hasTag = (typeof tag === 'string') && tag.trim().length > 0;
