@@ -146,6 +146,11 @@ QJ.MPMZ.tl.ex_playerConditionCheck = function() {
    if ( [5,28,37,47,48].includes($gameMap.mapId()) ) {
 	  system.addMoveData("F",[60,10,QJ.MPMZ.tl.ex_refreshFarEventDisabledCounters]);
    }
+
+   // 临时方案：重制HP回复
+   if ($gameParty.leader().hrg < 0) {
+	   $gameParty.leader().setHrg(0);
+   }
 	
 };
 
