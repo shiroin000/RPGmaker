@@ -1272,7 +1272,7 @@ QJ.MPMZ.tl._imoutoUtilImoutoDrinksColaFizzingUp = function() {
       // 用嘴堵住可乐
 	    var condition = $gameSelfVariables.value([1, 2, 'colaSpray']) > 1;
         if ( condition && Math.random() > 0.25 ) {
-			$gameMap.event(50).steupCEQJ(5);
+			$gameMap.event(9).steupCEQJ(5);
 			this.setDead({t:['Time',0]});
 		}
 		  
