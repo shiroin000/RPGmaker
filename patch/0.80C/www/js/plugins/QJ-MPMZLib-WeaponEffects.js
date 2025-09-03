@@ -1080,10 +1080,10 @@ QJ.MPMZ.tl.ex_meteorStrike = function(posX, posY) {
 
 // 连锁咒缚
 QJ.MPMZ.tl.ex_chainSpellBinding = function(unchain, index) {
-	
+
+    let actor = $gameActors.actor(1); 	
 	// 解除装备效果
 	if (unchain) {
-    let actor = $gameActors.actor(1); 
     let equips = actor.equips(); 
 	let count = 0;
        for (let index = 1; index < equips.length; index++) {
@@ -1093,8 +1093,11 @@ QJ.MPMZ.tl.ex_chainSpellBinding = function(unchain, index) {
 			count += 1;			
            }
 	     }
-	  if (count <= 1) {
-		  QJ.MPMZ.deleteProjectile('spellBindingContract',{d:[0,30],a:['S',"$gameParty.leader().addHrg(-0.01)"]});		
+	  if (count >= 1) {
+		  QJ.MPMZ.deleteProjectile('spellBindingContract',{d:[0,30],a:['S',`let actor = $gameParty.leader();
+		                                                                    let value = actor.xparamPlus(7);
+																			value -= 0.01;
+																			actor.setHrgPlus(value)`]});		
 	  }
 	  return;
     }	  
@@ -1125,7 +1128,9 @@ QJ.MPMZ.tl.ex_chainSpellBinding = function(unchain, index) {
   
   // ---------- 指定生成 ----------
   if (index && index > 0) { 
-    $gameParty.leader().addHrg(0.01);  
+    const list = $gameMap.getGroupBulletListQJ('servant');
+    let value = list.length * 0.01;
+    actor.setHrgPlus(value); 
     spawnLaserByIndex(index);
     return;
   }
@@ -1135,9 +1140,10 @@ QJ.MPMZ.tl.ex_chainSpellBinding = function(unchain, index) {
   // ---------- 针对在场从者生成 ----------
   const list = $gameMap.getGroupBulletListQJ('servant');
   let value = list.length * 0.01;
-  $gameParty.leader().setHrg(value);
+  actor.setHrgPlus(value);
   for (let i = 0; i < list.length; i++) {
     spawnLaserByIndex(list[i]);
   }  
   
 };	
+
