@@ -1093,7 +1093,7 @@ QJ.MPMZ.tl.ex_chainSpellBinding = function(unchain, index) {
 			count += 1;			
            }
 	     }
-	  if (count >= 1) {
+	  if (count <= 1) {
 		  QJ.MPMZ.deleteProjectile('spellBindingContract',{d:[0,30],a:['S',`let actor = $gameParty.leader();
 		                                                                    let value = actor.xparamPlus(7);
 																			value -= 0.01;
