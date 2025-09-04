@@ -1790,13 +1790,13 @@ Scene_Title.prototype.autoUpdataCheck = function() {
         if (numA !== numB) {
         var contrast = numA - numB;
         if (contrast < 0) {
-		  $gameVariables.setValue(2, versionB);
-		  scene.autoUpdataConfirm();
-          scene._startedCustomGame = true;
 		  // 如果有更新履历，就预存备用
 		   if (result.update) {
 			  $dataSystem.updateLog = result.update;
-		   }		  
+		   }
+		  $gameVariables.setValue(2, versionB);
+		  scene.autoUpdataConfirm();
+          scene._startedCustomGame = true;		   
 		}
 		return true;
     }
@@ -1804,13 +1804,13 @@ Scene_Title.prototype.autoUpdataCheck = function() {
         // 如果数值部分相同，比较字母部分（A < B < C...）
         var contrast = letterA.localeCompare(letterB);
         if (contrast < 0) {
-		  $gameVariables.setValue(2, versionB);
-		  scene.autoUpdataConfirm(versionB);
-          scene._startedCustomGame = true;
 		  // 如果有更新履历，就预存备用
 		   if (result.update) {
 			  $dataSystem.updateLog = result.update;
-		   }		  
+		   }
+		  $gameVariables.setValue(2, versionB);
+		  scene.autoUpdataConfirm(versionB);
+          scene._startedCustomGame = true;		   
 		}
 		return true;
     };		
@@ -1839,7 +1839,12 @@ Scene_Title.prototype.autoUpdataConfirm = function(version) {
 	if (match && version) {
 	 text = String(text).replace(/\$\{[^}]*\}/g, version);	
 	}
-	
+
+	if (!!$dataSystem.updateLog) {
+		text += "\n \n";
+		text += $dataSystem.updateLog;
+		text = text.replace(/\\(?:fs|c)\s*\[\s*-?\d+\s*\]/gi, '');
+	}
 	
     const ask = confirm(text);
     if (ask) {
