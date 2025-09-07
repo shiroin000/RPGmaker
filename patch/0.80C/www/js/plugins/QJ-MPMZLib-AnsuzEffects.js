@@ -1072,6 +1072,8 @@ chahuiUtil.extractAndInstallPatch = async function () {
   // —— 绝对路径 & 先验证所有文件是否存在 ——
   const cwd = process.cwd();
   const zipPaths = zipNames.map(n => path.join(cwd, n));
+  // 用于记录最新正在解压的文件路径
+  let lastZipAbs = null;  
   const missing = zipPaths
     .map((zp, i) => (!fs.existsSync(zp) ? zipNames[i] : null))
     .filter(Boolean);
@@ -1103,6 +1105,8 @@ chahuiUtil.extractAndInstallPatch = async function () {
     for (let i = 0; i < zipNames.length; i++) {
       const name = zipNames[i];
       const abs  = zipPaths[i];
+	  // 标记压缩包所在路径，供调试用
+	  lastZipAbs = abs;
           // —— 解压提醒演出 ——
             let textArray = window.systemFeatureText && window.systemFeatureText.startExtractZipFile;
             if (!textArray) textArray = `Extracting ${name}…`;
@@ -1144,6 +1148,8 @@ chahuiUtil.extractAndInstallPatch = async function () {
       ]
     );
     alert(failText);
+	// 打开失败压缩包所在路径
+	if (lastZipAbs) nw.Shell.showItemInFolder(lastZipAbs);
     $gameSelfSwitches.setValue([$gameMap.mapId(), 1, "Z"], false);
     $gameSelfSwitches.setValue([$gameMap.mapId(), 2, "Z"], false);
   }
