@@ -253,22 +253,24 @@ QJ.VB.showFastForwardButton = function() {
 (function(){
   "use strict";
 
-  // ===== 常量：按需改 =====
-  const SCALE = 0.5;              // 低分辨率比例：0.5=960x540 → 放大回屏幕
-  const INCLUDE_PICTURES = true;  // 是否把图片层(常见弹幕/特效)也进低分辨率
-  const DEBUG_WATERMARK = false;  // 左上显示 LOWRES 以确认插件在跑
+  // ===== 你可改这里：true 时使用的缩放；以及是否把图片层也压低分辨率 =====
+  const LOWSCALE = 0.5;          // scaleResolution === true 时采用的缩放倍率
+  const INCLUDE_PICTURES = true; // 是否把图片层(常见弹幕/特效)也纳入低分辨率
+  const DEBUG_WATERMARK  = false;
 
-  // ===== Spriteset_Map：建立低分辨率 RT 与显示用 Sprite =====
+  // 读取布尔开关；未定义或非 true 时按 false 处理
+  function readEnabledBool(){
+    try { return !!(ConfigManager && ConfigManager.scaleResolution); }
+    catch(_) { return false; }
+  }
+  function currentScale(enabled){ return enabled ? LOWSCALE : 1.0; }
+
+  // ===== Spriteset_Map：建立低分辨率 RT 与显示精灵 =====
   const _createLowerLayer = Spriteset_Map.prototype.createLowerLayer;
   Spriteset_Map.prototype.createLowerLayer = function(){
     _createLowerLayer.call(this);
-
-    const lowW = Math.max(1, Math.floor(Graphics.width  * SCALE));
-    const lowH = Math.max(1, Math.floor(Graphics.height * SCALE));
-    this._qj_lowResRT = PIXI.RenderTexture.create(lowW, lowH);
-
-    // 屏幕显示的低分辨率贴图：缩放会在渲染拦截里每帧设置（抵消父级缩放）
-    this._qj_lowResSprite = new PIXI.Sprite(this._qj_lowResRT);
+    this._qj_lowResRT = null;
+    this._qj_lowResSprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
     this._qj_lowResSprite.anchor.set(0, 0);
     this._qj_lowResSprite.position.set(0, 0);
     this.addChildAt(this._qj_lowResSprite, 0);
@@ -281,113 +283,141 @@ QJ.VB.showFastForwardButton = function() {
       txt.x = 6; txt.y = 3; box.addChild(g); box.addChild(txt);
       box.zIndex = 999999; this.addChild(box);
     }
+
+    // 缓存当前启用状态；首次置 null 以强制创建
+    this._qj_curEnabled = null;
   };
 
-  // ===== 窗口变化：重建 RT =====
+  // 重建/旁路 RT（仅当开关变化或强制重建时调用）
+  function rebuildRTIfNeeded(sset, enabled){
+    if (sset._qj_curEnabled === enabled && sset._qj_lowResRT) return;
+    if (sset._qj_lowResRT) { sset._qj_lowResRT.destroy(true); sset._qj_lowResRT = null; }
+    sset._qj_curEnabled = enabled;
+    const scale = currentScale(enabled);
+
+    if (scale >= 0.999) { // 旁路：不使用 RT
+      sset._qj_lowResSprite.texture = PIXI.Texture.EMPTY;
+      return;
+    }
+    const lowW = Math.max(1, Math.floor(Graphics.width  * scale));
+    const lowH = Math.max(1, Math.floor(Graphics.height * scale));
+    sset._qj_lowResRT = PIXI.RenderTexture.create(lowW, lowH);
+    sset._qj_lowResSprite.texture = sset._qj_lowResRT;
+  }
+
+  // 尺寸变化时强制重建
   const _onResize = Graphics._onResize;
   Graphics._onResize = function(){
     _onResize.call(this);
     const sc = SceneManager._scene;
-    if (sc && sc._spriteset && sc._spriteset._qj_lowResRT){
+    if (sc && sc._spriteset){
       const s = sc._spriteset;
-      if (s._qj_lowResRT) s._qj_lowResRT.destroy(true);
-      const lowW = Math.max(1, Math.floor(Graphics.width  * SCALE));
-      const lowH = Math.max(1, Math.floor(Graphics.height * SCALE));
-      s._qj_lowResRT = PIXI.RenderTexture.create(lowW, lowH);
-      s._qj_lowResSprite.texture = s._qj_lowResRT;
-      // 缩放会在渲染阶段按父级缩放重新计算
+      if (s._qj_lowResRT) { s._qj_lowResRT.destroy(true); s._qj_lowResRT = null; }
+      s._qj_curEnabled = null; // 标记下一帧重建
     }
   };
 
-  // ===== 拦截底层 WebGLRenderer.render（屏幕 pass → 离屏 pass）=====
+  // ===== 拦截底层 WebGL 渲染（屏幕 pass → 离屏 pass）=====
   if (PIXI && PIXI.WebGLRenderer) {
     const _origRender = PIXI.WebGLRenderer.prototype.render;
     let _guard = false;
 
-    // 共享矩阵：把世界按 SCALE 等比缩小写入 RT
-    const _qjMat = new PIXI.Matrix();
-    function updateMat(scale){
-      _qjMat.a = scale; _qjMat.b = 0;
-      _qjMat.c = 0;     _qjMat.d = scale;
-      _qjMat.tx = 0;    _qjMat.ty = 0;
-      return _qjMat;
+    // 离屏缩小矩阵
+    const _mat = new PIXI.Matrix();
+    function matScale(scale){
+      _mat.a = scale; _mat.b = 0;
+      _mat.c = 0;     _mat.d = scale;
+      _mat.tx = 0;    _mat.ty = 0;
+      return _mat;
     }
 
-    // 每帧根据父级（Spriteset_Map）的缩放，设置低分辨率贴图的“抵消缩放”
-    function applyLowSpriteScaleToCancelParent(sset){
-      // 父级就是 Spriteset_Map 本身，它在核心里会被设为 $gameScreen.zoomScale()
+    // 抵消父级（Spriteset_Map）缩放，避免与 DP_MapZoom 叠乘
+    function applyCancelParentScale(sset, scale){
       const parentScale = (sset.scale && sset.scale.x) ? sset.scale.x : 1;
-      const k = 1 / (SCALE * parentScale); // 抵消父级缩放后，最终世界缩放恒为 1/SCALE
-      const spr = sset._qj_lowResSprite;
-      spr.scale.x = k;
-      spr.scale.y = k;
-      // 不改 pivot/position，居中/偏移仍由父级负责
+      const k = 1 / (scale * parentScale); // 让最终视觉缩放不受父级影响
+      sset._qj_lowResSprite.scale.set(k, k);
+    }
+
+    // 读取开关并在变化时标记重建（极低开销）
+    let _lastEnabled = null;
+    function readAndMark(){
+      const v = readEnabledBool();
+      if (v !== _lastEnabled){ _lastEnabled = v; window.__QJ_LR_needRebuild = true; }
+      return v;
     }
 
     PIXI.WebGLRenderer.prototype.render = function(displayObject, renderTexture, clear, transform, skipUpdateTransform){
       const scene = SceneManager && SceneManager._scene;
-      const isMainToScreen = !renderTexture && scene && (scene instanceof Scene_Map);
-      const sset = isMainToScreen ? scene._spriteset : null;
-      const ok = sset && sset._qj_lowResRT && sset._qj_lowResSprite && sset._baseSprite;
+      const mainPass = !renderTexture && scene && (scene instanceof Scene_Map);
+      const sset = mainPass ? scene._spriteset : null;
+      const ok = sset && sset._qj_lowResSprite && sset._baseSprite;
 
       if (!_guard && ok) {
+        const enabled = readAndMark();
+        if (window.__QJ_LR_needRebuild){ rebuildRTIfNeeded(sset, enabled); window.__QJ_LR_needRebuild = false; }
+
+        const scale = currentScale(enabled);
+
+        // 旁路：关闭时直接按原逻辑渲染（低分辨率 sprite 不参与）
+        if (scale >= 0.999 || !sset._qj_lowResRT) {
+          const prev = sset._qj_lowResSprite.renderable;
+          sset._qj_lowResSprite.renderable = false;
+          const ret = _origRender.call(this, displayObject, renderTexture, clear, transform, skipUpdateTransform);
+          sset._qj_lowResSprite.renderable = prev;
+          return ret;
+        }
+
         const base = sset._baseSprite; // 地图/人物/天气等
-        const pics = (INCLUDE_PICTURES && sset._pictureContainer) ? sset._pictureContainer : null; // 图片层（常见弹幕）
+        const pics = (INCLUDE_PICTURES && sset._pictureContainer) ? sset._pictureContainer : null;
         const low  = sset._qj_lowResSprite;
 
-        // ★ 抵消父级缩放，避免放大叠乘（比如 zoomScale=2 时的 4x）
-        applyLowSpriteScaleToCancelParent(sset);
-
-        // 屏幕 pass：不画 base/pics，只显示低分辨率贴图 + UI
-        const prevBaseRenderable = base.renderable;
-        const prevPicsRenderable = pics ? pics.renderable : null;
-        const prevLowRenderable  = low.renderable;
+        // 屏幕 pass：不画 base/pics，只显示低分辨率贴图 + UI；并抵消父级缩放
+        applyCancelParentScale(sset, scale);
+        const prevBaseR = base.renderable;
+        const prevPicsR = pics ? pics.renderable : null;
+        const prevLowR  = low.renderable;
 
         base.renderable = false;
         if (pics) pics.renderable = false;
         low.renderable  = true;
 
         _guard = true;
-        _origRender.call(this, displayObject, renderTexture, clear, transform, skipUpdateTransform);
+        const ret = _origRender.call(this, displayObject, renderTexture, clear, transform, skipUpdateTransform);
         _guard = false;
 
-        // 离屏 pass：把 base(+pics) 等比缩小后写入 RT（跳过 transform 更新 → 避开 Drill 钩子）
+        // 离屏 pass：把 base(+pics) 缩小后写到 RT（跳过 transform 更新 → 避开 Drill 钩子）
         try {
-          const mat = updateMat(SCALE);
+          const m = matScale(scale);
           base.renderable = true;
-          _origRender.call(this, base, sset._qj_lowResRT, true,  mat, true);  // clear=true
-          if (pics) {
-            pics.renderable = true;
-            _origRender.call(this, pics, sset._qj_lowResRT, false, mat, true); // clear=false 叠加
-          }
-        } catch(e){
-          // console.warn('[QJ_LowResMap_DPCompat] offscreen render failed:', e);
-        }
+          _origRender.call(this, base, sset._qj_lowResRT, true,  m, true);
+          if (pics) { pics.renderable = true; _origRender.call(this, pics, sset._qj_lowResRT, false, m, true); }
+        } catch(e){ /* 忽略偶发 */ }
 
-        // 恢复 renderable
-        base.renderable = prevBaseRenderable;
-        if (pics) pics.renderable = prevPicsRenderable;
-        low.renderable  = prevLowRenderable;
+        // 恢复
+        base.renderable = prevBaseR;
+        if (pics) pics.renderable = prevPicsR;
+        low.renderable  = prevLowR;
 
-        return; // 这一帧结束
+        return ret;
       }
 
-      // 其它情况：保持原行为
       return _origRender.call(this, displayObject, renderTexture, clear, transform, skipUpdateTransform);
     };
   } else {
-    console.warn('[QJ_LowResMap_DPCompat] WebGLRenderer not found; plugin disabled.');
+    console.warn('[QJ_LowResMap_UseConfigScale] WebGLRenderer not found; plugin disabled.');
   }
 
-  // ===== 离开地图：清理 RT（防泄漏）=====
+  // 清理
   const _terminate = Spriteset_Map.prototype.terminate || function(){};
   Spriteset_Map.prototype.terminate = function(){
     try{
       if (this._qj_lowResRT)     { this._qj_lowResRT.destroy(true); this._qj_lowResRT = null; }
       if (this._qj_lowResSprite) { this._qj_lowResSprite.destroy({children:true, texture:false, baseTexture:false}); this._qj_lowResSprite = null; }
-    } finally {
-      if (_terminate) _terminate.call(this);
-    }
+    } finally { if (_terminate) _terminate.call(this); }
   };
 
 })();
+
+
+
+
