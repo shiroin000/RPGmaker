@@ -254,7 +254,7 @@ QJ.VB.showFastForwardButton = function() {
   "use strict";
 
   // ===== 常量：按需改 =====
-  const SCALE = 0.25;              // 低分辨率比例：0.5=960x540 → 放大回屏幕
+  const SCALE = 0.5;              // 低分辨率比例：0.5=960x540 → 放大回屏幕
   const INCLUDE_PICTURES = true;  // 是否把图片层(常见弹幕/特效)也进低分辨率
   const DEBUG_WATERMARK = false;  // 左上显示 LOWRES 以确认插件在跑
 
