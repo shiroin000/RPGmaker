@@ -3080,7 +3080,7 @@ QJ.MPMZ.tl.SacabambaspisCycloneJetCannon = function(initialize,args) {
 	  let dCode = "if(this._needJS){$gameMap.clearSpawnEventQJ(" + eid + ")}";
 	  let Sacabambaspis = QJ.MPMZ.Shoot({
 		     moveType:['D',false],
-			 groupName:['servant','Sacabambaspis'],
+			 groupName:['servant','Sacabambaspis',`Sacabambaspis${eid}`],
              position:[['S',posX],['S',posY]],
 			 initialRotation:['S',0],
 			 imgRotation:['F'],
