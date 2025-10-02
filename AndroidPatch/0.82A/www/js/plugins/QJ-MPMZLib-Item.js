@@ -3091,7 +3091,7 @@ QJ.MPMZ.tl.SacabambaspisCycloneJetCannon = function(initialize,args) {
 				  {t:['S',`$gameMap.event(${eid}) && !$gameMap.event(${eid}).isJumping() && $gameMap.regionId( $gameMap.event(${eid}).centerRealX(), $gameMap.event(${eid}).centerRealY() ) === 8
 				  `,true], a:['S', sCode], c:['T',20,20,true]}, 
              ],
-			 moveF: [			      
+			 moveF: [	
 			 ],
              collisionBox:['C',2],
 			 deadJS:[dCode],
